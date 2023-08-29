@@ -1,0 +1,1213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53A69671-224A-47E2-B17F-7B6E746EF9D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDMs.Web</RootNamespace>
+    <AssemblyName>EDMs.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.4.1.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>App_DllLib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>App_DllLib\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>App_DllLib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeHelper, Version=1.0.3575.17263, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\OfficeHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>App_DllLib\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomKey, Version=1.0.2575.25209, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RandomKey.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.Design, Version=2019.3.1023.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection, Version=2019.3.1023.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.Device.Detection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2019.3.1023.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.3.1023.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2019.3.1023.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2019.3.1021.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2019.3.1021.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2019.3.1021.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2019.3.1021.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2019.3.1021.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Appointments_Outlook.xml" />
+    <Content Include="Controls\Asset\AssetDetail.aspx" />
+    <Content Include="Controls\Asset\AssetList.aspx" />
+    <Content Include="Controls\Asset\LocationDetail.aspx" />
+    <Content Include="Controls\Asset\LocationList.aspx" />
+    <Content Include="Controls\Material\ReturnList.aspx" />
+    <Content Include="Controls\Material\ReceiptList.aspx" />
+    <Content Include="Controls\Material\IssuesReturnLineList.aspx" />
+    <Content Include="Controls\Material\PartDetail.aspx" />
+    <Content Include="Controls\Material\StoreDetail.aspx" />
+    <Content Include="Controls\Material\PartList.aspx" />
+    <Content Include="Controls\PPM\WOCompletedDetail.aspx" />
+    <Content Include="Controls\Material\StoreList.aspx" />
+    <Content Include="Controls\PPM\WRDetail.aspx" />
+    <Content Include="Controls\PPM\WRList.aspx" />
+    <Content Include="Controls\PPM\WOPartPlanList.aspx" />
+    <Content Include="Controls\PPM\WOResultDetail.aspx" />
+    <Content Include="Controls\PPM\WOCompletedList.aspx" />
+    <Content Include="Controls\PPM\WOResultList.aspx" />
+    <Content Include="Controls\PPM\WOPlanList.aspx" />
+    <Content Include="Controls\PPM\WOPlanDetail.aspx" />
+    <Content Include="Controls\PPM\WODetail.aspx" />
+    <Content Include="Controls\PPM\MatDetail.aspx" />
+    <Content Include="Controls\PPM\WOList.aspx" />
+    <Content Include="Controls\PPM\MatList.aspx" />
+    <Content Include="Controls\Purchase\PORDDetail.aspx" />
+    <Content Include="Controls\Purchase\REQDetail.aspx" />
+    <Content Include="Controls\Purchase\PORDList.aspx" />
+    <Content Include="Controls\Purchase\REQList.aspx" />
+    <Content Include="EAM_PartList.aspx" />
+    <Content Include="EAM_DocumentList.aspx" />
+    <Content Include="EAM_PORDList.aspx" />
+    <Content Include="EAM_ScraptsLineList.aspx" />
+    <Content Include="EAM_AssetManagementList.aspx" />
+    <Content Include="EAM_WORETNLineList.aspx" />
+    <Content Include="EAM_IssuesLineList.aspx" />
+    <Content Include="EAM_REQList.aspx" />
+    <Content Include="EAM_StoresManagement.aspx" />
+    <Content Include="EAM_ReceiptList.aspx" />
+    <Content Include="EAM_TranslineList.aspx" />
+    <Content Include="EAM_WOPartPlanList.aspx" />
+    <Content Include="EAM_WOCompletedList.aspx" />
+    <Content Include="EAM_WOPlanList.aspx" />
+    <Content Include="EAM_PPMManagement.aspx" />
+    <Content Include="EAM_AssetManagement.aspx" />
+    <Content Include="Images\clear_24.png" />
+    <Content Include="Images\complete_16.png" />
+    <Content Include="Images\complete_20.png" />
+    <Content Include="Images\complete_24.png" />
+    <Content Include="Images\dashboard.png" />
+    <Content Include="Images\dashboard2.png" />
+    <Content Include="Images\dashboard2_16.png" />
+    <Content Include="Images\dashboard2_19.png" />
+    <Content Include="Images\deletewf.png" />
+    <Content Include="Images\equipment.png" />
+    <Content Include="Images\error_14.png" />
+    <Content Include="Images\error_20.png" />
+    <Content Include="Images\error_24.png" />
+    <Content Include="Images\expand_left.png" />
+    <Content Include="Images\expand_right.png" />
+    <Content Include="Images\field-indicators.png" />
+    <Content Include="Images\hospital.png" />
+    <Content Include="Images\icon_inverse.png" />
+    <Content Include="Images\loading1.gif" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\loading3.gif" />
+    <Content Include="Images\loadingSearch.gif" />
+    <Content Include="Images\logo.svg" />
+    <Content Include="Images\material_20.png" />
+    <Content Include="Images\no-cost-rollup.png" />
+    <Content Include="Images\planCompleted_20.png" />
+    <Content Include="Images\plan_20.png" />
+    <Content Include="Images\po2_20.png" />
+    <Content Include="Images\po_20.png" />
+    <Content Include="Images\ppm20.png" />
+    <Content Include="Images\ppm24.png" />
+    <Content Include="Images\ppm2_20.png" />
+    <Content Include="Images\ppm3_20.png" />
+    <Content Include="Images\purchase_20.png" />
+    <Content Include="Images\refresh_20.png" />
+    <Content Include="Images\report1_20.png" />
+    <Content Include="Images\report2_20.png" />
+    <Content Include="Images\report3_20.png" />
+    <Content Include="Images\return_20.png" />
+    <Content Include="Images\search20.png" />
+    <Content Include="Images\search24.png" />
+    <Content Include="Images\stores_20.png" />
+    <Content Include="Images\tool-sprites.png" />
+    <Content Include="Images\toolbar_delete.png" />
+    <Content Include="Images\toolbar_new.png" />
+    <Content Include="Images\toolbar_reset.png" />
+    <Content Include="Images\toolbar_save.png" />
+    <Content Include="Images\toolbar_split.png" />
+    <Content Include="Images\work_20.png" />
+    <Content Include="Images\wo_20.png" />
+    <Content Include="Images\category3.png" />
+    <Content Include="Images\changeRequest.png" />
+    <Content Include="Images\commentSheet.png" />
+    <Content Include="Images\consolidate.png" />
+    <Content Include="Images\copyClib.png" />
+    <Content Include="Images\group2.png" />
+    <Content Include="Images\index.png" />
+    <Content Include="Images\monthlyReport.png" />
+    <Content Include="Images\outgoingTransOk.png" />
+    <Content Include="Images\pecc2logo.png" />
+    <Content Include="Images\process1.png" />
+    <Content Include="Images\process2.png" />
+    <Content Include="Images\release.png" />
+    <Content Include="Images\release1.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\styles.css" />
+    <Content Include="Controls\Security\ImportDataChangedFile.aspx" />
+    <Content Include="Controls\Security\ImportHistory.aspx" />
+    <Content Include="Controls\Security\ExportHistory.aspx" />
+    <Content Include="Controls\Security\IntegrateSyncConfig.aspx" />
+    <Content Include="Controls\Security\FunctionPermissionPage.aspx" />
+    <Content Include="Controls\Security\SharePermissionPage.aspx" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\login.css" />
+    <Content Include="Images\area1.png" />
+    <Content Include="Images\attachwfOk.png" />
+    <Content Include="Images\correspondence.png" />
+    <Content Include="Images\distribution.png" />
+    <Content Include="Images\docClass.png" />
+    <Content Include="Images\docCode.png" />
+    <Content Include="Images\docNo.png" />
+    <Content Include="Images\doctype1.png" />
+    <Content Include="Images\documentYellow.png" />
+    <Content Include="Images\drawing.png" />
+    <Content Include="Images\error1.png" />
+    <Content Include="Images\holiday1.png" />
+    <Content Include="Images\icon_cms.png" />
+    <Content Include="Images\importDoc.png" />
+    <Content Include="Images\importDocOk.png" />
+    <Content Include="Images\info1.png" />
+    <Content Include="Images\listtask.png" />
+    <Content Include="Images\markup.png" />
+    <Content Include="Images\markup1.png" />
+    <Content Include="Images\markup2.png" />
+    <Content Include="Images\matrix1.png" />
+    <Content Include="Images\matrix2.png" />
+    <Content Include="Images\ok2.png" />
+    <Content Include="Images\ok3.png" />
+    <Content Include="Images\overdue.png" />
+    <Content Include="Images\plant1.png" />
+    <Content Include="Images\reject1.png" />
+    <Content Include="Images\reject2.png" />
+    <Content Include="Images\revise.png" />
+    <Content Include="Images\revSchema.png" />
+    <Content Include="Images\revSchema1.png" />
+    <Content Include="Images\search1.png" />
+    <Content Include="Images\security.png" />
+    <Content Include="Images\typing.png" />
+    <Content Include="Images\undo_16.png" />
+    <Content Include="Images\unit.png" />
+    <Content Include="Images\workCode.png" />
+    <Content Include="Images\workflow2.png" />
+    <Content Include="Images\attach1.png" />
+    <Content Include="Images\attachwf.png" />
+    <Content Include="Images\attach_32.png" />
+    <Content Include="Images\ball_cancel.png" />
+    <Content Include="Images\ball_completefinal.png" />
+    <Content Include="Images\ball_completewf.png" />
+    <Content Include="Images\ball_createnew.png" />
+    <Content Include="Images\ball_inwf.png" />
+    <Content Include="Images\ball_inwf1.png" />
+    <Content Include="Images\ball_overdue.png" />
+    <Content Include="Images\blue.png" />
+    <Content Include="Images\break.png" />
+    <Content Include="Images\break1.png" />
+    <Content Include="Images\bsrLogo.png" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\cancel1.png" />
+    <Content Include="Images\checkall.png" />
+    <Content Include="Images\checkList.png" />
+    <Content Include="Images\checkList1.png" />
+    <Content Include="Images\checkred.png" />
+    <Content Include="Images\comment3.png" />
+    <Content Include="Images\complete.png" />
+    <Content Include="Images\complete1.png" />
+    <Content Include="Images\db.png" />
+    <Content Include="Images\detail.png" />
+    <Content Include="Images\distribute.png" />
+    <Content Include="Images\dis_attach.png" />
+    <Content Include="Images\dis_attachwf.png" />
+    <Content Include="Images\dis_delete.png" />
+    <Content Include="Images\dis_detail.png" />
+    <Content Include="Images\dis_edit.png" />
+    <Content Include="Images\dnexport.png" />
+    <Content Include="Images\document2.png" />
+    <Content Include="Images\documentNumbering_16.png" />
+    <Content Include="Images\email1.png" />
+    <Content Include="Images\email2.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\excelfile1.png" />
+    <Content Include="Images\excelfileattach.png" />
+    <Content Include="Images\exportHistory.png" />
+    <Content Include="Images\green.png" />
+    <Content Include="Images\holiday.png" />
+    <Content Include="Images\importHistory.png" />
+    <Content Include="Images\incomingTrans.png" />
+    <Content Include="Images\incomingTrans_24.png" />
+    <Content Include="Images\incomingTrans_32.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\material2.png" />
+    <Content Include="Images\meeting.png" />
+    <Content Include="Images\moc.png" />
+    <Content Include="Images\module.png" />
+    <Content Include="Images\morning.png" />
+    <Content Include="Images\ok1.png" />
+    <Content Include="Images\otherData.png" />
+    <Content Include="Images\otherData16.png" />
+    <Content Include="Images\outgoingTrans.png" />
+    <Content Include="Images\outgoingTrans_24.png" />
+    <Content Include="Images\outgoingTrans_32.png" />
+    <Content Include="Images\perform.png" />
+    <Content Include="Images\perform1.png" />
+    <Content Include="Images\perform2.png" />
+    <Content Include="Images\perform3.png" />
+    <Content Include="Images\perform3_32.png" />
+    <Content Include="Images\performDetail3_32.png" />
+    <Content Include="Images\procedure.png" />
+    <Content Include="Images\process.png" />
+    <Content Include="Images\purpose_16.png" />
+    <Content Include="Images\purpose_32.png" />
+    <Content Include="Images\reassign.png" />
+    <Content Include="Images\receive.png" />
+    <Content Include="Images\recipGroup.png" />
+    <Content Include="Images\recipUser.png" />
+    <Content Include="Images\red.png" />
+    <Content Include="Images\reject.png" />
+    <Content Include="Images\report1.png" />
+    <Content Include="Images\reset.png" />
+    <Content Include="Images\revision32.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\sendTrans.png" />
+    <Content Include="Images\sendTrans1.png" />
+    <Content Include="Images\sendTransOk.png" />
+    <Content Include="Images\sendTransOk1.png" />
+    <Content Include="Images\sharePermission.png" />
+    <Content Include="Images\sharePermission1.png" />
+    <Content Include="Images\sharePermission2.png" />
+    <Content Include="Images\shutdown.png" />
+    <Content Include="Images\stage.png" />
+    <Content Include="Images\sync.png" />
+    <Content Include="Images\sync16.png" />
+    <Content Include="Images\testconnect.png" />
+    <Content Include="Images\title.png" />
+    <Content Include="Images\trackinglist.png" />
+    <Content Include="Images\trackinglist1.png" />
+    <Content Include="Images\transmittal1.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="Images\workflow1.png" />
+    <Content Include="Images\workflowDetail.png" />
+    <Content Include="Images\working.png" />
+    <Content Include="Images\working1.png" />
+    <Content Include="Images\workrequest.png" />
+    <Content Include="Images\yellow.png" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Images\ppsLogo.png" />
+    <Content Include="Images\ppslogo_Large.png" />
+    <Content Include="Controls\Security\ChangePasswordForm.aspx" />
+    <Content Include="Controls\Security\ConfigDocPropertiesView.aspx" />
+    <Content Include="Controls\Security\ConfigAdditionPropertyOptionalType.aspx" />
+    <Content Include="Controls\Security\DisciplinePermissionPage.aspx" />
+    <Content Include="Controls\Security\DataPermissionPage.aspx" />
+    <Content Include="Controls\Security\PermissionControl.ascx" />
+    <Content Include="Controls\Security\RoleEditForm.aspx" />
+    <Content Include="Controls\Security\UserEditForm.aspx" />
+    <Content Include="Controls\Security\UserListControl.ascx" />
+    <Content Include="Controls\Security\Login.aspx" />
+    <Content Include="Images\filter.png" />
+    <Content Include="Images\issue.png" />
+    <Content Include="Images\issue1.png" />
+    <Content Include="Images\review.png" />
+    <Content Include="Images\matrix.png" />
+    <Content Include="Images\report2.png" />
+    <Content Include="Images\report3.png" />
+    <Content Include="Images\report4.png" />
+    <Content Include="Images\todo.png" />
+    <Content Include="Images\todo1.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\121.jpg" />
+    <Content Include="Images\action.png" />
+    <Content Include="Images\block.png" />
+    <Content Include="Images\chart.png" />
+    <Content Include="Images\chart1.png" />
+    <Content Include="Images\clear.png" />
+    <Content Include="Images\clearEMDR.png" />
+    <Content Include="Images\code.png" />
+    <Content Include="Images\comment.png" />
+    <Content Include="Images\comment1.png" />
+    <Content Include="Images\comment2.png" />
+    <Content Include="Images\config.png" />
+    <Content Include="Images\config1.png" />
+    <Content Include="Images\contract.png" />
+    <Content Include="Images\contractor.png" />
+    <Content Include="Images\cost.png" />
+    <Content Include="Images\docMenu.png" />
+    <Content Include="Images\docNumbering.png" />
+    <Content Include="Images\doctype.png" />
+    <Content Include="Images\document1.png" />
+    <Content Include="Images\documentNumbering.png" />
+    <Content Include="Images\down-icon.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\EDMSLogo.png" />
+    <Content Include="Images\emdr.png" />
+    <Content Include="Images\emdrreport.png" />
+    <Content Include="Images\exexcel2.png" />
+    <Content Include="Images\export.png" />
+    <Content Include="Images\exportExcel.png" />
+    <Content Include="Images\exportprocess.png" />
+    <Content Include="Images\field.png" />
+    <Content Include="Images\finance.png" />
+    <Content Include="Images\finance1.png" />
+    <Content Include="Images\finance2.png" />
+    <Content Include="Images\finance3.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\import.png" />
+    <Content Include="Images\in.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\library.png" />
+    <Content Include="Images\listview.png" />
+    <Content Include="Images\material.png" />
+    <Content Include="Images\material1.png" />
+    <Content Include="Images\move.png" />
+    <Content Include="Images\object.png" />
+    <Content Include="Images\originator.png" />
+    <Content Include="Images\out.png" />
+    <Content Include="Images\package.png" />
+    <Content Include="Images\payment.png" />
+    <Content Include="Images\payment1.png" />
+    <Content Include="Images\piping.png" />
+    <Content Include="Images\piping22.png" />
+    <Content Include="Images\platform.png" />
+    <Content Include="Images\plus-minus-icon1.png" />
+    <Content Include="Images\plus-minus-icon2.png" />
+    <Content Include="Images\plus-minus-icon3.png" />
+    <Content Include="Images\project.png" />
+    <Content Include="Images\propertiesview.png" />
+    <Content Include="Images\pvcfcLogo.png" />
+    <Content Include="Images\recoveryplan.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\scope.png" />
+    <Content Include="Images\share.png" />
+    <Content Include="Images\sharecontrol.png" />
+    <Content Include="Images\sharecontrol1.png" />
+    <Content Include="Images\shopping.png" />
+    <Content Include="Images\status1.png" />
+    <Content Include="Images\system.png" />
+    <Content Include="Images\template.png" />
+    <Content Include="Images\THEA_Logo_vn2.png" />
+    <Content Include="Images\THEA_Logo_vn_Backup.png" />
+    <Content Include="Images\type.png" />
+    <Content Include="Images\type1.png" />
+    <Content Include="Images\updaterecoveryplan.png" />
+    <Content Include="Images\upload1.png" />
+    <Content Include="Images\uploadmulti.png" />
+    <Content Include="Images\version.png" />
+    <Content Include="Images\well.png" />
+    <Content Include="Images\workflow.png" />
+    <Content Include="Images\workgroup.png" />
+    <Content Include="DownLoadFile.ashx" />
+    <None Include="Properties\PublishProfiles\EAMWebPortal - Hong Ngoc.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Images\bmp.png" />
+    <Content Include="Images\category.png" />
+    <Content Include="Images\category1.png" />
+    <Content Include="Images\category2.png" />
+    <Content Include="Images\changepass.png" />
+    <Content Include="Images\datap.png" />
+    <Content Include="Images\exexcel.png" />
+    <Content Include="Images\language.png" />
+    <Content Include="Images\listmenu.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\menup.png" />
+    <Content Include="Images\receivedfrom.png" />
+    <Content Include="Images\status.png" />
+    <Content Include="Images\transfer.png" />
+    <Content Include="Images\txt.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\xml.png" />
+    <Content Include="Controls\Security\MenuPermission.aspx" />
+    <Content Include="Controls\Security\GroupsList.aspx" />
+    <Content Include="Controls\Security\UsersList.aspx" />
+    <Content Include="Controls\Security\DataPermission.aspx" />
+    <Content Include="Images\7z.png" />
+    <Content Include="Images\attach.png" />
+    <Content Include="Images\discipline.png" />
+    <Content Include="Images\documents.png" />
+    <Content Include="Images\dwg.png" />
+    <Content Include="Images\dxf.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\generate.png" />
+    <Content Include="Images\group.png" />
+    <Content Include="Images\notification.png" />
+    <Content Include="Images\ok.png" />
+    <Content Include="Images\rar.png" />
+    <Content Include="Images\sendmail.png" />
+    <Content Include="Images\zip.png" />
+    <Content Include="Images\addmulti.png" />
+    <Content Include="Images\checkin.png" />
+    <Content Include="Images\checkout.png" />
+    <Content Include="Images\history.png" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\placeholder-add.png" />
+    <Content Include="Images\revision.png" />
+    <Content Include="Images\searchNew.png" />
+    <Content Include="Images\upload.png" />
+    <Content Include="Images\addDocument.png" />
+    <Content Include="Images\addfolder.png" />
+    <Content Include="Images\bg-login-top.png" />
+    <Content Include="Images\btnDN.gif" />
+    <Content Include="Images\btnUP.gif" />
+    <Content Include="Images\deletefolder.png" />
+    <Content Include="Images\Document.png" />
+    <Content Include="Images\errorbg.gif" />
+    <Content Include="Images\excelfile.png" />
+    <Content Include="Images\expview.png" />
+    <Content Include="Images\folder16.png" />
+    <Content Include="Images\folderdir16.png" />
+    <Content Include="Images\foldericon.png" />
+    <Content Include="Images\help-icn.png" />
+    <Content Include="Images\List.png" />
+    <Content Include="Images\listall.png" />
+    <Content Include="Images\otherfile.png" />
+    <Content Include="Images\pdffile.png" />
+    <Content Include="Images\rename.png" />
+    <Content Include="Images\search16.png" />
+    <Content Include="Images\sendnotification.png" />
+    <Content Include="Images\THEA_Logo_vn1.png" />
+    <Content Include="Images\Transmittal.png" />
+    <Content Include="Images\treeview.png" />
+    <Content Include="Images\user-32.png" />
+    <Content Include="Images\viewSetting.png" />
+    <Content Include="Images\wordfile.png" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\utils.js" />
+    <Content Include="Images\birthday_16.png" />
+    <Content Include="Images\dropdown.png" />
+    <Content Include="Images\menu.gif" />
+    <Content Include="Images\phone.png" />
+    <Content Include="Images\Resources\1.jpg" />
+    <Content Include="Images\Resources\2.jpg" />
+    <Content Include="Images\Resources\3.jpg" />
+    <Content Include="Images\Resources\4.jpg" />
+    <Content Include="Images\Resources\5.jpg" />
+    <Content Include="Images\Resources\6.jpg" />
+    <Content Include="Images\Resources\7.jpg" />
+    <Content Include="Images\rsBlue.png" />
+    <Content Include="Images\rsGreen.png" />
+    <Content Include="Images\rsMagenta.png" />
+    <Content Include="Images\rsOrange.png" />
+    <Content Include="Images\rsRed.png" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\addNew.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\calendar_big.gif" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\clear.gif" />
+    <Content Include="Images\contacts.gif" />
+    <Content Include="Images\contacts_big.gif" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\delete_inbox.gif" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\eFind.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Images\THEA_Logo_vn.png" />
+    <Content Include="Images\user_64.png" />
+    <Content Include="StoreToStoreRequisition.aspx" />
+    <Content Include="UserMenu.xml" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\UltiExcel.cs" />
+    <Compile Include="Controls\Asset\AssetDetail.aspx.cs">
+      <DependentUpon>AssetDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Asset\AssetDetail.aspx.designer.cs">
+      <DependentUpon>AssetDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Asset\AssetList.aspx.cs">
+      <DependentUpon>AssetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Asset\AssetList.aspx.designer.cs">
+      <DependentUpon>AssetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Asset\LocationDetail.aspx.cs">
+      <DependentUpon>LocationDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Asset\LocationDetail.aspx.designer.cs">
+      <DependentUpon>LocationDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Asset\LocationList.aspx.cs">
+      <DependentUpon>LocationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Asset\LocationList.aspx.designer.cs">
+      <DependentUpon>LocationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\ReturnList.aspx.cs">
+      <DependentUpon>ReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\ReturnList.aspx.designer.cs">
+      <DependentUpon>ReturnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\ReceiptList.aspx.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\ReceiptList.aspx.designer.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\IssuesReturnLineList.aspx.cs">
+      <DependentUpon>IssuesReturnLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\IssuesReturnLineList.aspx.designer.cs">
+      <DependentUpon>IssuesReturnLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\PartDetail.aspx.cs">
+      <DependentUpon>PartDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\PartDetail.aspx.designer.cs">
+      <DependentUpon>PartDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\StoreDetail.aspx.cs">
+      <DependentUpon>StoreDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\StoreDetail.aspx.designer.cs">
+      <DependentUpon>StoreDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\PartList.aspx.cs">
+      <DependentUpon>PartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\PartList.aspx.designer.cs">
+      <DependentUpon>PartList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOCompletedDetail.aspx.cs">
+      <DependentUpon>WOCompletedDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOCompletedDetail.aspx.designer.cs">
+      <DependentUpon>WOCompletedDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Material\StoreList.aspx.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Material\StoreList.aspx.designer.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WRDetail.aspx.cs">
+      <DependentUpon>WRDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WRDetail.aspx.designer.cs">
+      <DependentUpon>WRDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WRList.aspx.cs">
+      <DependentUpon>WRList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WRList.aspx.designer.cs">
+      <DependentUpon>WRList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPartPlanList.aspx.cs">
+      <DependentUpon>WOPartPlanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPartPlanList.aspx.designer.cs">
+      <DependentUpon>WOPartPlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOResultDetail.aspx.cs">
+      <DependentUpon>WOResultDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOResultDetail.aspx.designer.cs">
+      <DependentUpon>WOResultDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOCompletedList.aspx.cs">
+      <DependentUpon>WOCompletedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOCompletedList.aspx.designer.cs">
+      <DependentUpon>WOCompletedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOResultList.aspx.cs">
+      <DependentUpon>WOResultList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOResultList.aspx.designer.cs">
+      <DependentUpon>WOResultList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPlanList.aspx.cs">
+      <DependentUpon>WOPlanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPlanList.aspx.designer.cs">
+      <DependentUpon>WOPlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPlanDetail.aspx.cs">
+      <DependentUpon>WOPlanDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOPlanDetail.aspx.designer.cs">
+      <DependentUpon>WOPlanDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WODetail.aspx.cs">
+      <DependentUpon>WODetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WODetail.aspx.designer.cs">
+      <DependentUpon>WODetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\MatDetail.aspx.cs">
+      <DependentUpon>MatDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\MatDetail.aspx.designer.cs">
+      <DependentUpon>MatDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\WOList.aspx.cs">
+      <DependentUpon>WOList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\WOList.aspx.designer.cs">
+      <DependentUpon>WOList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPM\MatList.aspx.cs">
+      <DependentUpon>MatList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PPM\MatList.aspx.designer.cs">
+      <DependentUpon>MatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Purchase\PORDDetail.aspx.cs">
+      <DependentUpon>PORDDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Purchase\PORDDetail.aspx.designer.cs">
+      <DependentUpon>PORDDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Purchase\REQDetail.aspx.cs">
+      <DependentUpon>REQDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Purchase\REQDetail.aspx.designer.cs">
+      <DependentUpon>REQDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Purchase\PORDList.aspx.cs">
+      <DependentUpon>PORDList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Purchase\PORDList.aspx.designer.cs">
+      <DependentUpon>PORDList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Purchase\REQList.aspx.cs">
+      <DependentUpon>REQList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Purchase\REQList.aspx.designer.cs">
+      <DependentUpon>REQList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoadFile.ashx.cs">
+      <DependentUpon>DownLoadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_PartList.aspx.cs">
+      <DependentUpon>EAM_PartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_PartList.aspx.designer.cs">
+      <DependentUpon>EAM_PartList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_DocumentList.aspx.cs">
+      <DependentUpon>EAM_DocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_DocumentList.aspx.designer.cs">
+      <DependentUpon>EAM_DocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_PORDList.aspx.cs">
+      <DependentUpon>EAM_PORDList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_PORDList.aspx.designer.cs">
+      <DependentUpon>EAM_PORDList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_ScraptsLineList.aspx.cs">
+      <DependentUpon>EAM_ScraptsLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_ScraptsLineList.aspx.designer.cs">
+      <DependentUpon>EAM_ScraptsLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_AssetManagementList.aspx.cs">
+      <DependentUpon>EAM_AssetManagementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_AssetManagementList.aspx.designer.cs">
+      <DependentUpon>EAM_AssetManagementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_WORETNLineList.aspx.cs">
+      <DependentUpon>EAM_WORETNLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_WORETNLineList.aspx.designer.cs">
+      <DependentUpon>EAM_WORETNLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_IssuesLineList.aspx.cs">
+      <DependentUpon>EAM_IssuesLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_IssuesLineList.aspx.designer.cs">
+      <DependentUpon>EAM_IssuesLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_REQList.aspx.cs">
+      <DependentUpon>EAM_REQList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_REQList.aspx.designer.cs">
+      <DependentUpon>EAM_REQList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_StoresManagement.aspx.cs">
+      <DependentUpon>EAM_StoresManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_StoresManagement.aspx.designer.cs">
+      <DependentUpon>EAM_StoresManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_ReceiptList.aspx.cs">
+      <DependentUpon>EAM_ReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_ReceiptList.aspx.designer.cs">
+      <DependentUpon>EAM_ReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_TranslineList.aspx.cs">
+      <DependentUpon>EAM_TranslineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_TranslineList.aspx.designer.cs">
+      <DependentUpon>EAM_TranslineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_WOPartPlanList.aspx.cs">
+      <DependentUpon>EAM_WOPartPlanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_WOPartPlanList.aspx.designer.cs">
+      <DependentUpon>EAM_WOPartPlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_WOCompletedList.aspx.cs">
+      <DependentUpon>EAM_WOCompletedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_WOCompletedList.aspx.designer.cs">
+      <DependentUpon>EAM_WOCompletedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_WOPlanList.aspx.cs">
+      <DependentUpon>EAM_WOPlanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_WOPlanList.aspx.designer.cs">
+      <DependentUpon>EAM_WOPlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_PPMManagement.aspx.cs">
+      <DependentUpon>EAM_PPMManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_PPMManagement.aspx.designer.cs">
+      <DependentUpon>EAM_PPMManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EAM_AssetManagement.aspx.cs">
+      <DependentUpon>EAM_AssetManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAM_AssetManagement.aspx.designer.cs">
+      <DependentUpon>EAM_AssetManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\ImportDataChangedFile.aspx.cs">
+      <DependentUpon>ImportDataChangedFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ImportDataChangedFile.aspx.designer.cs">
+      <DependentUpon>ImportDataChangedFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\ImportHistory.aspx.cs">
+      <DependentUpon>ImportHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ImportHistory.aspx.designer.cs">
+      <DependentUpon>ImportHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\ExportHistory.aspx.cs">
+      <DependentUpon>ExportHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ExportHistory.aspx.designer.cs">
+      <DependentUpon>ExportHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\IntegrateSyncConfig.aspx.cs">
+      <DependentUpon>IntegrateSyncConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\IntegrateSyncConfig.aspx.designer.cs">
+      <DependentUpon>IntegrateSyncConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\FunctionPermissionPage.aspx.cs">
+      <DependentUpon>FunctionPermissionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\FunctionPermissionPage.aspx.designer.cs">
+      <DependentUpon>FunctionPermissionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\SharePermissionPage.aspx.cs">
+      <DependentUpon>SharePermissionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\SharePermissionPage.aspx.designer.cs">
+      <DependentUpon>SharePermissionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreToStoreRequisition.aspx.cs">
+      <DependentUpon>StoreToStoreRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreToStoreRequisition.aspx.designer.cs">
+      <DependentUpon>StoreToStoreRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\LdapAuthentication.cs" />
+    <Compile Include="Controls\Security\ChangePasswordForm.aspx.cs">
+      <DependentUpon>ChangePasswordForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ChangePasswordForm.aspx.designer.cs">
+      <DependentUpon>ChangePasswordForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\ConfigAdditionPropertyOptionalType.aspx.cs">
+      <DependentUpon>ConfigAdditionPropertyOptionalType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ConfigAdditionPropertyOptionalType.aspx.designer.cs">
+      <DependentUpon>ConfigAdditionPropertyOptionalType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\DisciplinePermissionPage.aspx.cs">
+      <DependentUpon>DisciplinePermissionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\DisciplinePermissionPage.aspx.designer.cs">
+      <DependentUpon>DisciplinePermissionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\DataPermissionPage.aspx.cs">
+      <DependentUpon>DataPermissionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\DataPermissionPage.aspx.designer.cs">
+      <DependentUpon>DataPermissionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ConfigDocPropertiesView.aspx.cs">
+      <DependentUpon>ConfigDocPropertiesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\ConfigDocPropertiesView.aspx.designer.cs">
+      <DependentUpon>ConfigDocPropertiesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\PermissionControl.ascx.cs">
+      <DependentUpon>PermissionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\PermissionControl.ascx.designer.cs">
+      <DependentUpon>PermissionControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\RoleEditForm.aspx.cs">
+      <DependentUpon>RoleEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\RoleEditForm.aspx.designer.cs">
+      <DependentUpon>RoleEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\UserEditForm.aspx.cs">
+      <DependentUpon>UserEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\UserEditForm.aspx.designer.cs">
+      <DependentUpon>UserEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\UserListControl.ascx.cs">
+      <DependentUpon>UserListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\UserListControl.ascx.designer.cs">
+      <DependentUpon>UserListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\MenuPermission.aspx.cs">
+      <DependentUpon>MenuPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\MenuPermission.aspx.designer.cs">
+      <DependentUpon>MenuPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\GroupsList.aspx.cs">
+      <DependentUpon>GroupsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\GroupsList.aspx.designer.cs">
+      <DependentUpon>GroupsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Security\UsersList.aspx.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\UsersList.aspx.designer.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\CryptorEngine.cs" />
+    <Compile Include="Controls\Security\DataPermission.aspx.cs">
+      <DependentUpon>DataPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Security\DataPermission.aspx.designer.cs">
+      <DependentUpon>DataPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\EntityCloner.cs" />
+    <Compile Include="Utilities\Enums\MenuType.cs" />
+    <Compile Include="Utilities\Sessions\GlobalConsts.cs" />
+    <Compile Include="Utilities\Sessions\GlobalVariables.cs" />
+    <Compile Include="Utilities\Sessions\SessionProvider.cs" />
+    <Compile Include="Utilities\Sessions\UserSession.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DocumentLibrary\YCCV\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\EDMs.Business\EDMs.Business.csproj">
+      <Project>{419eb6df-64cd-4702-827a-d9cc6f32efe3}</Project>
+      <Name>EDMs.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\EDMs.Data\EDMs.Data.csproj">
+      <Project>{107960a4-86f6-429e-a3fc-3151b2920efd}</Project>
+      <Name>EDMs.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50785</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

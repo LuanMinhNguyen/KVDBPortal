@@ -1,0 +1,38 @@
+D:\Workspace\EDMS - DQRE\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.exe
+D:\Workspace\EDMS - DQRE\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.exe
+D:\Workspace\EDMS - DQRE\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\itextsharp.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\itextsharp.pdfa.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\itextsharp.xmlworker.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\itextsharp.xtra.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\itextsharp.xml
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.exe
+D:\Workspace\EDMS - PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.exe
+D:\Workspace\EDMS - PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.exe
+D:\Workspace\EDMS_PECC2\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.exe
+D:\Workspace\EDMS_PECC2\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\GetPDFComment.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\PdfSharp.Charting.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\PdfSharp.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\PdfSharp.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\PdfSharp.Charting.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\de\PdfSharp.resources.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\bin\Debug\de\PdfSharp.Charting.resources.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\GetPDFComment\obj\Debug\GetPDFComment.csproj.AssemblyReference.cache

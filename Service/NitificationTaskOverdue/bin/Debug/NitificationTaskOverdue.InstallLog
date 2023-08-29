@@ -1,0 +1,21 @@
+﻿Installing assembly 'D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.InstallLog
+   assemblypath = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+Installing service NotificationTaskOverdue...
+Service NotificationTaskOverdue has been successfully installed.
+Creating EventLog source NotificationTaskOverdue in log Application...
+Committing assembly 'D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.InstallLog
+   assemblypath = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+Uninstalling assembly 'D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.InstallLog
+   assemblypath = D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+Removing EventLog source NotificationTaskOverdue.
+Service NotificationTaskOverdue is being removed from the system...
+Service NotificationTaskOverdue was successfully removed from the system.

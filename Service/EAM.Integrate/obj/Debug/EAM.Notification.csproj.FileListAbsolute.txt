@@ -1,0 +1,13 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\Debug\EAM.Notification.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\Debug\EAM.Notification.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\Debug\EAM.Notification.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\Debug\OpenPop.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.EmailNotification.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\Debug\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\Debug\EAM.Notification.csprojAssemblyReference.cache

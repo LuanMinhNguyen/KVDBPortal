@@ -1,0 +1,85 @@
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Release\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Release\EDMs.Web.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Release\EDMs.Web.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll.config
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Release\EDMs.Web.pdb

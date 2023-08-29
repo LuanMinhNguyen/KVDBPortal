@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Documents">
+      <Group>
+        
+      </Group>
+    </Item>
+    
+    <Item Text="Hệ thống">
+      <Group >
+        <Item Text="Người dùng" Value="" />
+          <Item Text="Danh mục" Value="" >
+              <Group Width="140" Flow="Vertical">
+                  <Item Text="Phòng ban" />
+                  <Item Text="Dịch vụ" />
+                  <Item Text="Dụng cụ" />
+                  <Item Text="Ngày nghỉ" />
+              </Group>
+          </Item>
+      </Group>
+    </Item>
+    
+  </Group>
+</Menu>

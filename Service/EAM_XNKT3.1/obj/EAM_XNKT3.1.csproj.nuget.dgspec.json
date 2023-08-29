@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\Service\\EAM_XNKT3.1\\EAM_XNKT3.1.csproj": {}
+  },
+  "projects": {
+    "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\Service\\EAM_XNKT3.1\\EAM_XNKT3.1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\Service\\EAM_XNKT3.1\\EAM_XNKT3.1.csproj",
+        "projectName": "EAM_XNKT3.1",
+        "projectPath": "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\Service\\EAM_XNKT3.1\\EAM_XNKT3.1.csproj",
+        "packagesPath": "C:\\Users\\R&D Dept\\.nuget\\packages\\",
+        "outputPath": "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\Service\\EAM_XNKT3.1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\00. New Workspace\\EAM_HongNgocHospital\\Source\\.nuget\\NuGet.Config",
+          "C:\\Users\\R&D Dept\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

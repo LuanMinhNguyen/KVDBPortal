@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="29f0a23f6df04b4a843ed32575cbf387" Name="Diagram1" ZoomLevel="107">
+        <EntityTypeShape EntityType="EAMModel.AA_MaterialRequest" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_MaterialRequestAttachFile" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_MaterialRequestDetail" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_Menus" Width="1.5" PointX="3.75" PointY="6.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_Permissions" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_Roles" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_UsersLoginHistory" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_PartLibraryForRequest" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="EAMModel.AA_Users" Width="1.5" PointX="0.75" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

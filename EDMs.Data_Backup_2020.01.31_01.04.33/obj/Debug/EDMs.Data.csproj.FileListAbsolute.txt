@@ -1,0 +1,27 @@
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache

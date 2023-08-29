@@ -1,0 +1,12 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\bin\Debug\EAM.LDAFolderWatcher.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\bin\Debug\EAM.LDAFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\bin\Debug\EAM.LDAFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\bin\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\bin\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAFolderWatcher\obj\Debug\EAM.LDAFolderWatcher.csproj.AssemblyReference.cache

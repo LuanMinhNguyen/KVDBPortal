@@ -1,0 +1,294 @@
+
+
+
+.RadScheduler .rsAptIn, .RadScheduler .rsAptMid, .RadScheduler .rsAptContent
+{
+    border-left-style: none !important;
+    border-right-style: none !important;
+}
+
+.RadScheduler .rsAptSimple .rsAptOut
+{
+    border-left: 1px solid #FFF !important;
+}
+
+.RadListBox .rlbTemplate
+{
+    display: inline !important;
+}
+
+div.rsBlue .rsAptContent
+{
+    color: #fff;
+    background-image: url('../Images/rsBlue.png');
+    background-repeat: repeat;
+    border-width: 0px;
+}
+
+div.rsOrange .rsAptContent
+{
+    background-image: url('../Images/rsOrange.png');
+    background-repeat: repeat;
+    border-width: 0px;
+}
+
+div.rsGreen .rsAptContent
+{
+    background-image: url('../Images/rsGreen.png');
+    background-repeat: repeat;
+    border-width: 0px;
+}
+
+div.rsRed .rsAptContent
+{
+    color: #fff;
+    background-image: url('../Images/rsRed.png');
+    background-repeat: repeat;
+    border-width: 0px;
+}
+
+div.rsMagenta .rsAptContent
+{
+    color: #fff;
+    background-image: url('../Images/rsMagenta.png');
+    background-repeat: repeat;
+    border-width: 0px;
+}
+
+div.rsBlue, div.rsGreen, div.rsRed, div.rsMagenta, div.rsOrange
+{
+    border-width: 0px;
+}
+/*More CSS*/
+
+input.button:hover {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0521F3), to(#1060EC), color-stop(80%, #4574EC));
+    text-shadow: #050505 0 -1px 2px;
+    background-color: #0E05F8;
+    color: #fff;
+
+}
+
+input.button {
+    float: right;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: 14px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a63f8), to(#0631cc));
+    text-shadow: #050505 0 -1px 0;
+    background-color:  #0E05F8;/*#459300;*/
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px transparent;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/*Login form*/
+#login-wrapper {
+    margin: 0 0 0 -160px;
+    width: 415px;
+    /*text-align: center;*/
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 47%;
+}
+
+input.text-input {
+    width: 200px;
+    float: right;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: solid 1px  #0322ff;
+    color: #555;
+    padding: 8px;
+    font-size: 13px;
+}
+
+#login-top {
+    /*height: 200px;*/
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+#login-top img {
+    
+    /*height: 200px;
+    margin-left: -80px;*/
+    padding-top: 115px;
+    margin-left: -86px;
+}
+
+#frmLogin .login-require {
+    font-family: tahoma;
+    font-size: 12px;
+    margin-left: 100px;
+    padding: 4px;
+    text-align: left;
+    width: 320px;
+}
+
+#frmLogin .login-error {
+    font-family: tahoma;
+    font-size: 12px;
+    color: red;
+}
+
+#frmLogin label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 80px;
+    float: left;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#frmLogin input .text-input {
+    width: 200px;
+    float: right;
+    border-radius: 4px;
+    background: #fff;
+    color: #555;
+    padding: 8px;
+    font-size: 13px;
+}
+#dummy {
+    /*background: url("../Images/bg-login-top.png") repeat scroll 0 0 #FFFFFF;*/
+    background: #f0f0f0;
+    border-bottom: 3px solid #777973;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+div.qlcbFormItem input[type="text"].min25Percent, div.qlcbFormItem textarea.min25Percent
+{
+    min-width: 235px;
+}
+
+div.qlcbFormItem input[type="text"].minFullWidth, div.qlcbFormItem textarea.minFullWidth
+{
+    min-width: 626px;
+}
+
+div.qlcbFormItem select.min25Percent
+{
+    min-width: 250px;
+    max-width: 250px;
+}
+
+div.qlcbFormItem input[type="text"].min50Percent, div.qlcbFormItem textarea.min50Percent, div.qlcbFormItem select.min50Percent
+{
+    min-width: 50%;
+}
+
+div.qlcbFormItem input[type="text"].qlcbFormRequired, div.qlcbFormItem textarea.qlcbFormRequired, div.qlcbFormItem select.qlcbFormRequired
+{
+    border-left-color: #F00;
+    border-left-width: 5px;
+}
+
+div.qlcbFormItem input[type="text"].qlcbFormRequiGray, div.qlcbFormItem textarea.qlcbFormRequiGray, div.qlcbFormItem select.qlcbFormRequiGray
+{
+    border-left-color: #B8B8B8;
+    border-left-width: 5px;
+}
+
+div.qlcbFormItem input[type="text"].qlcbFormUPPERCASE, div.qlcbFormItem textarea.qlcbFormUPPERCASE
+{
+    text-transform: uppercase;
+}
+
+div.qlcbFormItem input[type="text"], div.qlcbFormItem textarea, div.qlcbFormItem select
+{
+    float: left;
+    border-color: #8E8E8E #B8B8B8 #B8B8B8 #46A3D3;
+    color: #000000;
+    font: 12px "segoe ui";
+    border-width: 1px;
+    border-style: solid;
+    border-left-width: 5px;
+    padding: 2px 1px 3px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.qlcbFormItem input[type="text"]:hover, div.qlcbFormItem select:hover
+{
+    border-color: #000 #000 #000 #46A3D3;
+}
+
+div.qlcbFormItem input[type="text"].qlcbFormRequired:hover, div.qlcbFormItem select.qlcbFormRequired:hover
+{
+    border-color: #000 #000 #000 #F00;
+}
+
+.dnnFormMessage {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px 10px 10px 40px;
+    line-height: 1.4;
+    margin: 0.5em 1em;
+}
+
+.dnnFormInfo {
+background: #edf8ff url(../images/help-icn.png) no-repeat 10px center;
+border: #46a3d3 2px solid;
+color: #085b8f;
+text-shadow: 0px 1px 1px #fff;
+}
+
+.dnnForm .dnnFormItem.dnnFormHelp, .dnnFormItem.dnnFormHelp {
+clear: both;
+overflow: hidden;
+width: 100%;
+padding: 0;
+}
+
+.dnnFormItem.dnnFormHelp p.dnnFormRequired {
+float: right;
+margin: 0;
+padding: 0;
+}
+
+.accordion dt a
+{
+    color: #085B8F;
+    border-bottom: 2px solid #46A3D3;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin: 0.5em auto 0.6em;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+.accordion dt span
+{
+    color: #085B8F;
+    border-bottom: 2px solid #46A3D3;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin: 0.5em auto 0.6em;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\02. Web deployed\EAM-WebPortal-SYT</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Aspose.Cells.dll">
+      <publishTime>06/04/2018 10:08:12</publishTime>
+    </File>
+    <File Include="bin/Aspose.Pdf.dll">
+      <publishTime>06/04/2018 10:08:30</publishTime>
+    </File>
+    <File Include="bin/Aspose.Words.dll">
+      <publishTime>06/04/2018 10:08:13</publishTime>
+    </File>
+    <File Include="bin/EAM.Business.dll">
+      <publishTime>09/03/2020 16:28:51</publishTime>
+    </File>
+    <File Include="bin/EAM.Business.pdb">
+      <publishTime>09/03/2020 16:28:51</publishTime>
+    </File>
+    <File Include="bin/EAM.Data.dll">
+      <publishTime>09/03/2020 16:28:47</publishTime>
+    </File>
+    <File Include="bin/EAM.Data.dll.config">
+      <publishTime>04/08/2020 09:44:55</publishTime>
+    </File>
+    <File Include="bin/EAM.Data.pdb">
+      <publishTime>09/03/2020 16:28:47</publishTime>
+    </File>
+    <File Include="bin/EAM.WebPortal.dll">
+      <publishTime>05/11/2021 11:30:11</publishTime>
+    </File>
+    <File Include="bin/EAM.WebPortal.pdb">
+      <publishTime>05/11/2021 11:30:11</publishTime>
+    </File>
+    <File Include="bin/EDMs.Business.dll">
+      <publishTime>04/01/2020 23:38:06</publishTime>
+    </File>
+    <File Include="bin/EDMs.Business.pdb">
+      <publishTime>04/01/2020 23:38:06</publishTime>
+    </File>
+    <File Include="bin/EDMs.Data.dll">
+      <publishTime>04/01/2020 23:38:02</publishTime>
+    </File>
+    <File Include="bin/EDMs.Data.dll.config">
+      <publishTime>02/12/2020 00:14:12</publishTime>
+    </File>
+    <File Include="bin/EDMs.Data.pdb">
+      <publishTime>04/01/2020 23:38:02</publishTime>
+    </File>
+    <File Include="bin/EDMs.Web.dll">
+      <publishTime>04/11/2020 14:23:45</publishTime>
+    </File>
+    <File Include="bin/EDMs.Web.dll.config">
+      <publishTime>02/25/2020 14:51:05</publishTime>
+    </File>
+    <File Include="bin/EDMs.Web.pdb">
+      <publishTime>04/11/2020 14:23:45</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>01/18/2021 11:08:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AnalysisServices.AdomdClient.dll">
+      <publishTime>03/30/2015 00:56:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/19/2020 14:39:56</publishTime>
+    </File>
+    <File Include="bin/OfficeHelper.dll">
+      <publishTime>06/04/2018 10:08:10</publishTime>
+    </File>
+    <File Include="bin/RandomKey.dll">
+      <publishTime>06/04/2018 10:08:12</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>03/30/2020 11:42:58</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>02/19/2020 15:07:06</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.pdb">
+      <publishTime>02/19/2020 15:07:06</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.Html5.WebForms.dll">
+      <publishTime>02/19/2020 15:08:14</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.Html5.WebForms.pdb">
+      <publishTime>02/19/2020 15:08:14</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>02/12/2020 00:14:07</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Device.Detection.dll">
+      <publishTime>02/12/2020 00:14:07</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>02/12/2020 00:14:10</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>02/12/2020 00:14:12</publishTime>
+    </File>
+    <File Include="Control/Material/DetailImexSearching.aspx">
+      <publishTime>07/13/2020 16:58:27</publishTime>
+    </File>
+    <File Include="Control/Material/MaterialRequestDetail.aspx">
+      <publishTime>11/02/2020 22:06:09</publishTime>
+    </File>
+    <File Include="Control/Material/MRAttachFiles.aspx">
+      <publishTime>09/16/2020 02:03:33</publishTime>
+    </File>
+    <File Include="Control/Material/StockSearching.aspx">
+      <publishTime>08/25/2020 15:01:42</publishTime>
+    </File>
+    <File Include="Control/Reporting/BC_NXTTheoNhomKho.html">
+      <publishTime>04/20/2020 10:11:24</publishTime>
+    </File>
+    <File Include="Control/Reporting/BC_SuDungQuanHuyen.html">
+      <publishTime>04/20/2020 10:11:56</publishTime>
+    </File>
+    <File Include="Control/Reporting/PhieuNhapKho.html">
+      <publishTime>06/17/2020 01:26:29</publishTime>
+    </File>
+    <File Include="Control/Security/ChangePasswordForm.aspx">
+      <publishTime>04/13/2020 09:07:38</publishTime>
+    </File>
+    <File Include="Control/Security/GroupsList.aspx">
+      <publishTime>04/12/2020 23:30:02</publishTime>
+    </File>
+    <File Include="Control/Security/Login.aspx">
+      <publishTime>04/12/2020 14:30:58</publishTime>
+    </File>
+    <File Include="Control/Security/MenuPermission.aspx">
+      <publishTime>04/13/2020 00:00:26</publishTime>
+    </File>
+    <File Include="Control/Security/RoleEditForm.aspx">
+      <publishTime>04/12/2020 23:30:59</publishTime>
+    </File>
+    <File Include="Control/Security/UserEditForm.aspx">
+      <publishTime>08/07/2020 10:05:05</publishTime>
+    </File>
+    <File Include="Control/Security/UsersList.aspx">
+      <publishTime>04/13/2020 09:32:32</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/11/2021 10:39:04</publishTime>
+    </File>
+    <File Include="Default_bak.aspx">
+      <publishTime>08/06/2020 22:12:32</publishTime>
+    </File>
+    <File Include="DocumentLibrary/BaoCaoYeuCauCap/temp.txt">
+      <publishTime>03/31/2020 08:53:33</publishTime>
+    </File>
+    <File Include="DownLoadFile.ashx">
+      <publishTime>08/07/2020 01:20:52</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/12/2020 14:00:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/12/2020 14:13:18</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>07/14/2020 17:21:33</publishTime>
+    </File>
+    <File Include="HtmlPage2.html">
+      <publishTime>07/14/2020 17:19:57</publishTime>
+    </File>
+    <File Include="Resources/DataTemplate/ReqDataTemplate.xls">
+      <publishTime>03/30/2020 17:16:45</publishTime>
+    </File>
+    <File Include="Resources/DataTemplate/ReqDataTemplate.xlsm">
+      <publishTime>03/30/2020 17:15:28</publishTime>
+    </File>
+    <File Include="Resources/DataTemplate/ReqDataTemplate.xlsx">
+      <publishTime>04/07/2020 08:43:10</publishTime>
+    </File>
+    <File Include="Resources/DataTemplate/ReqReport.xlsx">
+      <publishTime>08/25/2020 23:09:36</publishTime>
+    </File>
+    <File Include="Resources/DataTemplate/SummaryMRTemplate.xlsx">
+      <publishTime>09/29/2020 11:30:06</publishTime>
+    </File>
+    <File Include="Resources/ExportData/temp.txt">
+      <publishTime>03/31/2020 08:55:59</publishTime>
+    </File>
+    <File Include="Resources/Images/addNew.png">
+      <publishTime>04/12/2020 23:09:58</publishTime>
+    </File>
+    <File Include="Resources/Images/Cancel.png">
+      <publishTime>04/12/2020 23:52:25</publishTime>
+    </File>
+    <File Include="Resources/Images/changepass.png">
+      <publishTime>04/13/2020 09:12:20</publishTime>
+    </File>
+    <File Include="Resources/Images/clear_16.png">
+      <publishTime>07/13/2020 14:20:57</publishTime>
+    </File>
+    <File Include="Resources/Images/complete_16.png">
+      <publishTime>04/11/2020 13:04:00</publishTime>
+    </File>
+    <File Include="Resources/Images/complete_20.png">
+      <publishTime>04/11/2020 13:04:11</publishTime>
+    </File>
+    <File Include="Resources/Images/complete_24.png">
+      <publishTime>04/11/2020 13:04:25</publishTime>
+    </File>
+    <File Include="Resources/Images/delete.png">
+      <publishTime>04/12/2020 23:09:18</publishTime>
+    </File>
+    <File Include="Resources/Images/document.png">
+      <publishTime>08/06/2020 16:52:16</publishTime>
+    </File>
+    <File Include="Resources/Images/download.png">
+      <publishTime>04/08/2020 00:07:40</publishTime>
+    </File>
+    <File Include="Resources/Images/edit.png">
+      <publishTime>04/12/2020 23:08:20</publishTime>
+    </File>
+    <File Include="Resources/Images/equiment16.png">
+      <publishTime>03/30/2020 15:02:15</publishTime>
+    </File>
+    <File Include="Resources/Images/error_14.png">
+      <publishTime>04/11/2020 13:01:12</publishTime>
+    </File>
+    <File Include="Resources/Images/error_20.png">
+      <publishTime>04/11/2020 13:01:03</publishTime>
+    </File>
+    <File Include="Resources/Images/error_24.png">
+      <publishTime>04/11/2020 13:00:55</publishTime>
+    </File>
+    <File Include="Resources/Images/excel.png">
+      <publishTime>03/30/2020 15:39:39</publishTime>
+    </File>
+    <File Include="Resources/Images/expand_left.png">
+      <publishTime>04/07/2020 23:33:13</publishTime>
+    </File>
+    <File Include="Resources/Images/expand_right.png">
+      <publishTime>04/07/2020 23:33:13</publishTime>
+    </File>
+    <File Include="Resources/Images/field-indicators.png">
+      <publishTime>04/08/2020 14:32:06</publishTime>
+    </File>
+    <File Include="Resources/Images/folder16.png">
+      <publishTime>03/30/2020 15:02:41</publishTime>
+    </File>
+    <File Include="Resources/Images/group.png">
+      <publishTime>04/12/2020 23:12:44</publishTime>
+    </File>
+    <File Include="Resources/Images/logo.svg">
+      <publishTime>04/12/2020 13:49:09</publishTime>
+    </File>
+    <File Include="Resources/Images/logout.png">
+      <publishTime>04/12/2020 23:12:33</publishTime>
+    </File>
+    <File Include="Resources/Images/menup.png">
+      <publishTime>04/12/2020 23:16:15</publishTime>
+    </File>
+    <File Include="Resources/Images/ok.png">
+      <publishTime>04/12/2020 23:17:15</publishTime>
+    </File>
+    <File Include="Resources/Images/process16.png">
+      <publishTime>03/31/2020 09:00:58</publishTime>
+    </File>
+    <File Include="Resources/Images/process32.png">
+      <publishTime>04/09/2020 15:42:34</publishTime>
+    </File>
+    <File Include="Resources/Images/process_2_16.png">
+      <publishTime>08/24/2020 00:55:11</publishTime>
+    </File>
+    <File Include="Resources/Images/reset.png">
+      <publishTime>04/12/2020 23:09:43</publishTime>
+    </File>
+    <File Include="Resources/Images/save.png">
+      <publishTime>04/12/2020 23:12:52</publishTime>
+    </File>
+    <File Include="Resources/Images/search20.png">
+      <publishTime>03/30/2020 14:33:15</publishTime>
+    </File>
+    <File Include="Resources/Images/toolbar_delete.png">
+      <publishTime>04/08/2020 00:30:17</publishTime>
+    </File>
+    <File Include="Resources/Images/toolbar_new.png">
+      <publishTime>04/08/2020 00:30:17</publishTime>
+    </File>
+    <File Include="Resources/Images/toolbar_reset.png">
+      <publishTime>04/09/2020 15:23:59</publishTime>
+    </File>
+    <File Include="Resources/Images/toolbar_save.png">
+      <publishTime>04/08/2020 00:30:17</publishTime>
+    </File>
+    <File Include="Resources/Images/toolbar_split.png">
+      <publishTime>04/07/2020 23:33:13</publishTime>
+    </File>
+    <File Include="Resources/Images/user.png">
+      <publishTime>04/12/2020 23:10:11</publishTime>
+    </File>
+    <File Include="Resources/ImportData/temp.txt">
+      <publishTime>03/31/2020 08:55:05</publishTime>
+    </File>
+    <File Include="Resources/Scripts/bootstrap.min.js">
+      <publishTime>04/07/2020 23:27:39</publishTime>
+    </File>
+    <File Include="Resources/Scripts/jquery-1.7.1.js">
+      <publishTime>04/12/2020 13:42:31</publishTime>
+    </File>
+    <File Include="Resources/Scripts/jquery-1.9.1.js">
+      <publishTime>04/07/2020 23:27:39</publishTime>
+    </File>
+    <File Include="Resources/Scripts/utils.js">
+      <publishTime>04/13/2020 09:07:03</publishTime>
+    </File>
+    <File Include="Resources/Style/bootstrap.min.css">
+      <publishTime>04/12/2020 13:41:52</publishTime>
+    </File>
+    <File Include="Resources/Style/Content/Site.css">
+      <publishTime>04/12/2020 14:17:31</publishTime>
+    </File>
+    <File Include="Resources/Style/Content/styles.css">
+      <publishTime>04/12/2020 14:17:31</publishTime>
+    </File>
+    <File Include="Resources/Style/login.css">
+      <publishTime>04/12/2020 13:41:52</publishTime>
+    </File>
+    <File Include="Resources/Style/style.css">
+      <publishTime>04/12/2020 13:41:13</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>08/06/2020 22:18:16</publishTime>
+    </File>
+    <File Include="StoreToStoreRequisition.aspx">
+      <publishTime>07/13/2020 03:12:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/17/2020 14:06:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

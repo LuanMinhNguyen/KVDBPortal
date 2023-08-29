@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{419EB6DF-64CD-4702-827A-D9CC6F32EFE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDMs.Business</RootNamespace>
+    <AssemblyName>EDMs.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Document\EAMWorkRequestNoteService.cs" />
+    <Compile Include="Services\Document\EAMWorkRequestAttachFilesService.cs" />
+    <Compile Include="Services\Document\EAMWorkRequestService.cs" />
+    <Compile Include="Services\Document\ChangeRequestDocFileService.cs" />
+    <Compile Include="Services\Document\NCR_SIAddPictureService.cs" />
+    <Compile Include="Services\Document\NCR_SIAttachFilesService.cs" />
+    <Compile Include="Services\Document\ConrespondenceService.cs" />
+    <Compile Include="Services\Document\ChangeRequestAttachFilesService.cs" />
+    <Compile Include="Services\Document\PECC2DocumentAttachFileService.cs" />
+    <Compile Include="Services\Document\DQREDocumentAttachFileService.cs" />
+    <Compile Include="Services\Document\DQREDocumentMasterService.cs" />
+    <Compile Include="Services\Document\PECC2ObjectNumberingService.cs" />
+    <Compile Include="Services\Document\PECC2TransmittalAttachDocFileService.cs" />
+    <Compile Include="Services\Document\DQRETransmittalAttachFilesDocService.cs" />
+    <Compile Include="Services\Document\PECC2TransmittalAttachFileService.cs" />
+    <Compile Include="Services\Document\DQRETransmittalAttachFilesService.cs" />
+    <Compile Include="Services\Document\ContractorTransmittalAttachFileService.cs" />
+    <Compile Include="Services\Document\DQREDocumentNumberingService.cs" />
+    <Compile Include="Services\Document\ContractorTransmittalDocFileService.cs" />
+    <Compile Include="Services\Document\AttachResponseFileService.cs" />
+    <Compile Include="Services\Document\AttachDocToTransmittalService.cs" />
+    <Compile Include="Services\Document\AttachCommentFileService.cs" />
+    <Compile Include="Services\Document\DQREDocumentService.cs" />
+    <Compile Include="Services\Document\ChangeRequestService.cs" />
+    <Compile Include="Services\Document\DQRETransmittalService.cs" />
+    <Compile Include="Services\Document\DQREMarkupLayerService.cs" />
+    <Compile Include="Services\Document\RFIAttachFileService.cs" />
+    <Compile Include="Services\Document\RFIDetailService.cs" />
+    <Compile Include="Services\Document\ToDoListService.cs" />
+    <Compile Include="Services\Document\DocumentSequenceManagementService.cs" />
+    <Compile Include="Services\Document\AttachFilesPackageService.cs" />
+    <Compile Include="Services\Document\CommentResponseService.cs" />
+    <Compile Include="Services\Document\ProcessActualService.cs" />
+    <Compile Include="Services\Document\ProcessRecoveryPlanedService.cs" />
+    <Compile Include="Services\Document\ProcessPlanedService.cs" />
+    <Compile Include="Services\Document\CategoryService.cs" />
+    <Compile Include="Services\Document\AttachFileService.cs" />
+    <Compile Include="Services\Document\TemplateTypeService.cs" />
+    <Compile Include="Services\Document\IncomingTransmittalService.cs" />
+    <Compile Include="Services\Document\DocumentNewService.cs" />
+    <Compile Include="Services\Document\DocumentPackageService.cs" />
+    <Compile Include="Services\Document\TemplateManagementService.cs" />
+    <Compile Include="Services\Document\DocumentNumberingService.cs" />
+    <Compile Include="Services\Document\DistributionMatrixService.cs" />
+    <Compile Include="Services\Document\DistributionMatrixDetailService.cs" />
+    <Compile Include="Services\Document\TransmittalService.cs" />
+    <Compile Include="Services\Document\DistributionMatrixTypeSevice.cs" />
+    <Compile Include="Services\EAMStoreProcedureService.cs" />
+    <Compile Include="Services\Library\AreaService.cs" />
+    <Compile Include="Services\Library\AttentionService.cs" />
+    <Compile Include="Services\Library\BlockService.cs" />
+    <Compile Include="Services\Library\ChangeGradeCodeService.cs" />
+    <Compile Include="Services\Library\ChangeRequestReviewResultCodeService.cs" />
+    <Compile Include="Services\Library\ConfidentialityService.cs" />
+    <Compile Include="Services\Library\ChangeRequestTypeService.cs" />
+    <Compile Include="Services\Library\GroupCodeService.cs" />
+    <Compile Include="Services\Library\KKSIdentificationCodeService.cs" />
+    <Compile Include="Services\Library\DocumentClassService.cs" />
+    <Compile Include="Services\Library\PurposeCodeService.cs" />
+    <Compile Include="Services\Library\OrganizationCodeService.cs" />
+    <Compile Include="Services\Library\ProjectCodeService.cs" />
+    <Compile Include="Services\Library\MaterialService.cs" />
+    <Compile Include="Services\Library\RevisionSchemaSevice.cs" />
+    <Compile Include="Services\Library\RevisionStatusService.cs" />
+    <Compile Include="Services\Library\SystemCodeService.cs" />
+    <Compile Include="Services\Library\UnitService.cs" />
+    <Compile Include="Services\Library\WorkService.cs" />
+    <Compile Include="Services\Library\DrawingService.cs" />
+    <Compile Include="Services\Library\DocumentCodeServices.cs" />
+    <Compile Include="Services\Library\HolidayConfigService.cs" />
+    <Compile Include="Services\Library\ProcedureTypeService.cs" />
+    <Compile Include="Services\Library\ProcedureStageService.cs" />
+    <Compile Include="Services\Library\TitleService.cs" />
+    <Compile Include="Services\Library\DepartmentService.cs" />
+    <Compile Include="Services\Library\MRTypeService.cs" />
+    <Compile Include="Services\Library\PriorityLevelService.cs" />
+    <Compile Include="Services\Library\PipingClassCodeService.cs" />
+    <Compile Include="Services\Library\EquipmentIdentifierCodeService.cs" />
+    <Compile Include="Services\Library\MediumCodeService.cs" />
+    <Compile Include="Services\Library\ProcurementRequirementTypeService.cs" />
+    <Compile Include="Services\Library\OptionalTypePropertiesService.cs" />
+    <Compile Include="Services\Library\CodeService.cs" />
+    <Compile Include="Services\Scope\ContractorService.cs" />
+    <Compile Include="Services\Scope\WorkGroupService.cs" />
+    <Compile Include="Services\Scope\PackageService.cs" />
+    <Compile Include="Services\Scope\ScopeProjectService.cs" />
+    <Compile Include="Services\Security\ImportDataChangeHistoryService.cs" />
+    <Compile Include="Services\Security\ExportDataChangeHistoryService.cs" />
+    <Compile Include="Services\Security\ImportEmailDownloadedService.cs" />
+    <Compile Include="Services\Security\ErrorLogService.cs" />
+    <Compile Include="Services\Security\ImportScheduleService.cs" />
+    <Compile Include="Services\Security\ExportScheduleService.cs" />
+    <Compile Include="Services\Security\IntergrateParamConfigService.cs" />
+    <Compile Include="Services\Security\FunctionPermissionService.cs" />
+    <Compile Include="Services\Security\UserDisciplineSevice.cs" />
+    <Compile Include="Services\Security\SharePermissionService.cs" />
+    <Compile Include="Services\Security\UsersLoginHistoryService.cs" />
+    <Compile Include="Services\Security\WaitingSyncDataService.cs" />
+    <Compile Include="Services\Security\OptionalTypePropertiesViewService.cs" />
+    <Compile Include="Services\Security\DocPropertiesViewService.cs" />
+    <Compile Include="Services\Library\DocPropertiesService.cs" />
+    <Compile Include="Services\Library\OptionalTypeDetailService.cs" />
+    <Compile Include="Services\Library\OptionalTypeService.cs" />
+    <Compile Include="Services\Library\WellService.cs" />
+    <Compile Include="Services\Library\TagTypeService.cs" />
+    <Compile Include="Services\Library\SystemDocService.cs" />
+    <Compile Include="Services\Library\ProjectService.cs" />
+    <Compile Include="Services\Library\PlatformService.cs" />
+    <Compile Include="Services\Library\PlantService.cs" />
+    <Compile Include="Services\Library\OriginatorService.cs" />
+    <Compile Include="Services\Library\FieldService.cs" />
+    <Compile Include="Services\Library\DocumentMainTypeService.cs" />
+    <Compile Include="Services\Security\GroupDataPermissionService.cs" />
+    <Compile Include="Services\Library\ToListService.cs" />
+    <Compile Include="Services\Library\LanguageService.cs" />
+    <Compile Include="Services\Document\DocumentService.cs" />
+    <Compile Include="Services\Document\FolderService.cs" />
+    <Compile Include="Services\Document\NotificationRuleService.cs" />
+    <Compile Include="Services\Library\ReceivedFromService.cs" />
+    <Compile Include="Services\Library\StatusService.cs" />
+    <Compile Include="Services\Library\DisciplineService.cs" />
+    <Compile Include="Services\Library\RevisionService.cs" />
+    <Compile Include="Services\Library\DocumentTypeService.cs" />
+    <Compile Include="Services\Security\PermissionProcurementRequirementService.cs" />
+    <Compile Include="Services\Security\PermissionContractService.cs" />
+    <Compile Include="Services\Security\PermissionDisciplineService.cs" />
+    <Compile Include="Services\Security\PermissionWorkgroupService.cs" />
+    <Compile Include="Services\Security\PermissionService.cs" />
+    <Compile Include="Services\Security\MenuService.cs" />
+    <Compile Include="Services\Security\RoleService.cs" />
+    <Compile Include="Services\Security\UserDataPermissionService.cs" />
+    <Compile Include="Services\Security\UserService.cs" />
+    <Compile Include="Services\Library\ResourceGroupService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\Library\ResourceService.cs" />
+    <Compile Include="Services\WMS\TrackingBreakdownReportAttachFilesService.cs" />
+    <Compile Include="Services\WMS\PerformanceReviewAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingECRAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingMorningCallCommentService.cs" />
+    <Compile Include="Services\WMS\TrackingProductionMeetingAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingProductionMeetingService.cs" />
+    <Compile Include="Services\WMS\TrackingMOCAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingGeneralWorkingAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingGeneralWorkingService.cs" />
+    <Compile Include="Services\WMS\TrackingProcedureAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingPunchAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingSailAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingShutdownReportAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingWCRAttachFilesService.cs" />
+    <Compile Include="Services\WMS\TrackingMorningCallAttachFilesService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionAttachFilesService.cs" />
+    <Compile Include="Services\WMS\AMOSExService.cs" />
+    <Compile Include="Services\WMS\TrackingECRService.cs" />
+    <Compile Include="Services\WMS\TrackingBreakdownReportService.cs" />
+    <Compile Include="Services\WMS\TrackingWCRService.cs" />
+    <Compile Include="Services\WMS\TrackingShutdownReportService.cs" />
+    <Compile Include="Services\WMS\TrackingSailService.cs" />
+    <Compile Include="Services\WMS\TrackingPunchService.cs" />
+    <Compile Include="Services\WMS\TrackingProcedureService.cs" />
+    <Compile Include="Services\WMS\TrackingMorningCallService.cs" />
+    <Compile Include="Services\WMS\TrackingMOCService.cs" />
+    <Compile Include="Services\WMS\TrackingMOCCommentService.cs" />
+    <Compile Include="Services\WMS\TrackingShutdownReportCommentService.cs" />
+    <Compile Include="Services\WMS\TrackingBreakdownReportCommentService.cs" />
+    <Compile Include="Services\WMS\TrackingECRCommentService.cs" />
+    <Compile Include="Services\WMS\WorkRequestService.cs" />
+    <Compile Include="Services\WMS\WorkRequestCommentService.cs" />
+    <Compile Include="Services\WMS\WorkRequestAttachFilesService.cs" />
+    <Compile Include="Services\WMS\NumberManagementService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionDetailService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionCommentService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionCheckListDetailService.cs" />
+    <Compile Include="Services\WMS\MaterialRequisitionCheckListDefineService.cs" />
+    <Compile Include="Services\Workflow\ObjectAssignedUserService.cs" />
+    <Compile Include="Services\Workflow\ObjectAssignedWorkflowService.cs" />
+    <Compile Include="Services\Workflow\ObjectWorkflowDetailService.cs" />
+    <Compile Include="Services\Workflow\TemplateWorkflowDetailService.cs" />
+    <Compile Include="Services\Workflow\CustomizeWorkflowDetailService.cs" />
+    <Compile Include="Services\Workflow\WorkflowService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDMs.Data\EDMs.Data.csproj">
+      <Project>{107960a4-86f6-429e-a3fc-3151b2920efd}</Project>
+      <Name>EDMs.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

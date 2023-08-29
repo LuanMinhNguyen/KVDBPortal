@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\02. Web deployed\EAM_XNKTBBBD1</_PublishTargetUrl>
+    <History>True|2022-03-25T11:07:24.4224630Z;True|2022-03-25T18:03:43.6061976+07:00;True|2021-08-07T16:58:00.8148429+07:00;True|2021-08-07T16:55:05.0892309+07:00;True|2021-08-07T16:27:52.3644592+07:00;True|2021-08-07T15:49:58.7240578+07:00;True|2021-08-05T22:38:24.1848340+07:00;True|2021-08-05T22:36:52.0148010+07:00;True|2021-08-05T22:24:50.2210918+07:00;True|2021-08-05T22:09:08.0643210+07:00;False|2021-08-05T22:08:45.3638400+07:00;False|2021-08-05T22:07:10.6446341+07:00;False|2021-08-05T22:06:43.8298199+07:00;False|2021-08-05T22:06:03.2562108+07:00;False|2021-08-05T22:05:43.8565326+07:00;True|2021-08-05T21:50:06.4478267+07:00;True|2021-08-05T21:33:38.4220709+07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Aspose.Cells.dll">
+      <publishTime>06/04/2018 10:08:12</publishTime>
+    </File>
+    <File Include="bin/EAM.XNKTBBBD.dll">
+      <publishTime>03/25/2022 18:03:40</publishTime>
+    </File>
+    <File Include="bin/EAM.XNKTBBBD.pdb">
+      <publishTime>03/25/2022 18:03:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/05/2021 12:44:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/05/2021 22:05:41</publishTime>
+    </File>
+    <File Include="XNKTBBBD.ashx">
+      <publishTime>08/22/2021 21:52:23</publishTime>
+    </File>
+    <File Include="XNKTF04b.ashx">
+      <publishTime>08/22/2021 21:52:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

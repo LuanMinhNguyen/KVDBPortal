@@ -1,0 +1,34 @@
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csprojAssemblyReference.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll.config
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csproj.AssemblyReference.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csproj.CoreCompileInputs.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csproj.CopyComplete
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="EAMModelStoreContainer" CdmEntityContainer="EAMEntities">
+    <EntitySetMapping Name="AA_MaterialRequest">
+      <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequest">
+        <MappingFragment StoreEntitySet="AA_MaterialRequest">
+          <ScalarProperty Name="IsGenEAMMR" ColumnName="IsGenEAMMR" />
+          <ScalarProperty Name="SoLayMauXN" ColumnName="SoLayMauXN" />
+          <ScalarProperty Name="SoNguoiCachLyTapTrung" ColumnName="SoNguoiCachLyTapTrung" />
+          <ScalarProperty Name="SoNguoiCachLyTaiNha" ColumnName="SoNguoiCachLyTaiNha" />
+          <ScalarProperty Name="SoTYT" ColumnName="SoTYT" />
+          <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="OrganizationName" ColumnName="OrganizationName" />
+          <ScalarProperty Name="OrganizationCode" ColumnName="OrganizationCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_MaterialRequestAttachFile">
+      <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequestAttachFile">
+        <MappingFragment StoreEntitySet="AA_MaterialRequestAttachFile">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="ExtensionIcon" ColumnName="ExtensionIcon" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="MaterialRequestID" ColumnName="MaterialRequestID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_MaterialRequestDetail">
+      <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequestDetail">
+        <MappingFragment StoreEntitySet="AA_MaterialRequestDetail">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ToStoreName" ColumnName="ToStoreName" />
+          <ScalarProperty Name="ToStoreCode" ColumnName="ToStoreCode" />
+          <ScalarProperty Name="FromStoreName" ColumnName="FromStoreName" />
+          <ScalarProperty Name="FromStoreCode" ColumnName="FromStoreCode" />
+          <ScalarProperty Name="ApprovedQty" ColumnName="ApprovedQty" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="PartUMO" ColumnName="PartUMO" />
+          <ScalarProperty Name="PartDescription" ColumnName="PartDescription" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="MaterialRequestID" ColumnName="MaterialRequestID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_Menus">
+      <EntityTypeMapping TypeName="EAMModel.AA_Menus">
+        <MappingFragment StoreEntitySet="AA_Menus">
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_Permissions">
+      <EntityTypeMapping TypeName="EAMModel.AA_Permissions">
+        <MappingFragment StoreEntitySet="AA_Permissions">
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_Roles">
+      <EntityTypeMapping TypeName="EAMModel.AA_Roles">
+        <MappingFragment StoreEntitySet="AA_Roles">
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="IsAllowDelete" ColumnName="IsAllowDelete" />
+          <ScalarProperty Name="ContractorName" ColumnName="ContractorName" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="IsLimitedView" ColumnName="IsLimitedView" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="IsUpdate" ColumnName="IsUpdate" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_Users">
+      <EntityTypeMapping TypeName="EAMModel.AA_Users">
+        <MappingFragment StoreEntitySet="AA_Users">
+          <ScalarProperty Name="OrgCode" ColumnName="OrgCode" />
+          <ScalarProperty Name="IsPD" ColumnName="IsPD" />
+          <ScalarProperty Name="IsSendMail" ColumnName="IsSendMail" />
+          <ScalarProperty Name="SignImageUrl" ColumnName="SignImageUrl" />
+          <ScalarProperty Name="ConfidentialName" ColumnName="ConfidentialName" />
+          <ScalarProperty Name="ConfidentialId" ColumnName="ConfidentialId" />
+          <ScalarProperty Name="IsDC" ColumnName="IsDC" />
+          <ScalarProperty Name="DisciplineName" ColumnName="DisciplineName" />
+          <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+          <ScalarProperty Name="IsEngineer" ColumnName="IsEngineer" />
+          <ScalarProperty Name="IsLeader" ColumnName="IsLeader" />
+          <ScalarProperty Name="IsDeptManager" ColumnName="IsDeptManager" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="CommentGroupName" ColumnName="CommentGroupName" />
+          <ScalarProperty Name="CommentGroupId" ColumnName="CommentGroupId" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="HashCode" ColumnName="HashCode" />
+          <ScalarProperty Name="LasrUpdatedDate" ColumnName="LasrUpdatedDate" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="CanApprove" ColumnName="CanApprove" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Employee_Ref" ColumnName="Employee_Ref" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AA_UsersLoginHistory">
+      <EntityTypeMapping TypeName="EAMModel.AA_UsersLoginHistory">
+        <MappingFragment StoreEntitySet="AA_UsersLoginHistory">
+          <ScalarProperty Name="IsOn" ColumnName="IsOn" />
+          <ScalarProperty Name="LanguageFormat" ColumnName="LanguageFormat" />
+          <ScalarProperty Name="OSDetail" ColumnName="OSDetail" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="HostNameComputer" ColumnName="HostNameComputer" />
+          <ScalarProperty Name="WindownDomainUser" ColumnName="WindownDomainUser" />
+          <ScalarProperty Name="PhysicalMemory" ColumnName="PhysicalMemory" />
+          <ScalarProperty Name="DurationTimeLogin" ColumnName="DurationTimeLogin" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="LogoutLocalTime" ColumnName="LogoutLocalTime" />
+          <ScalarProperty Name="LocalTimeZone" ColumnName="LocalTimeZone" />
+          <ScalarProperty Name="LocalTime" ColumnName="LocalTime" />
+          <ScalarProperty Name="ServerTime" ColumnName="ServerTime" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

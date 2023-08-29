@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\02. Web deployed\EAMLDAWebService</_PublishTargetUrl>
+    <History>True|2021-09-13T04:37:49.6773048Z;True|2021-09-12T22:03:11.5793962+07:00;True|2021-09-12T22:01:57.5971179+07:00;True|2021-09-12T21:59:12.9334509+07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EAM.LDAWebService.dll">
+      <publishTime>09/13/2021 11:37:48</publishTime>
+    </File>
+    <File Include="bin/EAM.LDAWebService.pdb">
+      <publishTime>09/13/2021 11:37:48</publishTime>
+    </File>
+    <File Include="bin/LocalData/TangVat/AttachFile/tmp.txt">
+      <publishTime>07/24/2021 00:18:19</publishTime>
+    </File>
+    <File Include="bin/LocalData/TangVat/tmp.txt">
+      <publishTime>07/24/2021 00:18:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/22/2015 11:06:54</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="LDAWebService.svc">
+      <publishTime>09/12/2021 22:01:48</publishTime>
+    </File>
+    <File Include="LocalData/TangVat/AttachFile/tmp.txt">
+      <publishTime>07/24/2021 00:18:19</publishTime>
+    </File>
+    <File Include="LocalData/TangVat/tmp.txt">
+      <publishTime>07/24/2021 00:18:19</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/12/2021 21:43:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/13/2021 11:37:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

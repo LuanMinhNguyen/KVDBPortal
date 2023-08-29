@@ -1,0 +1,14 @@
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\bin\Release\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Business\obj\Release\EDMs.Business.pdb

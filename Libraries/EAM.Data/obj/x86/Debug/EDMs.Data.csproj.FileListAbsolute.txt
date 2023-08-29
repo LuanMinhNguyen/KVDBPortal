@@ -1,0 +1,6 @@
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll.config
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\Telerik.Web.UI.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.pdb

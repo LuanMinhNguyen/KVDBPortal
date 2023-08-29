@@ -1,0 +1,26 @@
+D:\Workspace\EDMS - DQRE\Source\Service\Temp.IO\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS - DQRE\Source\Service\Temp.IO\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\Temp.IO\obj\Debug\Temp.IO.dll
+D:\Workspace\EDMS - DQRE\Source\Service\Temp.IO\obj\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\Temp.IO\obj\Debug\Temp.IO.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS - PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.dll
+D:\Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS_PECC2\Source\Service\Temp.IO\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.dll
+D:\Workspace\EDMS_PECC2\Source\Service\Temp.IO\obj\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\Debug\Temp.IO.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\Debug\Temp.IO.csproj.AssemblyReference.cache

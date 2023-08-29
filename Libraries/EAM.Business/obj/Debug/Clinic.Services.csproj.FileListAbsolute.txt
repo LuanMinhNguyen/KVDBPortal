@@ -1,0 +1,10 @@
+C:\Users\Anh2No\Documents\Visual Studio 2012\Projects\Clinic\Libraries\Clinic.Services\bin\Debug\Clinic.Services.dll
+C:\Users\Anh2No\Documents\Visual Studio 2012\Projects\Clinic\Libraries\Clinic.Services\bin\Debug\Clinic.Services.pdb
+C:\Users\Anh2No\Documents\Visual Studio 2012\Projects\Clinic\Libraries\Clinic.Services\obj\Debug\Clinic.Services.csprojResolveAssemblyReference.cache
+C:\Users\Anh2No\Documents\Visual Studio 2012\Projects\Clinic\Libraries\Clinic.Services\obj\Debug\Clinic.Services.dll
+C:\Users\Anh2No\Documents\Visual Studio 2012\Projects\Clinic\Libraries\Clinic.Services\obj\Debug\Clinic.Services.pdb
+C:\Data\Project\TheAClinic\Dev\Libraries\Clinic.Services\bin\Debug\Clinic.Services.dll
+C:\Data\Project\TheAClinic\Dev\Libraries\Clinic.Services\bin\Debug\Clinic.Services.pdb
+C:\Data\Project\TheAClinic\Dev\Libraries\Clinic.Services\obj\Debug\Clinic.Services.csprojResolveAssemblyReference.cache
+C:\Data\Project\TheAClinic\Dev\Libraries\Clinic.Services\obj\Debug\Clinic.Services.dll
+C:\Data\Project\TheAClinic\Dev\Libraries\Clinic.Services\obj\Debug\Clinic.Services.pdb

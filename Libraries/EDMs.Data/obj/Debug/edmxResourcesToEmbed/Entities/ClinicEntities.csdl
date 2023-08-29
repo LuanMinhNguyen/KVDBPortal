@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClinicModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="ClinicEntities">
+    <EntitySet Name="AppointmentStatuses" EntityType="ClinicModel.AppointmentStatus" />
+    <EntitySet Name="Employees" EntityType="ClinicModel.Employee" />
+    <EntitySet Name="PatientStatuses" EntityType="ClinicModel.PatientStatus" />
+    <EntitySet Name="ResourceGroups" EntityType="ClinicModel.ResourceGroup" />
+    <EntitySet Name="Rooms" EntityType="ClinicModel.Room" />
+    <EntitySet Name="ServiceTypes" EntityType="ClinicModel.ServiceType" />
+    <EntitySet Name="CheckInHistories" EntityType="ClinicModel.CheckInHistory" />
+    <EntitySet Name="Consultings" EntityType="ClinicModel.Consulting" />
+    <EntitySet Name="Contacts" EntityType="ClinicModel.Contact" />
+    <EntitySet Name="MemberCards" EntityType="ClinicModel.MemberCard" />
+    <EntitySet Name="UsedServices" EntityType="ClinicModel.UsedService" />
+    <EntitySet Name="Roles" EntityType="ClinicModel.Role" />
+    <EntitySet Name="Descriptions" EntityType="ClinicModel.Description" />
+    <EntitySet Name="Permissions" EntityType="ClinicModel.Permission" />
+    <EntitySet Name="Users" EntityType="ClinicModel.User" />
+    <EntitySet Name="Appointments" EntityType="ClinicModel.Appointment" />
+    <EntitySet Name="Resources" EntityType="ClinicModel.Resource" />
+    <EntitySet Name="Menus" EntityType="ClinicModel.Menu" />
+    <EntitySet Name="Patients" EntityType="ClinicModel.Patient" />
+  </EntityContainer>
+  <EntityType Name="AppointmentStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="String" Name="SSN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sex" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarialStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Generation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HomePhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellPhone" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MailLabel" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="PatientStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="ResourceGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="ServiceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CssClass" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="CheckInHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PatientId" />
+    <Property Type="Int32" Name="AppointmentId" />
+    <Property Type="DateTime" Name="CheckInDate" Precision="3" />
+    <Property Type="DateTime" Name="CheckInTime" Precision="3" />
+    <Property Type="Boolean" Name="IsClosed" />
+    <Property Type="Boolean" Name="IsIn" />
+    <Property Type="Int32" Name="ResourceId" Nullable="false" />
+    <Property Type="Int32" Name="ServiceTypeId" />
+    <Property Type="Int32" Name="RoomId" />
+    <Property Type="String" Name="EmergencyContactName" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmergencyContactPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="Consulting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Content" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="String" Name="ServiceTypeID" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="String" Name="Content" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+  </EntityType>
+  <EntityType Name="MemberCard">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="StartDate" Precision="3" />
+    <Property Type="DateTime" Name="EndDate" Precision="3" />
+    <Property Type="Decimal" Name="DiscountRate" Precision="8" Scale="0" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="UsedService">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceTypeID" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="DateTime" Name="UsedDate" Precision="3" />
+    <Property Type="DateTime" Name="NextDate" Precision="3" />
+    <Property Type="Int16" Name="NumberOfTimes" />
+    <Property Type="Int32" Name="ResourceID" />
+    <Property Type="String" Name="Content" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Description">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Content" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="MenuId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Employee_Ref" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Int32" Name="ResourceId" />
+    <Property Type="Boolean" Name="CanApprove" />
+    <Property Type="Boolean" Name="IsAdmin" />
+  </EntityType>
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SetDisplayName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PatientId" />
+    <Property Type="DateTime" Name="LastCall" Precision="3" />
+    <Property Type="DateTime" Name="NextCall" Precision="3" />
+    <Property Type="Int32" Name="NumberCall" />
+    <Property Type="String" Name="ServiceTypeId" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="AppointmentStatusId" />
+    <Property Type="Int32" Name="ResourceId" />
+    <Property Type="Int32" Name="RoomId" />
+    <Property Type="DateTime" Name="AppointmentDate" Precision="3" />
+    <Property Type="DateTime" Name="Start" Precision="3" />
+    <Property Type="DateTime" Name="End" Precision="3" />
+    <Property Type="Int32" Name="AppointmentDuration" />
+    <Property Type="DateTime" Name="CancelDate" Precision="3" />
+    <Property Type="DateTime" Name="CancelTime" Precision="3" />
+    <Property Type="Int32" Name="CancelBy" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RecurrenceRuleText" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsBlock" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="UpdateBy" />
+    <Property Type="Boolean" Name="IsApprove" />
+    <Property Type="String" Name="Reminder" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ReminderId" />
+    <Property Type="String" Name="ResourceOthers" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ParentAppointmentId" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FullName" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="String" Name="SSN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sex" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarialStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IdentityCard" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Occupation" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Generation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HomePhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellPhone" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MailLabel" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CssClass" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ResourceGroupId" />
+    <Property Type="Boolean" Name="IsResource" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+    <Property Type="Boolean" Name="IsFulltime" />
+    <Property Type="Double" Name="RemainDayLeaveOf" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="Url" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Priority" />
+    <Property Type="Int32" Name="Type" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="String" Name="SSN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SSNOriginal" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriverLicenseNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sex" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarialStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Generation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HomePhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellPhone" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmergencyContactName" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmergencyContactPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MailLabel" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PatientStatusId" />
+    <Property Type="DateTime" Name="FirstSeenDate" Precision="3" />
+    <Property Type="DateTime" Name="LastSeenDate" Precision="3" />
+    <Property Type="Boolean" Name="IsCheckIn" />
+    <Property Type="String" Name="MedicalAlert" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StatementMessage" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EMRPatientId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountStatusId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+    <Property Type="String" Name="FullName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Occupation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IdentityCard" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

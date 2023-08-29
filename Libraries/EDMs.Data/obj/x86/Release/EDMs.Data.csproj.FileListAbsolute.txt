@@ -1,0 +1,11 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Release\EDMs.Data.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Release\EDMs.Data.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\Telerik.Web.UI.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\Microsoft.AnalysisServices.AdomdClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Release\Telerik.Web.UI.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Release\EDMs.Data.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Release\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Release\EDMs.Data.pdb

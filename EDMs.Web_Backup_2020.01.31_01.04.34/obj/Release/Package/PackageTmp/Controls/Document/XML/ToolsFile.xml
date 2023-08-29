@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <tools>
+    <tool name="FindAndReplace"/>
+    <tool name="Print"/>
+    <tool name="AjaxSpellCheck"/>
+    <tool separator="true"/>
+    <tool name="Cut"/>
+    <tool name="Copy"/>
+    <tool name="Paste"/>
+
+    <tool separator="true"/>
+    <tool name="Undo"/>
+    <tool name="Redo"/>
+    <tool separator="true"/>
+    <!--<tool name="ImageManager"/>
+    <tool name="InsertTable"/>
+    <tool separator="true"/>-->
+    <tool name="LinkManager"/>
+    <tool name="Unlink"/>
+    <tool name="InsertSymbol"/>
+    <tool name="ToggleTableBorder"/>
+  </tools>
+  <tools>
+    <tool name="Bold"/>
+    <tool name="Italic"/>
+    <tool name="Underline"/>
+    <tool separator="true"/>
+    <tool name="JustifyLeft"/>
+    <tool name="JustifyCenter"/>
+    <tool name="JustifyRight"/>
+    <tool name="JustifyFull"/>
+    <tool separator="true"/>
+    <tool name="InsertOrderedList"/>
+    <tool name="InsertUnorderedList"/>
+    <tool name="Outdent"/>
+    <tool name="Indent"/>
+    <tool name="FormatBlock"/>
+    <tool separator="true"/>
+  </tools>
+  <tools>
+    <tool name="FontName"/>
+    <tool name="FontSize"/>
+    <tool name="ForeColor"/>
+    <tool name="BackColor"/>
+  </tools>
+  
+</root>

@@ -1,0 +1,340 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D24DC11B-E1F5-4A5A-B6AF-79FE401C6C93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EAM.WebPortal</RootNamespace>
+    <AssemblyName>EAM.WebPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\EDMs.Web\App_DllLib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf">
+      <HintPath>..\EDMs.Web\App_DllLib\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\EDMs.Web\App_DllLib\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="EAM.Business">
+      <HintPath>..\..\Libraries\EAM.Business\bin\Debug\EAM.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="EAM.Data">
+      <HintPath>..\..\Libraries\EAM.Business\bin\Debug\EAM.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="OfficeHelper">
+      <HintPath>..\EDMs.Web\App_DllLib\OfficeHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Reporting, Version=14.0.20.219, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.Html5.WebForms, Version=14.0.20.219, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.Device.Detection.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Control\Material\DetailImexSearching.aspx" />
+    <Content Include="Control\Material\StockSearching.aspx" />
+    <Content Include="Control\Material\MaterialRequestDetail.aspx" />
+    <Content Include="Control\Material\MRAttachFiles.aspx" />
+    <Content Include="Control\Reporting\PhieuNhapKho.html" />
+    <Content Include="Control\Reporting\BC_NXTTheoNhomKho.html" />
+    <Content Include="Control\Reporting\BC_SuDungQuanHuyen.html" />
+    <Content Include="Control\Security\ChangePasswordForm.aspx" />
+    <Content Include="Control\Security\GroupsList.aspx" />
+    <Content Include="Control\Security\Login.aspx" />
+    <Content Include="Control\Security\MenuPermission.aspx" />
+    <Content Include="Control\Security\RoleEditForm.aspx" />
+    <Content Include="Control\Security\UserEditForm.aspx" />
+    <Content Include="Control\Security\UsersList.aspx" />
+    <Content Include="DocumentLibrary\BaoCaoYeuCauCap\temp.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="Resources\DataTemplate\ReqDataTemplate.xlsx" />
+    <Content Include="Resources\DataTemplate\ReqDataTemplate.xls" />
+    <Content Include="Resources\DataTemplate\ReqDataTemplate.xlsm" />
+    <Content Include="DownLoadFile.ashx" />
+    <None Include="Properties\PublishProfiles\EAM-WebPortal-SYT.pubxml" />
+    <Content Include="Resources\DataTemplate\SummaryMRTemplate.xlsx" />
+    <Content Include="Resources\Images\addNew.png" />
+    <Content Include="Resources\Images\Cancel.png" />
+    <Content Include="Resources\Images\changepass.png" />
+    <Content Include="Resources\Images\clear_16.png" />
+    <Content Include="Resources\Images\delete.png" />
+    <Content Include="Resources\Images\document.png" />
+    <Content Include="Resources\Images\edit.png" />
+    <Content Include="Resources\Images\group.png" />
+    <Content Include="Resources\Images\logout.png" />
+    <Content Include="Resources\Images\menup.png" />
+    <Content Include="Resources\Images\ok.png" />
+    <Content Include="Resources\Images\process_2_16.png" />
+    <Content Include="Resources\Images\reset.png" />
+    <Content Include="Resources\Images\save.png" />
+    <Content Include="Resources\Images\user.png" />
+    <Content Include="Resources\Scripts\utils.js" />
+    <Content Include="Resources\Style\Content\Site.css" />
+    <Content Include="Resources\Style\Content\styles.css" />
+    <Content Include="Site.Master" />
+    <Content Include="Resources\DataTemplate\ReqReport.xlsx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportData\temp.txt" />
+    <Content Include="Resources\Images\complete_16.png" />
+    <Content Include="Resources\Images\complete_20.png" />
+    <Content Include="Resources\Images\complete_24.png" />
+    <Content Include="Resources\Images\download.png" />
+    <Content Include="Resources\Images\equiment16.png" />
+    <Content Include="Resources\Images\error_14.png" />
+    <Content Include="Resources\Images\error_20.png" />
+    <Content Include="Resources\Images\error_24.png" />
+    <Content Include="Resources\Images\excel.png" />
+    <Content Include="Resources\Images\expand_left.png" />
+    <Content Include="Resources\Images\expand_right.png" />
+    <Content Include="Resources\Images\field-indicators.png" />
+    <Content Include="Resources\Images\folder16.png" />
+    <Content Include="Resources\Images\logo.svg" />
+    <Content Include="Resources\Images\process16.png" />
+    <Content Include="Resources\Images\process32.png" />
+    <Content Include="Resources\Images\search20.png" />
+    <Content Include="Resources\Images\toolbar_delete.png" />
+    <Content Include="Resources\Images\toolbar_new.png" />
+    <Content Include="Resources\Images\toolbar_reset.png" />
+    <Content Include="Resources\Images\toolbar_save.png" />
+    <Content Include="Resources\Images\toolbar_split.png" />
+    <Content Include="Resources\ImportData\temp.txt" />
+    <Content Include="Resources\Scripts\bootstrap.min.js" />
+    <Content Include="Resources\Scripts\jquery-1.7.1.js" />
+    <Content Include="Resources\Scripts\jquery-1.9.1.js" />
+    <Content Include="Resources\Style\bootstrap.min.css" />
+    <Content Include="Resources\Style\login.css" />
+    <Content Include="Resources\Style\style.css" />
+    <Content Include="StoreToStoreRequisition.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Material\DetailImexSearching.aspx.cs">
+      <DependentUpon>DetailImexSearching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Material\DetailImexSearching.aspx.designer.cs">
+      <DependentUpon>DetailImexSearching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Material\StockSearching.aspx.cs">
+      <DependentUpon>StockSearching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Material\StockSearching.aspx.designer.cs">
+      <DependentUpon>StockSearching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Material\MaterialRequestDetail.aspx.cs">
+      <DependentUpon>MaterialRequestDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Material\MaterialRequestDetail.aspx.designer.cs">
+      <DependentUpon>MaterialRequestDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Material\MRAttachFiles.aspx.cs">
+      <DependentUpon>MRAttachFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Material\MRAttachFiles.aspx.designer.cs">
+      <DependentUpon>MRAttachFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\ChangePasswordForm.aspx.cs">
+      <DependentUpon>ChangePasswordForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\ChangePasswordForm.aspx.designer.cs">
+      <DependentUpon>ChangePasswordForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\GroupsList.aspx.cs">
+      <DependentUpon>GroupsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\GroupsList.aspx.designer.cs">
+      <DependentUpon>GroupsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\MenuPermission.aspx.cs">
+      <DependentUpon>MenuPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\MenuPermission.aspx.designer.cs">
+      <DependentUpon>MenuPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\RoleEditForm.aspx.cs">
+      <DependentUpon>RoleEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\RoleEditForm.aspx.designer.cs">
+      <DependentUpon>RoleEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\UserEditForm.aspx.cs">
+      <DependentUpon>UserEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\UserEditForm.aspx.designer.cs">
+      <DependentUpon>UserEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Security\UsersList.aspx.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Security\UsersList.aspx.designer.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoadFile.ashx.cs">
+      <DependentUpon>DownLoadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Utilities\EntityCloner.cs" />
+    <Compile Include="Resources\Utilities\MenuType.cs" />
+    <Compile Include="Resources\Utilities\Session\GlobalConsts.cs" />
+    <Compile Include="Resources\Utilities\Session\GlobalVariables.cs" />
+    <Compile Include="Resources\Utilities\LDAP\LdapAuthentication.cs" />
+    <Compile Include="Resources\Utilities\Session\SessionProvider.cs" />
+    <Compile Include="Resources\Utilities\Session\UserSession.cs" />
+    <Compile Include="Resources\Utilities\Utility.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StoreToStoreRequisition.aspx.cs">
+      <DependentUpon>StoreToStoreRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreToStoreRequisition.aspx.designer.cs">
+      <DependentUpon>StoreToStoreRequisition.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64827</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64827/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

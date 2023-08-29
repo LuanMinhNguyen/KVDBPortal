@@ -1,0 +1,14 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\EAM.Notification.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\EAM.Notification.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\EAM.Notification.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\OpenPop.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\bin\x86\Release\System.Data.OracleClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\SyncToOffShore.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.EmailNotification.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.EmailNotification\obj\x86\Release\EAM.Notification.csprojAssemblyReference.cache

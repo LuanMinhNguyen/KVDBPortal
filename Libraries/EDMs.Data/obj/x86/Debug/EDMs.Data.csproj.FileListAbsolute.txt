@@ -1,0 +1,17 @@
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll.config
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\bin\x86\Debug\Telerik.Web.UI.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\Telerik.Web.UI.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\x86\Debug\Telerik.Web.UI.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.csproj.AssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\x86\Debug\EDMs.Data.pdb

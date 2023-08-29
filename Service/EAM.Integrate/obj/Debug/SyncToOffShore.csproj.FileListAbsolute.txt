@@ -1,0 +1,72 @@
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.SyncData.resources
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe.config
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\OpenPop.dll
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS - DQRE\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe.config
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\OpenPop.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.SyncData.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.GenerateResource.Cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe.config
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\OpenPop.dll
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.SyncData.resources
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS - PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe.config
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\OpenPop.dll
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.SyncData.resources
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.GenerateResource.Cache
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.exe
+D:\Workspace\EDMS_PECC2\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.SyncData.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\SyncToOffShore.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\OpenPop.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\bin\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\SyncToOffShore\obj\Debug\SyncToOffShore.pdb

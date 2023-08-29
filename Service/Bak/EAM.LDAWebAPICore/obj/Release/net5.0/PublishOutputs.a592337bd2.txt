@@ -1,0 +1,12 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\EAM.LDAWebAPICore.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\wwwroot\ReportFile\HxGN_OnCall_Portfolio_Overview_ProductSheet.pdf
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\appsettings.json
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\EAM.LDAWebAPICore.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\EAM.LDAWebAPICore.deps.json
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\EAM.LDAWebAPICore.runtimeconfig.json
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\EAM.LDAWebAPICore.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebAPICore\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

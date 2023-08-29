@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{107960A4-86F6-429E-A3FC-3151B2920EFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDMs.Data</RootNamespace>
+    <AssemblyName>EDMs.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Web.UI, Version=2019.3.1023.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\RCAJAX\2019.3.1023.35\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\Document\AttachCommentFileDAO.cs" />
+    <Compile Include="DAO\Document\AttachDocToTransmittal.cs" />
+    <Compile Include="DAO\Document\AttachFileDAO.cs" />
+    <Compile Include="DAO\Document\AttachFilesPackageDAO.cs" />
+    <Compile Include="DAO\Document\AttachResponseFileDAO.cs" />
+    <Compile Include="DAO\Document\CategoryDAO.cs" />
+    <Compile Include="DAO\Document\ChangeRequestAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\ChangeRequestDAO.cs" />
+    <Compile Include="DAO\Document\ChangeRequestDocFileDAO.cs" />
+    <Compile Include="DAO\Document\CommentResponseDAO.cs" />
+    <Compile Include="DAO\Document\ConrespondenceDAO.cs" />
+    <Compile Include="DAO\Document\ContractorTransmittalAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\ContractorTransmittalDocFileDAO.cs" />
+    <Compile Include="DAO\Document\DistributionMatrixDAO.cs" />
+    <Compile Include="DAO\Document\DistributionMatrixDetailDAO.cs" />
+    <Compile Include="DAO\Document\DistributionMatrixTypeDAO.cs" />
+    <Compile Include="DAO\Document\DocumentDAO.cs" />
+    <Compile Include="DAO\Document\DocumentNewDAO.cs" />
+    <Compile Include="DAO\Document\DocumentNumberingDAO.cs" />
+    <Compile Include="DAO\Document\DocumentPackageDAO.cs" />
+    <Compile Include="DAO\Document\DocumentSequenceManagementDAO.cs" />
+    <Compile Include="DAO\Document\DQREDocumentAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\DQREDocumentMasterDAO.cs" />
+    <Compile Include="DAO\Document\DQREDocumentNumberingDAO.cs" />
+    <Compile Include="DAO\Document\DQREDocumentsDAO.cs" />
+    <Compile Include="DAO\Document\DQREMarkupLayerDAO.cs" />
+    <Compile Include="DAO\Document\DQRETransmittalAttachDocFileDAO.cs" />
+    <Compile Include="DAO\Document\DQRETransmittalAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\DQRETransmittalDAO.cs" />
+    <Compile Include="DAO\Document\EAMWorkRequestAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\EAMWorkRequestDAO.cs" />
+    <Compile Include="DAO\Document\EAMWorkRequestNoteDAO.cs" />
+    <Compile Include="DAO\Document\FolderDAO.cs" />
+    <Compile Include="DAO\Document\IncomingTransmittalDAO.cs" />
+    <Compile Include="DAO\Document\NCR_SIAddPictureDAO.cs" />
+    <Compile Include="DAO\Document\NCR_SIAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\NotificationRuleDAO.cs" />
+    <Compile Include="DAO\Document\PECC2DocumentAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\PECC2ObjectNumberingDAO.cs" />
+    <Compile Include="DAO\Document\PECC2TransmittalAttachDocFileDAO.cs" />
+    <Compile Include="DAO\Document\PECC2TransmittalAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\ProcessActualDAO.cs" />
+    <Compile Include="DAO\Document\ProcessPlanedDAO.cs" />
+    <Compile Include="DAO\Document\ProcessRecoveryPlanedDAO.cs" />
+    <Compile Include="DAO\Document\RFIAttachFileDAO.cs" />
+    <Compile Include="DAO\Document\RFIDetailDAO.cs" />
+    <Compile Include="DAO\Document\TemplateManagementDAO.cs" />
+    <Compile Include="DAO\Document\ToDoListDAO.cs" />
+    <Compile Include="DAO\Document\TransmittalDAO.cs" />
+    <Compile Include="DAO\EAMStoreProcedureDAO.cs" />
+    <Compile Include="DAO\Library\AreaDAO.cs" />
+    <Compile Include="DAO\Library\AttentionDAO.cs" />
+    <Compile Include="DAO\Library\BlockDAO.cs" />
+    <Compile Include="DAO\Library\ChangeGradeCodeDAO.cs" />
+    <Compile Include="DAO\Library\ChangeRequestReviewResultCodeDAO.cs" />
+    <Compile Include="DAO\Library\ConfidentialityDAO.cs" />
+    <Compile Include="DAO\Library\ChangeRequestTypeDAO.cs" />
+    <Compile Include="DAO\Library\GroupCodeDAO.cs" />
+    <Compile Include="DAO\Library\KKSIdentificationCodeDAO.cs" />
+    <Compile Include="DAO\Library\DocumentClassDAO.cs" />
+    <Compile Include="DAO\Library\PurposeCodeDAO.cs" />
+    <Compile Include="DAO\Library\OrganizationCodeDAO.cs" />
+    <Compile Include="DAO\Library\ProjectCodeDAO.cs" />
+    <Compile Include="DAO\Library\MaterialDAO.cs" />
+    <Compile Include="DAO\Library\RevisionSchemaDAO.cs" />
+    <Compile Include="DAO\Library\RevisionStatusDAO.cs" />
+    <Compile Include="DAO\Library\SystemCodeDAO.cs" />
+    <Compile Include="DAO\Library\UnitDAO.cs" />
+    <Compile Include="DAO\Library\WorkDAO.cs" />
+    <Compile Include="DAO\Library\DrawingDAO.cs" />
+    <Compile Include="DAO\Library\DocumentCodeDAO.cs" />
+    <Compile Include="DAO\Library\HolidayConfigDAO.cs" />
+    <Compile Include="DAO\Library\ProcedureTypeDAO.cs" />
+    <Compile Include="DAO\Library\ProcedureStageDAO.cs" />
+    <Compile Include="DAO\Library\TitleDAO.cs" />
+    <Compile Include="DAO\Library\DepartmentDAO.cs" />
+    <Compile Include="DAO\Library\CodeDAO.cs" />
+    <Compile Include="DAO\Library\MRTypeDAO.cs" />
+    <Compile Include="DAO\Library\PriorityLevelDAO.cs" />
+    <Compile Include="DAO\Library\MediumCodeDAO.cs" />
+    <Compile Include="DAO\Library\PipingClassCodeDAO.cs" />
+    <Compile Include="DAO\Library\EquipmentIdentifierCodeDAO.cs" />
+    <Compile Include="DAO\Library\ProcurementRequirementTypeDAO.cs" />
+    <Compile Include="DAO\Scope\ContractorDAO.cs" />
+    <Compile Include="DAO\Scope\WorkGroupDAO.cs" />
+    <Compile Include="DAO\Scope\PackageDAO.cs" />
+    <Compile Include="DAO\Scope\ScopeProjectDAO.cs" />
+    <Compile Include="DAO\Security\ImportDataChangeHistoryDAO.cs" />
+    <Compile Include="DAO\Security\ExportDataChangeHistoryDAO.cs" />
+    <Compile Include="DAO\Security\ImportEmailDownloadedDAO.cs" />
+    <Compile Include="DAO\Security\ImportScheduleDAO.cs" />
+    <Compile Include="DAO\Security\ExportScheduleDAO.cs" />
+    <Compile Include="DAO\Security\ErrorLogDAO.cs" />
+    <Compile Include="DAO\Security\IntergrateParamConfigDAO.cs" />
+    <Compile Include="DAO\Security\FunctionPermissionDAO.cs" />
+    <Compile Include="DAO\Security\UserDisciplineDAO.cs" />
+    <Compile Include="DAO\Security\SharePermissionDAO.cs" />
+    <Compile Include="DAO\Security\UsersLoginHistoryDAO.cs" />
+    <Compile Include="DAO\Security\WaitingSyncDataDAO.cs" />
+    <Compile Include="DAO\Security\OptionalTypePropertiesViewDAO.cs" />
+    <Compile Include="DAO\Security\DocPropertiesViewDAO.cs" />
+    <Compile Include="DAO\Library\OptionalTypeDetailDAO.cs" />
+    <Compile Include="DAO\Library\OptionalTypeDAO.cs" />
+    <Compile Include="DAO\Library\WellDAO.cs" />
+    <Compile Include="DAO\Library\TagTypeDAO.cs" />
+    <Compile Include="DAO\Library\SystemDocDAO.cs" />
+    <Compile Include="DAO\Library\ProjectDAO.cs" />
+    <Compile Include="DAO\Library\PlatformDAO.cs" />
+    <Compile Include="DAO\Library\FieldDAO.cs" />
+    <Compile Include="DAO\Library\DocumentMainTypeDAO.cs" />
+    <Compile Include="DAO\Library\OriginatorDAO.cs" />
+    <Compile Include="DAO\Library\PlantDAO.cs" />
+    <Compile Include="DAO\Security\GroupDataPermissionDAO.cs" />
+    <Compile Include="DAO\Library\ToListDAO.cs" />
+    <Compile Include="DAO\Library\LanguageDAO.cs" />
+    <Compile Include="DAO\Library\ReceivedFromDAO.cs" />
+    <Compile Include="DAO\Library\StatusDAO.cs" />
+    <Compile Include="DAO\Library\DisciplineDAO.cs" />
+    <Compile Include="DAO\Library\RevisionDAO.cs" />
+    <Compile Include="DAO\Library\DocumentTypeDAO.cs" />
+    <Compile Include="DAO\Security\PermissionContractDAO.cs" />
+    <Compile Include="DAO\Security\PermissionProcurementRequirementDAO.cs" />
+    <Compile Include="DAO\Security\PermissionDisciplineDAO.cs" />
+    <Compile Include="DAO\Security\PermissionWorkgroupDAO.cs" />
+    <Compile Include="DAO\Security\PermissionDAO.cs" />
+    <Compile Include="DAO\Security\MenuDAO.cs" />
+    <Compile Include="DAO\Security\RoleDAO.cs" />
+    <Compile Include="DAO\Security\UserDAO.cs" />
+    <Compile Include="DAO\Library\ResourceDAO.cs" />
+    <Compile Include="DAO\Library\ResourceGroupDAO.cs" />
+    <Compile Include="DAO\IRepository.cs" />
+    <Compile Include="DAO\Security\UserDataPermissionDAO.cs" />
+    <Compile Include="DAO\WMS\PerformanceReviewAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMorningCallCommentDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingProductionMeetingAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingProductionMeetingDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMOCAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingBreakdownReportAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingECRAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingGeneralWorkingAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingGeneralWorkingDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingShutdownReportAttachFilesDAO .cs" />
+    <Compile Include="DAO\WMS\TrackingWCRAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingSailAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingPunchAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingProcedureAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMorningCallAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingECRDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingBreakdownReportDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingWCRDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingShutdownReportDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingSailDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingPunchDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingProcedureDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMorningCallDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMOCDAO.cs" />
+    <Compile Include="DAO\WMS\WorkRequestAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionAttachFilesDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingShutdownReportCommentDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingBreakdownReportCommentDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingECRCommentDAO.cs" />
+    <Compile Include="DAO\WMS\TrackingMOCCommentDAO.cs" />
+    <Compile Include="DAO\WMS\WorkRequestCommentDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionCommentDAO.cs" />
+    <Compile Include="DAO\WMS\AMOSExDAO.cs" />
+    <Compile Include="DAO\WMS\WorkRequestDAO.cs" />
+    <Compile Include="DAO\WMS\NumberManagementDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionDetailDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionCheckListDetailDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionCheckListDefineDAO.cs" />
+    <Compile Include="DAO\WMS\MaterialRequisitionDAO.cs" />
+    <Compile Include="DAO\Workflow\ObjectAssignedUserDAO.cs" />
+    <Compile Include="DAO\Workflow\ObjectAssignedWorkflowDAO.cs" />
+    <Compile Include="DAO\Workflow\ObjectWorkflowDetailDAO.cs" />
+    <Compile Include="DAO\Workflow\TemplateWorkflowDetailDAO.cs" />
+    <Compile Include="DAO\Workflow\WorkflowDAO.cs" />
+    <Compile Include="DAO\Workflow\CustomizeWorkflowDetailDAO.cs" />
+    <Compile Include="Dto\Asset\AssetDepreciationDto.cs" />
+    <Compile Include="Dto\Asset\AssetStructureDto.cs" />
+    <Compile Include="Dto\Asset\LocationStructureDto.cs" />
+    <Compile Include="Dto\Asset\LocationDto.cs" />
+    <Compile Include="Dto\Asset\AssetEventDto.cs" />
+    <Compile Include="Dto\Asset\AssetDocumentDto.cs" />
+    <Compile Include="Dto\Asset\AssetPartAssociatedDto.cs" />
+    <Compile Include="Dto\Asset\AssetPartUsageDto.cs" />
+    <Compile Include="Dto\Asset\AssetPMScheduleDto.cs" />
+    <Compile Include="Dto\Dashboard\ColumnChartDto.cs" />
+    <Compile Include="Dto\Asset\AssetDto.cs" />
+    <Compile Include="Dto\Dashboard\DepartmentDto.cs" />
+    <Compile Include="Dto\Dashboard\OrganizationDto.cs" />
+    <Compile Include="Dto\Dashboard\PmPlanDto.cs" />
+    <Compile Include="Dto\Document\DocEntitiesDto.cs" />
+    <Compile Include="Dto\Document\DocListDto.cs" />
+    <Compile Include="Dto\MaterialInventory\DocListDto.cs" />
+    <Compile Include="Dto\MaterialInventory\PartListSYTDto.cs" />
+    <Compile Include="Dto\MaterialInventory\PartInStoreDto.cs" />
+    <Compile Include="Dto\MaterialInventory\StoreToStoreReqLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\StoreToStoreReqDto.cs" />
+    <Compile Include="Dto\MaterialInventory\WORETNLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\ScraptsLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\SPRETNLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\IssuesLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\ReceiptLineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\TranslineDto.cs" />
+    <Compile Include="Dto\MaterialInventory\PartListDto.cs" />
+    <Compile Include="Dto\MaterialInventory\StockDto.cs" />
+    <Compile Include="Dto\MaterialInventory\StoresDto.cs" />
+    <Compile Include="Dto\PPM\NormMaterialDocDto.cs" />
+    <Compile Include="Dto\PPM\NormMaterialPartDto.cs" />
+    <Compile Include="Dto\PPM\PPMLaborPlanDto.cs" />
+    <Compile Include="Dto\PPM\PPMPartPlanDto.cs" />
+    <Compile Include="Dto\PPM\PPMActivitiesDto.cs" />
+    <Compile Include="Dto\PPM\NormMaterialDto.cs" />
+    <Compile Include="Dto\PPM\WODocDto.cs" />
+    <Compile Include="Dto\PPM\WOPartDto.cs" />
+    <Compile Include="Dto\PPM\WOCompletedDto.cs" />
+    <Compile Include="Dto\PPM\WOActivitiesDto.cs" />
+    <Compile Include="Dto\PPM\WOPartPlanDto.cs" />
+    <Compile Include="Dto\PPM\WODto.cs" />
+    <Compile Include="Dto\PPM\WOPlanDto.cs" />
+    <Compile Include="Dto\PPM\PPMsDto.cs" />
+    <Compile Include="Dto\PurchaseOrder\PORDLineDto.cs" />
+    <Compile Include="Dto\PurchaseOrder\REQLineDto.cs" />
+    <Compile Include="Dto\PurchaseOrder\PORDListDto.cs" />
+    <Compile Include="Dto\PurchaseOrder\REQListDto.cs" />
+    <Compile Include="Entities\Area.cs" />
+    <Compile Include="Entities\AttachContractFile.cs" />
+    <Compile Include="Entities\AttachPRFile.cs" />
+    <Compile Include="Entities\ChangeGradeCode.cs" />
+    <Compile Include="Entities\ChangeRequestReviewResultCode.cs" />
+    <Compile Include="Entities\DocumentCode.cs" />
+    <Compile Include="Entities\DQREDocument.cs" />
+    <Compile Include="Entities\DrawingCode.cs" />
+    <Compile Include="Entities\GroupCode.cs" />
+    <Compile Include="Entities\ChangeRequestType.cs" />
+    <Compile Include="Entities\MaterialCode.cs" />
+    <Compile Include="Entities\OrganizationCode.cs" />
+    <Compile Include="Entities\KKSIdentificationCode.cs" />
+    <Compile Include="Entities\ChangeRequestAttachFile.cs" />
+    <Compile Include="Entities\PECC2TransmittalAttachFile.cs" />
+    <Compile Include="Entities\PECC2DocumentAttachFile.cs" />
+    <Compile Include="Entities\RFI.cs" />
+    <Compile Include="Entities\RFIDetail.cs" />
+    <Compile Include="Entities\SystemCode.cs" />
+    <Compile Include="Entities\PerformanceReview.cs" />
+    <Compile Include="Entities\MaterialRequisitionCheckListDefine.cs" />
+    <Compile Include="Entities\DistributionMatrix.cs" />
+    <Compile Include="Entities\CommentResponse.cs" />
+    <Compile Include="Entities\Code.cs" />
+    <Compile Include="Entities\ProcedureStage.cs" />
+    <Compile Include="Entities\ObjectAssignedUser.cs" />
+    <Compile Include="Entities\ProjectCode.cs" />
+    <Compile Include="Entities\PurposeCode.cs" />
+    <Compile Include="Entities\RevisionSchema.cs" />
+    <Compile Include="Entities\RevisionStatu.cs" />
+    <Compile Include="Entities\ToDoListTracking.cs" />
+    <Compile Include="Entities\ToList.cs" />
+    <Compile Include="Entities\Originator.cs" />
+    <Compile Include="Entities\DocumentNumbering.cs" />
+    <Compile Include="Entities\ScopeProject.cs" />
+    <Compile Include="Entities\PipingClassCode.cs" />
+    <Compile Include="Entities\EquipmentIdentifierCode.cs" />
+    <Compile Include="Entities\MediumCode.cs" />
+    <Compile Include="Entities\PermissionContract.cs" />
+    <Compile Include="Entities\ProcurementRequirementType.cs" />
+    <Compile Include="Entities\PermissionProcurementRequirement.cs" />
+    <Compile Include="Entities\PermissionDiscipline.cs" />
+    <Compile Include="Entities\ProcessRecoveryPlaned.cs" />
+    <Compile Include="Entities\ProcessReport.cs" />
+    <Compile Include="Entities\TemplateManagement.cs" />
+    <Compile Include="Entities\Block.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Category.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AttachFilesPackage.cs" />
+    <Compile Include="Entities\FolderPermissionItem.cs" />
+    <Compile Include="Entities\DocumentPackage.cs" />
+    <Compile Include="Entities\Package.cs" />
+    <Compile Include="Entities\PermissionPackage.cs" />
+    <Compile Include="Entities\OptionalTypeDetail.cs" />
+    <Compile Include="Entities\DocumentNew.cs" />
+    <Compile Include="Entities\Unit.cs" />
+    <Compile Include="Entities\UserDataPermission.cs" />
+    <Compile Include="Entities\Well.cs" />
+    <Compile Include="Entities\Field.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Platform.cs" />
+    <Compile Include="Entities\ReceivedFrom.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Status.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DocumentType.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Discipline.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Role.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\NotificationRule.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Document.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EDMsEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Permission.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\User.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Resource.cs">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WorkCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityDAO.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Entities\EDMsEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EDMsEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entities\EDMsEntities.edmx.diagram">
+      <DependentUpon>EDMsEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

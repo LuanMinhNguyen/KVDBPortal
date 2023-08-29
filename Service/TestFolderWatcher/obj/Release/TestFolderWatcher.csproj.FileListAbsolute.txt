@@ -1,0 +1,56 @@
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe.config
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Business.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Data.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Web.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\Temp.IO.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\Telerik.Web.UI.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\OfficeHelper.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\Aspose.Cells.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\RandomKey.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Business.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Data.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Web.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\bin\Release\Temp.IO.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.csprojResolveAssemblyReference.cache
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.exe
+C:\Workspace\BD-EDMSmini\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe.config
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\Aspose.Cells.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Business.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Data.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Web.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\Temp.IO.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\Telerik.Web.UI.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\OfficeHelper.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\RandomKey.dll
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Business.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Data.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\EDMs.Web.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\Temp.IO.pdb
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\bin\Release\Telerik.Web.UI.xml
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.csprojResolveAssemblyReference.cache
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.exe
+C:\Workspace\EDMS\Dev\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe.config
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.exe
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.exe
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\TestFolderWatcher.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Business.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Web.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\OpenPop.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\Telerik.Web.UI.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\OfficeHelper.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\RandomKey.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Business.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Data.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\EDMs.Web.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\Temp.IO.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\Release\TestFolderWatcher.csprojResolveAssemblyReference.cache
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\Release\Aspose.Cells.dll

@@ -1,0 +1,20 @@
+/* Form Module */
+.form-module {
+    position: relative;
+    /*background: #ffffff;*/
+    max-width: 400px;
+    width: 100%;
+    /*border-top: 5px solid #33b5e5;*/
+    /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);*/
+    margin: 0 auto;
+}
+  .form {
+    padding: 30px;
+  }
+#spanTitle {
+    color: #454545;
+    font-size: 24px;
+    /*font-weight: 400;*/
+    line-height: 1;
+    font-family: helvetica, arial, verdana, sans-serif;
+}

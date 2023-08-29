@@ -1,0 +1,6 @@
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\bin\Debug\Clinic.Data.dll.config
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\bin\Debug\Clinic.Data.dll
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\bin\Debug\Clinic.Data.pdb
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\obj\Debug\Clinic.Data.csprojResolveAssemblyReference.cache
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\obj\Debug\Clinic.Data.dll
+C:\Workspace\BD-EDMSmini\Dev\Libraries\Clinic.Data\obj\Debug\Clinic.Data.pdb

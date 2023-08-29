@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="EAM.LDAWebService.LDAWebService" CodeBehind="LDAWebService.svc.cs" %>

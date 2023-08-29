@@ -1,0 +1,12 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\LocalData\TangVat\AttachFile\tmp.txt
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\LocalData\TangVat\tmp.txt
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\EAM.LDAWebService.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\EAM.LDAWebService.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\EAM.LDAWebService.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\System.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\bin\System.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\obj\Debug\EAM.LDAWebService.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\obj\Debug\EAM.LDAWebService.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\obj\Debug\EAM.LDAWebService.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\obj\Debug\EAM.LDAWebService.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EAM.LDAWebService\obj\Debug\EAM.LDAWebService.pdb

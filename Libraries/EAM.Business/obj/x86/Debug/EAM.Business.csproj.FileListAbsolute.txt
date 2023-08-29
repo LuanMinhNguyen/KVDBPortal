@@ -1,0 +1,10 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\bin\x86\Debug\EAM.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\bin\x86\Debug\EAM.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\bin\x86\Debug\EAM.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\bin\x86\Debug\EAM.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\bin\x86\Debug\EAM.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\obj\x86\Debug\EAM.Business.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\obj\x86\Debug\EAM.Business.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\obj\x86\Debug\EAM.Business.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\obj\x86\Debug\EAM.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Business\obj\x86\Debug\EAM.Business.pdb

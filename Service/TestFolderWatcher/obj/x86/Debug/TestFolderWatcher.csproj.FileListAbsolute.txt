@@ -1,0 +1,37 @@
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.exe.config
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.exe
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\Aspose.Cells.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Business.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Web.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\OpenPop.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\Telerik.Web.UI.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\OfficeHelper.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\RandomKey.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Business.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Data.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Web.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\bin\x86\Debug\Temp.IO.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.csprojResolveAssemblyReference.cache
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.exe
+D:\00. Workspace\WMS PTSC PPS\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\TestFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\OpenPop.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\System.Data.OracleClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\bin\x86\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.csproj.AssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\TestFolderWatcher\obj\x86\Debug\TestFolderWatcher.pdb

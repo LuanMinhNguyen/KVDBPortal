@@ -1,0 +1,14 @@
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.dll.config
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Release\Telerik.Web.UI.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.dll.config
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Release\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Release\Telerik.Web.UI.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Release\EDMs.Data.pdb

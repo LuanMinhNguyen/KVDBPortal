@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClinicModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="ClinicModelStoreContainer">
+    <EntitySet Name="AppointmentStatuses" EntityType="ClinicModel.Store.AppointmentStatuses" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="Employees" EntityType="ClinicModel.Store.Employees" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="PatientStatuses" EntityType="ClinicModel.Store.PatientStatuses" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="ResourceGroup" EntityType="ClinicModel.Store.ResourceGroup" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="Resources" EntityType="ClinicModel.Store.Resources" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="Rooms" EntityType="ClinicModel.Store.Rooms" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="ServiceTypes" EntityType="ClinicModel.Store.ServiceTypes" store:Type="Tables" Schema="Library" />
+    <EntitySet Name="Appointments" EntityType="ClinicModel.Store.Appointments" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="CheckInHistory" EntityType="ClinicModel.Store.CheckInHistory" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="Consulting" EntityType="ClinicModel.Store.Consulting" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="Contact" EntityType="ClinicModel.Store.Contact" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="Description" EntityType="ClinicModel.Store.Description" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="MemberCard" EntityType="ClinicModel.Store.MemberCard" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="Patients" EntityType="ClinicModel.Store.Patients" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="UsedService" EntityType="ClinicModel.Store.UsedService" store:Type="Tables" Schema="Patient" />
+    <EntitySet Name="Menus" EntityType="ClinicModel.Store.Menus" store:Type="Tables" Schema="Security" />
+    <EntitySet Name="Permissions" EntityType="ClinicModel.Store.Permissions" store:Type="Tables" Schema="Security" />
+    <EntitySet Name="Roles" EntityType="ClinicModel.Store.Roles" store:Type="Tables" Schema="Security" />
+    <EntitySet Name="Users" EntityType="ClinicModel.Store.Users" store:Type="Tables" Schema="Security" />
+  </EntityContainer>
+  <EntityType Name="AppointmentStatuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" MaxLength="40" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="SSN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="MarialStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="Generation" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomePhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="WorkPhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="MailLabel" Type="nvarchar" MaxLength="60" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="StateCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="20" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="PatientStatuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="ResourceGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Resources">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="250" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="SSN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="MarialStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="IdentityCard" Type="nvarchar" MaxLength="15" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="250" />
+    <Property Name="Generation" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomePhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="WorkPhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="MailLabel" Type="nvarchar" MaxLength="60" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="StateCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="20" />
+    <Property Name="Color" Type="varchar" MaxLength="10" />
+    <Property Name="CssClass" Type="varchar" MaxLength="50" />
+    <Property Name="ResourceGroupId" Type="int" />
+    <Property Name="IsResource" Type="bit" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="IsFulltime" Type="bit" />
+    <Property Name="RemainDayLeaveOf" Type="float" />
+  </EntityType>
+  <EntityType Name="Rooms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="ServiceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Color" Type="varchar" MaxLength="10" />
+    <Property Name="CssClass" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Appointments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" MaxLength="10" />
+    <Property Name="SetDisplayName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PatientId" Type="int" />
+    <Property Name="LastCall" Type="datetime" />
+    <Property Name="NextCall" Type="datetime" />
+    <Property Name="NumberCall" Type="int" />
+    <Property Name="ServiceTypeId" Type="varchar" MaxLength="1000" />
+    <Property Name="AppointmentStatusId" Type="int" />
+    <Property Name="ResourceId" Type="int" />
+    <Property Name="RoomId" Type="int" />
+    <Property Name="AppointmentDate" Type="datetime" />
+    <Property Name="Start" Type="datetime" />
+    <Property Name="End" Type="datetime" />
+    <Property Name="AppointmentDuration" Type="int" />
+    <Property Name="CancelDate" Type="datetime" />
+    <Property Name="CancelTime" Type="datetime" />
+    <Property Name="CancelBy" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Reminder" Type="varchar" MaxLength="250" />
+    <Property Name="ReminderId" Type="int" />
+    <Property Name="RecurrenceRuleText" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsBlock" Type="bit" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="IsApprove" Type="bit" />
+    <Property Name="ResourceOthers" Type="varchar" MaxLength="500" />
+    <Property Name="ParentAppointmentId" Type="int" />
+  </EntityType>
+  <EntityType Name="CheckInHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PatientId" Type="int" />
+    <Property Name="AppointmentId" Type="int" />
+    <Property Name="CheckInDate" Type="datetime" />
+    <Property Name="CheckInTime" Type="datetime" />
+    <Property Name="IsClosed" Type="bit" />
+    <Property Name="IsIn" Type="bit" />
+    <Property Name="ResourceId" Type="int" Nullable="false" />
+    <Property Name="ServiceTypeId" Type="int" />
+    <Property Name="RoomId" Type="int" />
+    <Property Name="EmergencyContactName" Type="nvarchar" MaxLength="30" />
+    <Property Name="EmergencyContactPhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Consulting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="ServiceTypeID" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Description">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="nvarchar" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MemberCard">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="DiscountRate" Type="decimal" Precision="8" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="SSN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SSNOriginal" Type="nvarchar" MaxLength="50" />
+    <Property Name="DriverLicenseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="MarialStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="Generation" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomePhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="WorkPhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactName" Type="nvarchar" MaxLength="30" />
+    <Property Name="EmergencyContactPhone" Type="nvarchar" MaxLength="15" />
+    <Property Name="MailLabel" Type="nvarchar" MaxLength="60" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="StateCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="20" />
+    <Property Name="PatientStatusId" Type="int" />
+    <Property Name="FirstSeenDate" Type="datetime" />
+    <Property Name="LastSeenDate" Type="datetime" />
+    <Property Name="IsCheckIn" Type="bit" />
+    <Property Name="MedicalAlert" Type="nvarchar" MaxLength="256" />
+    <Property Name="StatementMessage" Type="nvarchar" MaxLength="256" />
+    <Property Name="EMRPatientId" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountStatusId" Type="nvarchar" MaxLength="10" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdentityCard" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="UsedService">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceTypeID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="UsedDate" Type="datetime" />
+    <Property Name="NextDate" Type="datetime" />
+    <Property Name="NumberOfTimes" Type="smallint" />
+    <Property Name="ResourceID" Type="int" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Url" Type="varchar" MaxLength="200" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="MenuId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Employee_Ref" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="ResourceId" Type="int" />
+    <Property Name="CanApprove" Type="bit" />
+    <Property Name="IsAdmin" Type="bit" />
+  </EntityType>
+</Schema>

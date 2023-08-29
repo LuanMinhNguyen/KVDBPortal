@@ -1,0 +1,8 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Release\EAM.TestConsole.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Release\EAM.TestConsole.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Release\EAM.TestConsole.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Release\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Release\EAM.TestConsole.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Release\EAM.TestConsole.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Release\EAM.TestConsole.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Release\EAM.TestConsole.pdb

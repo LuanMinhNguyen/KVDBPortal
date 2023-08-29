@@ -1,0 +1,2787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EDMsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="EDMsEntities">
+    <EntitySet Name="ResourceGroups" EntityType="EDMsModel.ResourceGroup" />
+    <EntitySet Name="Permissions" EntityType="EDMsModel.Permission" />
+    <EntitySet Name="Folders" EntityType="EDMsModel.Folder" />
+    <EntitySet Name="Revisions" EntityType="EDMsModel.Revision" />
+    <EntitySet Name="Attentions" EntityType="EDMsModel.Attention" />
+    <EntitySet Name="ToLists" EntityType="EDMsModel.ToList" />
+    <EntitySet Name="Resources" EntityType="EDMsModel.Resource" />
+    <EntitySet Name="GroupDataPermissions" EntityType="EDMsModel.GroupDataPermission" />
+    <EntitySet Name="NotificationRules" EntityType="EDMsModel.NotificationRule" />
+    <EntitySet Name="Disciplines" EntityType="EDMsModel.Discipline" />
+    <EntitySet Name="Languages" EntityType="EDMsModel.Language" />
+    <EntitySet Name="ReceivedFroms" EntityType="EDMsModel.ReceivedFrom" />
+    <EntitySet Name="Status" EntityType="EDMsModel.Status" />
+    <EntitySet Name="Menus" EntityType="EDMsModel.Menu" />
+    <EntitySet Name="Documents" EntityType="EDMsModel.Document" />
+    <EntitySet Name="Originators" EntityType="EDMsModel.Originator" />
+    <EntitySet Name="Plants" EntityType="EDMsModel.Plant" />
+    <EntitySet Name="Projects" EntityType="EDMsModel.Project" />
+    <EntitySet Name="TagTypes" EntityType="EDMsModel.TagType" />
+    <EntitySet Name="DocumentMainTypes" EntityType="EDMsModel.DocumentMainType" />
+    <EntitySet Name="SystemDocs" EntityType="EDMsModel.SystemDoc" />
+    <EntitySet Name="DocumentTypes" EntityType="EDMsModel.DocumentType" />
+    <EntitySet Name="Blocks" EntityType="EDMsModel.Block" />
+    <EntitySet Name="Fields" EntityType="EDMsModel.Field" />
+    <EntitySet Name="Platforms" EntityType="EDMsModel.Platform" />
+    <EntitySet Name="Wells" EntityType="EDMsModel.Well" />
+    <EntitySet Name="OptionalTypes" EntityType="EDMsModel.OptionalType" />
+    <EntitySet Name="Roles" EntityType="EDMsModel.Role" />
+    <EntitySet Name="Categories" EntityType="EDMsModel.Category" />
+    <EntitySet Name="DocPropertiesViews" EntityType="EDMsModel.DocPropertiesView" />
+    <EntitySet Name="AttachFiles" EntityType="EDMsModel.AttachFile" />
+    <EntitySet Name="OptionalTypePropertiesViews" EntityType="EDMsModel.OptionalTypePropertiesView" />
+    <EntitySet Name="DocumentNews" EntityType="EDMsModel.DocumentNew" />
+    <EntitySet Name="OptionalTypeDetails" EntityType="EDMsModel.OptionalTypeDetail" />
+    <EntitySet Name="IncomingTransmittals" EntityType="EDMsModel.IncomingTransmittal" />
+    <EntitySet Name="ScopeProjects" EntityType="EDMsModel.ScopeProject" />
+    <EntitySet Name="Packages" EntityType="EDMsModel.Package" />
+    <EntitySet Name="AttachFilesPackages" EntityType="EDMsModel.AttachFilesPackage" />
+    <EntitySet Name="WorkGroups" EntityType="EDMsModel.WorkGroup" />
+    <EntitySet Name="Users" EntityType="EDMsModel.User" />
+    <EntitySet Name="AttachDocToTransmittals" EntityType="EDMsModel.AttachDocToTransmittal" />
+    <EntitySet Name="UserDataPermissions" EntityType="EDMsModel.UserDataPermission" />
+    <EntitySet Name="TemplateManagements" EntityType="EDMsModel.TemplateManagement" />
+    <EntitySet Name="Transmittals" EntityType="EDMsModel.Transmittal" />
+    <EntitySet Name="ProcessActuals" EntityType="EDMsModel.ProcessActual" />
+    <EntitySet Name="ProcessPlaneds" EntityType="EDMsModel.ProcessPlaned" />
+    <EntitySet Name="PermissionWorkgroups" EntityType="EDMsModel.PermissionWorkgroup" />
+    <EntitySet Name="Departments" EntityType="EDMsModel.Department" />
+    <EntitySet Name="Codes" EntityType="EDMsModel.Code" />
+    <EntitySet Name="ContractorTypes" EntityType="EDMsModel.ContractorType" />
+    <EntitySet Name="Contractors" EntityType="EDMsModel.Contractor" />
+    <EntitySet Name="PermissionDisciplines" EntityType="EDMsModel.PermissionDiscipline" />
+    <EntitySet Name="DocumentPackages" EntityType="EDMsModel.DocumentPackage" />
+    <EntitySet Name="ProcessRecoveryPlaneds" EntityType="EDMsModel.ProcessRecoveryPlaned" />
+    <EntitySet Name="CommentResponses" EntityType="EDMsModel.CommentResponse" />
+    <EntitySet Name="Contracts" EntityType="EDMsModel.Contract" />
+    <EntitySet Name="CostContractProjects" EntityType="EDMsModel.CostContractProject" />
+    <EntitySet Name="Materials" EntityType="EDMsModel.Material" />
+    <EntitySet Name="ProcurementRequirements" EntityType="EDMsModel.ProcurementRequirement" />
+    <EntitySet Name="PermissionContracts" EntityType="EDMsModel.PermissionContract" />
+    <EntitySet Name="PermissionProcurementRequirements" EntityType="EDMsModel.PermissionProcurementRequirement" />
+    <EntitySet Name="ProcurementRequirementTypes" EntityType="EDMsModel.ProcurementRequirementType" />
+    <EntitySet Name="CostContractContractors" EntityType="EDMsModel.CostContractContractor" />
+    <EntitySet Name="ContractTypes" EntityType="EDMsModel.ContractType" />
+    <EntitySet Name="AttachContractFiles" EntityType="EDMsModel.AttachContractFile" />
+    <EntitySet Name="AttachPRFiles" EntityType="EDMsModel.AttachPRFile" />
+    <EntitySet Name="PaymentHistories" EntityType="EDMsModel.PaymentHistory" />
+    <EntitySet Name="EquipmentIdentifierCodes" EntityType="EDMsModel.EquipmentIdentifierCode" />
+    <EntitySet Name="MediumCodes" EntityType="EDMsModel.MediumCode" />
+    <EntitySet Name="PipingClassCodes" EntityType="EDMsModel.PipingClassCode" />
+    <EntitySet Name="DocumentNumberings" EntityType="EDMsModel.DocumentNumbering" />
+    <EntitySet Name="DocumentSequenceManagements" EntityType="EDMsModel.DocumentSequenceManagement" />
+    <EntitySet Name="DistributionMatrices" EntityType="EDMsModel.DistributionMatrix" />
+    <EntitySet Name="DistributionMatrixDetails" EntityType="EDMsModel.DistributionMatrixDetail" />
+    <EntitySet Name="ProjectTemplateManagements" EntityType="EDMsModel.ProjectTemplateManagement" />
+    <EntitySet Name="ToDoLists" EntityType="EDMsModel.ToDoList" />
+    <EntitySet Name="AttachCommentFiles" EntityType="EDMsModel.AttachCommentFile" />
+    <EntitySet Name="AttachResponseFiles" EntityType="EDMsModel.AttachResponseFile" />
+    <EntitySet Name="MaterialRequisitionCheckListDefines" EntityType="EDMsModel.MaterialRequisitionCheckListDefine" />
+    <EntitySet Name="NumberManagements" EntityType="EDMsModel.NumberManagement" />
+    <EntitySet Name="PriorityLevels" EntityType="EDMsModel.PriorityLevel" />
+    <EntitySet Name="MRTypes" EntityType="EDMsModel.MRType" />
+    <EntitySet Name="AMOSExes" EntityType="EDMsModel.AMOSEx" />
+    <EntitySet Name="Workflows" EntityType="EDMsModel.Workflow" />
+    <EntitySet Name="WorkflowDetails" EntityType="EDMsModel.WorkflowDetail" />
+    <EntitySet Name="WorkflowSteps" EntityType="EDMsModel.WorkflowStep" />
+    <EntitySet Name="Titles" EntityType="EDMsModel.Title" />
+    <EntitySet Name="MaterialRequisitions" EntityType="EDMsModel.MaterialRequisition" />
+    <EntitySet Name="WorkRequests" EntityType="EDMsModel.WorkRequest" />
+    <EntitySet Name="MaterialRequisitionAttachFiles" EntityType="EDMsModel.MaterialRequisitionAttachFile" />
+    <EntitySet Name="MaterialRequisitionCheckListDetails" EntityType="EDMsModel.MaterialRequisitionCheckListDetail" />
+    <EntitySet Name="MaterialRequisitionComments" EntityType="EDMsModel.MaterialRequisitionComment" />
+    <EntitySet Name="MaterialRequisitionDetails" EntityType="EDMsModel.MaterialRequisitionDetail" />
+    <EntitySet Name="WorkRequestAttachFiles" EntityType="EDMsModel.WorkRequestAttachFile" />
+    <EntitySet Name="WorkRequestComments" EntityType="EDMsModel.WorkRequestComment" />
+    <EntitySet Name="ObjectAssignedWorkflows" EntityType="EDMsModel.ObjectAssignedWorkflow" />
+    <EntitySet Name="ObjectAssignedUsers" EntityType="EDMsModel.ObjectAssignedUser" />
+    <EntitySet Name="WaitingSyncDatas" EntityType="EDMsModel.WaitingSyncData" />
+    <EntitySet Name="TrackingBreakdownReportAttachFiles" EntityType="EDMsModel.TrackingBreakdownReportAttachFile" />
+    <EntitySet Name="TrackingECRAttachFiles" EntityType="EDMsModel.TrackingECRAttachFile" />
+    <EntitySet Name="TrackingMOCAttachFiles" EntityType="EDMsModel.TrackingMOCAttachFile" />
+    <EntitySet Name="TrackingMorningCallAttachFiles" EntityType="EDMsModel.TrackingMorningCallAttachFile" />
+    <EntitySet Name="TrackingProcedureAttachFiles" EntityType="EDMsModel.TrackingProcedureAttachFile" />
+    <EntitySet Name="TrackingPunchAttachFiles" EntityType="EDMsModel.TrackingPunchAttachFile" />
+    <EntitySet Name="TrackingSailAttachFiles" EntityType="EDMsModel.TrackingSailAttachFile" />
+    <EntitySet Name="TrackingShutdownReportAttachFiles" EntityType="EDMsModel.TrackingShutdownReportAttachFile" />
+    <EntitySet Name="TrackingWCRAttachFiles" EntityType="EDMsModel.TrackingWCRAttachFile" />
+    <EntitySet Name="TrackingECRs" EntityType="EDMsModel.TrackingECR" />
+    <EntitySet Name="TrackingMOCs" EntityType="EDMsModel.TrackingMOC" />
+    <EntitySet Name="TrackingWCRs" EntityType="EDMsModel.TrackingWCR" />
+    <EntitySet Name="TrackingGeneralWorkingAttachFiles" EntityType="EDMsModel.TrackingGeneralWorkingAttachFile" />
+    <EntitySet Name="TrackingGeneralWorkings" EntityType="EDMsModel.TrackingGeneralWorking" />
+    <EntitySet Name="ExportSchedules" EntityType="EDMsModel.ExportSchedule" />
+    <EntitySet Name="ImportSchedules" EntityType="EDMsModel.ImportSchedule" />
+    <EntitySet Name="IntergrateParamConfigs" EntityType="EDMsModel.IntergrateParamConfig" />
+    <EntitySet Name="ExportDataChangeHistories" EntityType="EDMsModel.ExportDataChangeHistory" />
+    <EntitySet Name="ImportDataChangeHistories" EntityType="EDMsModel.ImportDataChangeHistory" />
+    <EntitySet Name="ImportEmailDownloadeds" EntityType="EDMsModel.ImportEmailDownloaded" />
+    <EntitySet Name="TrackingMorningCalls" EntityType="EDMsModel.TrackingMorningCall" />
+    <EntitySet Name="TrackingBreakdownReports" EntityType="EDMsModel.TrackingBreakdownReport" />
+    <EntitySet Name="TrackingShutdownReports" EntityType="EDMsModel.TrackingShutdownReport" />
+    <EntitySet Name="TrackingProcedures" EntityType="EDMsModel.TrackingProcedure" />
+    <EntitySet Name="TrackingPunches" EntityType="EDMsModel.TrackingPunch" />
+    <EntitySet Name="TrackingSails" EntityType="EDMsModel.TrackingSail" />
+    <EntitySet Name="SharePermissions" EntityType="EDMsModel.SharePermission" />
+    <EntitySet Name="TrackingBreakdownReportComments" EntityType="EDMsModel.TrackingBreakdownReportComment" />
+    <EntitySet Name="TrackingECRComments" EntityType="EDMsModel.TrackingECRComment" />
+    <EntitySet Name="TrackingMOCComments" EntityType="EDMsModel.TrackingMOCComment" />
+    <EntitySet Name="TrackingShutdownReportComments" EntityType="EDMsModel.TrackingShutdownReportComment" />
+    <EntitySet Name="HolidayConfigs" EntityType="EDMsModel.HolidayConfig" />
+    <EntitySet Name="TrackingProductionMeetings" EntityType="EDMsModel.TrackingProductionMeeting" />
+    <EntitySet Name="TrackingProductionMeetingAttachFiles" EntityType="EDMsModel.TrackingProductionMeetingAttachFile" />
+  </EntityContainer>
+  <EntityType Name="ResourceGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="MenuId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Folder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DirName" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryID" />
+    <Property Type="Int32" Name="ParentID" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Revision">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="0" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="0" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsFirst" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Attention">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FullName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ToListID" />
+    <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="ToList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FullName" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Precision="3" />
+    <Property Type="String" Name="SSN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sex" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarialStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IdentityCard" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Occupation" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Generation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HomePhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkPhone" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellPhone" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MailLabel" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CssClass" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ResourceGroupId" />
+    <Property Type="Boolean" Name="IsResource" />
+    <Property Type="DateTime" Name="LastUpdate" Precision="3" />
+    <Property Type="Int32" Name="UpdateBy" />
+    <Property Type="Boolean" Name="IsFulltime" />
+    <Property Type="Double" Name="RemainDayLeaveOf" />
+  </EntityType>
+  <EntityType Name="GroupDataPermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CategoryIdList" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FolderIdList" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="0" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="0" />
+  </EntityType>
+  <EntityType Name="NotificationRule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DisciplineID" />
+    <Property Type="String" Name="ReceiverList" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReceiverListId" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReceiveGroup" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReceiveGroupId" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="0" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="0" />
+  </EntityType>
+  <EntityType Name="Discipline">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="Complete" Type="Double" />
+    <Property Name="IsAutoCalculate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="ReceivedFrom">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PercentCompleteDefault" Type="Double" />
+    <Property Name="FinalCodeID" Type="Int32" />
+    <Property Name="FinalCodeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="Url" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Priority" />
+    <Property Type="Int32" Name="Type" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="String" Name="Icon" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DocumentNumber" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RevisionID" />
+    <Property Type="String" Name="RevisionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DocumentTypeID" />
+    <Property Type="Int32" Name="StatusID" />
+    <Property Type="Int32" Name="DisciplineID" />
+    <Property Type="Int32" Name="ReceivedFromID" />
+    <Property Type="DateTime" Name="ReceivedDate" Precision="0" />
+    <Property Type="String" Name="TransmittalNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LanguageID" />
+    <Property Type="String" Name="Well" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KeyWords" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsLeaf" />
+    <Property Type="Int32" Name="DocIndex" />
+    <Property Type="Int32" Name="ParentID" />
+    <Property Type="Int32" Name="FolderID" />
+    <Property Type="String" Name="DirName" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FilePath" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RevisionFilePath" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FileExtension" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FileExtensionIcon" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RevisionFileName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FileNameOriginal" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDelete" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="CategoryID" />
+  </EntityType>
+  <EntityType Name="Originator">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Plant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="TagType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="DocumentMainType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="SystemDoc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="DocumentType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="PlantId" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Int32" Name="ProjectId" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="ProjectId" />
+    <Property Type="String" Name="RoleId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Field">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="BlockId" />
+    <Property Type="String" Name="RoleId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Platform">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Well">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="PlatformId" />
+    <Property Type="String" Name="RoleId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" Precision="3" />
+    <Property Type="DateTime" Name="EndDate" Precision="3" />
+    <Property Type="DateTime" Name="StartDateTesting" Precision="3" />
+    <Property Type="DateTime" Name="EndDateTesting" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="OptionalType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAdmin" />
+    <Property Type="Boolean" Name="IsUpdate" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="TypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="0" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="0" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="DocPropertiesView">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="String" Name="PropertyIndex" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DocumentId" />
+    <Property Type="String" Name="Filename" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Extension" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FilePath" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExtensionIcon" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDefault" />
+    <Property Type="Double" Name="FileSize" />
+  </EntityType>
+  <EntityType Name="OptionalTypePropertiesView">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OptionalTypeId" />
+    <Property Type="String" Name="PropertyIndex" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DocumentNew">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RevId" />
+    <Property Type="String" Name="RevName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VendorName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DrawingNumber" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="PlantId" />
+    <Property Type="String" Name="PlantName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SystemId" />
+    <Property Type="String" Name="SystemName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DisciplineId" />
+    <Property Type="String" Name="DisciplineName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DocumentTypeId" />
+    <Property Type="String" Name="DocumentTypeName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TagTypeId" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TagTypeName" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProjectId" />
+    <Property Type="String" Name="ProjectName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="BlockId" />
+    <Property Type="String" Name="BlockName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FieldId" />
+    <Property Type="String" Name="FieldName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PlatformId" />
+    <Property Type="String" Name="PlatformName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WellId" />
+    <Property Type="String" Name="WellName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RIGId" />
+    <Property Type="String" Name="RIGName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KindOfRepair" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" Precision="0" />
+    <Property Type="DateTime" Name="EndDate" Precision="0" />
+    <Property Type="Int32" Name="NumberOfWork" />
+    <Property Type="String" Name="TagNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TagDes" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Manufacturers" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SerialNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ModelNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AssetNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TableOfContents" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PublishDate" Precision="0" />
+    <Property Type="Int32" Name="FromId" />
+    <Property Type="String" Name="FromName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ToId" />
+    <Property Type="String" Name="ToName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Signer" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Other" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="IsPublish" />
+    <Property Type="Boolean" Name="IsPrivate" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Boolean" Name="IsLeaf" />
+    <Property Type="Int32" Name="DocIndex" />
+    <Property Type="Int32" Name="CategoryId" />
+  </EntityType>
+  <EntityType Name="OptionalTypeDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OptionalTypeId" />
+    <Property Type="String" Name="CategoryId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="RoleId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Boolean" Name="IsRoot" />
+    <Property Type="String" Name="Serial" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TechnicalSpec" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" Precision="0" />
+    <Property Type="DateTime" Name="EndDate" Precision="0" />
+    <Property Type="Int32" Name="SystemId" />
+    <Property Type="String" Name="SystemName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DutyCapacity" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DesTemp" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DesPress" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DiffPres" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Vendor" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IncomingTransmittal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransNumber" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProjectId" />
+    <Property Type="String" Name="ProjectName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FromId" />
+    <Property Type="String" Name="FromName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ToId" />
+    <Property Type="String" Name="ToName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AttentionId" />
+    <Property Type="String" Name="AttentionName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ReceivedDate" Precision="0" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="String" Name="AttachFilePath" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AttachFileName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ScopeProject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" Precision="0" />
+    <Property Type="DateTime" Name="EndDate" Precision="0" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="FrequencyForProgressChart" Type="Int32" />
+    <Property Name="IsAutoCalculate" Type="Boolean" />
+    <Property Name="DocsFolderPath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TransFolderPath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DCId" Type="Int32" />
+    <Property Name="DCName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ReviewDuration" Type="Int32" />
+    <Property Name="IsAutoSendNotification" Type="Boolean" />
+    <Property Name="IsAutoDistribute" Type="Boolean" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EmailAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="EmailName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="EmailPwd" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MailServer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Port" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UseDefaultCredentials" Type="Boolean" />
+    <Property Name="EnableSsl" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProjectId" />
+    <Property Type="String" Name="ProjectName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Complete" Nullable="false" />
+    <Property Type="Double" Name="Weight" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatdDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="AttachFilesPackage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentPackageID" Type="Int32" />
+    <Property Name="FileName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="AttachType" Type="Int32" />
+    <Property Name="AttachTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CmtResFrom" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CmtResTo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FilePathEncrypt" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="Complete" Type="Double" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="Int32" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Employee_Ref" Type="Int32" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="ResourceId" Type="Int32" />
+    <Property Name="CanApprove" Type="Boolean" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LasrUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="HashCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Position" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="CellPhone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="TitleId" Type="Int32" />
+    <Property Name="TitleName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CommentGroupId" Type="Int32" />
+    <Property Name="CommentGroupName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RoleName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="LocationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AttachDocToTransmittal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransmittalId" Type="Int32" />
+    <Property Name="DocumentId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserDataPermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="FolderId" Type="Int32" />
+    <Property Name="RoleId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="IsFullPermission" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TemplateManagement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TransFolderId" Type="Int32" />
+    <Property Name="FilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Transmittal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IssuseDate" Type="DateTime" Precision="3" />
+    <Property Name="TransmittalNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ContractName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ToList" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="AttentionList" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CCList" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ReceivedDate" Type="DateTime" Precision="0" />
+    <Property Name="GeneratePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsGenerate" Type="Boolean" />
+    <Property Name="DocList" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="ReasonForIssue" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FromList" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ToId" Type="Int32" />
+    <Property Name="FromId" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="TransType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ProcessActual">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="WorkgroupId" Type="Int32" />
+    <Property Name="Actual" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ProcessPlaned">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="WorkgroupId" Type="Int32" />
+    <Property Name="Planed" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PermissionWorkgroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="WorkgroupId" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsFullPermission" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="TypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Code">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsFinal" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ContractorType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Contractor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="TypeID" Type="Int32" />
+    <Property Name="TypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ReferenceID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PermissionDiscipline">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="DisciplineID" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsFullPermission" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DocumentPackage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IndexNumber" Type="Int32" />
+    <Property Name="DocNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DocTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="WorkgroupId" Type="Int32" />
+    <Property Name="WorkgroupName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DeparmentId" Type="Int32" />
+    <Property Name="DeparmentName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="PlanedDate" Type="DateTime" Precision="0" />
+    <Property Name="RevisionId" Type="Int32" />
+    <Property Name="RevisionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RevisionPlanedDate" Type="DateTime" Precision="0" />
+    <Property Name="RevisionActualDate" Type="DateTime" Precision="0" />
+    <Property Name="RevisionCommentCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="RevisionReceiveTransNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Complete" Type="Double" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="OutgoingTransNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OutgoingTransDate" Type="DateTime" Precision="0" />
+    <Property Name="IncomingTransNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IncomingTransDate" Type="DateTime" Precision="0" />
+    <Property Name="ICAReviewOutTransNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ICAReviewReceivedDate" Type="DateTime" Precision="0" />
+    <Property Name="ICAReviewCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentTypeId" Type="Int32" />
+    <Property Name="DocumentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DisciplineId" Type="Int32" />
+    <Property Name="DisciplineName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PackageId" Type="Int32" />
+    <Property Name="PackageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="IsEMDR" Type="Boolean" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="PlatformId" Type="Int32" />
+    <Property Name="PlatformName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsCriticalDoc" Type="Boolean" />
+    <Property Name="IsPriorityDoc" Type="Boolean" />
+    <Property Name="IsVendorDoc" Type="Boolean" />
+    <Property Name="ReferenceFromID" Type="Int32" />
+    <Property Name="ReferenceFromName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StatusID" Type="Int32" />
+    <Property Name="StatusName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FinalCodeID" Type="Int32" />
+    <Property Name="FinalCodeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CompleteForProject" Type="Double" />
+    <Property Name="RevisionPlanReceiveCommentDate" Type="DateTime" Precision="3" />
+    <Property Name="RevisionActualReceiveCommentDate" Type="DateTime" Precision="3" />
+    <Property Name="DocTypeFullName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DisciplineFullName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectFullName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="SequencetialNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DrawingSheetNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorId" Type="Int32" />
+    <Property Name="OriginatorName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorFullName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FinalIssueTransNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsInternalDocument" Type="Boolean" />
+    <Property Name="FinalIssuePlanDate" Type="DateTime" Precision="0" />
+    <Property Name="FinalIssueActualDate" Type="DateTime" Precision="0" />
+    <Property Name="FirstIssuePlanDate" Type="DateTime" Precision="0" />
+    <Property Name="FirstIssueActualDate" Type="DateTime" Precision="0" />
+    <Property Name="FirstIssueTransNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StatusFullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProcessRecoveryPlaned">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="WorkgroupId" Type="Int32" />
+    <Property Name="Planed" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="IndexNo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CommentResponse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentID" Type="Int32" />
+    <Property Name="ManageSendDate" Type="DateTime" Precision="0" />
+    <Property Name="ManageSendTransID" Type="Int32" />
+    <Property Name="ManageSendTransNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PlanReceiveDate" Type="DateTime" Precision="0" />
+    <Property Name="ActualReceiveDate" Type="DateTime" Precision="0" />
+    <Property Name="FromContractorID" Type="Int32" />
+    <Property Name="FromContractorName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FromContractorTypeID" Type="Int32" />
+    <Property Name="ToContractorID" Type="Int32" />
+    <Property Name="ToContractorName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveCodeID" Type="Int32" />
+    <Property Name="ReceiveCodeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveTransID" Type="Int32" />
+    <Property Name="ReceiveTransNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CommentSheetID" Type="Int32" />
+    <Property Name="CommentSheetNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="PlanSendCMSToDesign" Type="DateTime" Precision="0" />
+    <Property Name="ActualSendCMSToDesign" Type="DateTime" Precision="0" />
+    <Property Name="SendCMSToDesignTransID" Type="Int32" />
+    <Property Name="SendCMSToDesignTransName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResPlanDesignToManage" Type="DateTime" Precision="0" />
+    <Property Name="ResActualDesignToManage" Type="DateTime" Precision="0" />
+    <Property Name="ResDesignToManageTransID" Type="Int32" />
+    <Property Name="ResDesignToManageTransName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResPlanManageToReview" Type="DateTime" Precision="0" />
+    <Property Name="ResActualManageToReview" Type="DateTime" Precision="0" />
+    <Property Name="ResManageToReviewTransID" Type="Int32" />
+    <Property Name="ResManageToReviewTransName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResPlanReviewToManage" Type="DateTime" Precision="0" />
+    <Property Name="ResActualReviewToManage" Type="DateTime" Precision="0" />
+    <Property Name="ResReviewToManageTransID" Type="Int32" />
+    <Property Name="ResReviewToManageTransName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResPlanManageToDesign" Type="DateTime" Precision="0" />
+    <Property Name="ResActualManageToDesign" Type="DateTime" Precision="0" />
+    <Property Name="ResManageToDesignTransID" Type="Int32" />
+    <Property Name="ResManageToDesignTransName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProcurementRequirementID" Type="Int32" />
+    <Property Name="ProcurementRequirementNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ContractorSelectedID" Type="Int32" />
+    <Property Name="ContractorSelectedName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ContractContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EffectedDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="DeliveryStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContractTypeID" Type="Int32" />
+    <Property Name="ContractTypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ContractStatusID" Type="Int32" />
+    <Property Name="ContractStausName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ExchangeRate" Type="Double" />
+    <Property Name="ContractValueVND" Type="Double" />
+    <Property Name="ContractValueUSD" Type="Double" />
+    <Property Name="ArisingTotalValue" Type="Double" />
+    <Property Name="ContractTotalValue" Type="Double" />
+    <Property Name="PaymentedValueVND" Type="Double" />
+    <Property Name="PaymentedValueUSD" Type="Double" />
+    <Property Name="RemainPaymentVND" Type="Double" />
+    <Property Name="RemainPaymentUSD" Type="Double" />
+    <Property Name="DeferenceWithPRValue" Type="Double" />
+    <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="PaymentValueUSDExchange" Type="Double" />
+    <Property Name="RemainPaymentUSDExchange" Type="Double" />
+    <Property Name="Complete" Type="Double" />
+    <Property Name="Weight" Type="Double" />
+  </EntityType>
+  <EntityType Name="CostContractProject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="FrequencyForProgressChart" Type="Int32" />
+    <Property Name="IsAutoCalculate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractID" Type="Int32" />
+    <Property Name="ContractNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Quality" Type="Double" />
+    <Property Name="DeliveryPlan" Type="DateTime" Precision="0" />
+    <Property Name="DeliveryActual" Type="DateTime" Precision="0" />
+    <Property Name="MaterialTypeID" Type="Int32" />
+    <Property Name="MaterialTypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="Complete" Type="Double" />
+    <Property Name="CompleteContract" Type="Double" />
+    <Property Name="UnitID" Type="Int32" />
+    <Property Name="UnitName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeliveryStatus" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="PRID" Type="Int32" />
+    <Property Name="PRNumber" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProcurementRequirement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MainOwnerID" Type="Int32" />
+    <Property Name="MainOwnerName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProcurementPlanValue" Type="Double" />
+    <Property Name="ProcurementRequirementValue" Type="Double" />
+    <Property Name="USDExchangeValue" Type="Double" />
+    <Property Name="ContractorChoiceTypeID" Type="Int32" />
+    <Property Name="ContractorChoiceTypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TypeID" Type="Int32" />
+    <Property Name="TypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PermissionContract">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="ProcurementRequirementID" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ContractID" Type="Int32" />
+    <Property Name="IsFullPermission" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PermissionProcurementRequirement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="ProcurementRequirementID" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsFullPermission" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsShared" Type="Boolean" />
+    <Property Name="IsViewOnly" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ProcurementRequirementType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="RusName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CostContractContractor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ContractType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="RusName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AttachContractFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractId" Type="Int32" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AttachPRFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PRId" Type="Int32" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PaymentHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractID" Type="Int32" />
+    <Property Name="ContractName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ActualValueVND" Type="Double" />
+    <Property Name="ActualValueUSD" Type="Double" />
+    <Property Name="ActualDate" Type="DateTime" Precision="0" />
+    <Property Name="PlanValueVND" Type="Double" />
+    <Property Name="PlanValueUSD" Type="Double" />
+    <Property Name="PlanDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EquipmentIdentifierCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TypicalExample" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Classification" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MediumCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Classification" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PipingClassCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Classification" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="DocumentNumbering">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Format" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DocumentSequenceManagement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DisciplineId" Type="Int32" />
+    <Property Name="DocumentTypeId" Type="Int32" />
+    <Property Name="CurrentSequence" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DistributionMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DistributionMatrixDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DistributionMatrixId" Type="Int32" />
+    <Property Name="DistributionMatrixName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DisciplineId" Type="Int32" />
+    <Property Name="DisciplineName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DocTypeId" Type="Int32" />
+    <Property Name="DocTypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ActionTypeId" Type="Int32" />
+    <Property Name="ActionTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ActionTypeFullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="UserName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DisciplineFullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DocTypeFullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProjectTemplateManagement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ToDoList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocId" Type="Int32" />
+    <Property Name="DocNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DocRevName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DocTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DocReceivedDate" Type="DateTime" Precision="3" />
+    <Property Name="DocReceivedTransNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DocDisciplineId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="UserName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ActionName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DeadlineDate" Type="DateTime" Precision="3" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="TaskTypeId" Type="Int32" />
+    <Property Name="TaksTypeName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ActualDate" Type="DateTime" Precision="3" />
+    <Property Name="DocProjectId" Type="Int32" />
+    <Property Name="DocDisciplineName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AttachCommentFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentId" Type="Int32" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AttachResponseFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentId" Type="Int32" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MaterialRequisitionCheckListDefine">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ParentId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="NumberManagement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NextCount" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PriorityLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdateByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="MRType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AMOSEx">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SFICode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ReqROBMin" Type="Double" />
+    <Property Name="ReqROBMax" Type="Double" />
+    <Property Name="Units" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MakerName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ROB" Type="Double" />
+  </EntityType>
+  <EntityType Name="Workflow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ObjectTypeId" Type="Int32" />
+    <Property Name="ObjectTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkflowDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkflowID" Type="Int32" />
+    <Property Name="WorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepID" Type="Int32" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StepDefinitionID" Type="Int32" />
+    <Property Name="StepDefinitionName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Duration" Type="Double" />
+    <Property Name="AssignUserIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InformationOnlyUserIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AssignRoleIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InformationOnlyRoleIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DistributionMatrixIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NextWorkflowStepID" Type="Int32" />
+    <Property Name="NextWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RejectWorkflowStepID" Type="Int32" />
+    <Property Name="RejectWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Recipients" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsFirst" Type="Boolean" />
+    <Property Name="CanReject" Type="Boolean" />
+    <Property Name="AssignTitleIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsOnlyWorkingDay" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WorkflowStep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="WorkflowID" Type="Int32" />
+    <Property Name="WorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsFirst" Type="Boolean" />
+    <Property Name="CanReject" Type="Boolean" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="LocationName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="LocationName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MaterialRequisition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AMOSWorkOrder" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DeparmentId" Type="Int32" />
+    <Property Name="DepartmentName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Justification" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MRTypeIds" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MRTypeName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DateRequire" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PriorityId" Type="Int32" />
+    <Property Name="PriorityName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorId" Type="Int32" />
+    <Property Name="OriginatorName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorDate" Type="DateTime" Precision="3" />
+    <Property Name="StoreManId" Type="Int32" />
+    <Property Name="StoreManName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="StoreManDate" Type="DateTime" Precision="3" />
+    <Property Name="SupervisorId" Type="Int32" />
+    <Property Name="SupervisorName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SupervisorDate" Type="DateTime" Precision="3" />
+    <Property Name="OIMId" Type="Int32" />
+    <Property Name="OIMName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OIMDate" Type="DateTime" Precision="3" />
+    <Property Name="Comment_PurchasingGroup" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Comment_ReceivedMRFromFacility" Type="DateTime" Precision="3" />
+    <Property Name="Comment_MRProcessingCompleted" Type="DateTime" Precision="3" />
+    <Property Name="Comment_ForwardMRToTechDept" Type="DateTime" Precision="3" />
+    <Property Name="Comment_ReceivedMRFromTech" Type="DateTime" Precision="3" />
+    <Property Name="Comment_ForwardMRToPurchasingGroup" Type="DateTime" Precision="3" />
+    <Property Name="Comment_OperationSign" Type="Int32" />
+    <Property Name="Comment_OperationSignName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment_OperationSignDate" Type="DateTime" Precision="3" />
+    <Property Name="Comment_TechSign" Type="Int32" />
+    <Property Name="Comment_TechSignName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment_TechSignDate" Type="DateTime" Precision="3" />
+    <Property Name="Comment_DirectorSign" Type="Int32" />
+    <Property Name="Comment_DirectorSignName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment_DirectorSignDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedByDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedByDate" Type="DateTime" Precision="3" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WorkRequest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="WRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="WRTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorId" Type="Int32" />
+    <Property Name="OriginatorName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OriginatorJobTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RaisedDate" Type="DateTime" Precision="3" />
+    <Property Name="RequriedDate" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ScopeOfService" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PriotiyLevelId" Type="Int32" />
+    <Property Name="PriorityLevelName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OIMReviewId" Type="Int32" />
+    <Property Name="OIMReviewName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OIMReviewDate" Type="DateTime" Precision="3" />
+    <Property Name="OperationManagerReviewId" Type="Int32" />
+    <Property Name="OperationManagerReviewName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OperationManagerReviewDate" Type="DateTime" Precision="3" />
+    <Property Name="TechnicalDeptReviewId" Type="Int32" />
+    <Property Name="TechnicalDeptReviewName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TechnicalDeptReviewDate" Type="DateTime" Precision="3" />
+    <Property Name="DirectorReviewId" Type="Int32" />
+    <Property Name="DirectorReviewName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorReviewDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="DepartmentName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MaterialRequisitionAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MRId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="MaterialRequisitionCheckListDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MRId" Type="Guid" />
+    <Property Name="MRCheckListId" Type="Int32" />
+    <Property Name="IsYes" Type="Boolean" />
+    <Property Name="IsNo" Type="Boolean" />
+    <Property Name="IsNA" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MaterialRequisitionComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+    <Property Name="MRId" Type="Guid" />
+  </EntityType>
+  <EntityType Name="MaterialRequisitionDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MRId" Type="Guid" />
+    <Property Name="MRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReqROBMin" Type="Double" />
+    <Property Name="ReqROBMax" Type="Double" />
+    <Property Name="ROB" Type="Double" />
+    <Property Name="QtyReq" Type="Double" />
+    <Property Name="QtyRemarkUseForJob" Type="Double" />
+    <Property Name="QtyRemarkForSpare" Type="Double" />
+    <Property Name="Units" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SFICode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MakerName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CertificateRequired" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Alternative" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NormalUsingFrequency" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkRequestAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="WRId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkRequestComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="WRId" Type="Guid" />
+    <Property Name="WRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ObjectAssignedWorkflow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ObjectID" Type="Guid" />
+    <Property Name="ObjectNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="WorkflowID" Type="Int32" />
+    <Property Name="WorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepID" Type="Int32" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NextWorkflowStepID" Type="Int32" />
+    <Property Name="NextWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RejectWorkflowStepID" Type="Int32" />
+    <Property Name="RejectWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="IsReject" Type="Boolean" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="AssignedBy" Type="Int32" />
+    <Property Name="CanReject" Type="Boolean" />
+    <Property Name="ObjectProject" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RejectFromId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ObjectAssignedUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ObjectAssignedWorkflowID" Type="Guid" />
+    <Property Name="ObjectID" Type="Guid" />
+    <Property Name="ObjectNumber" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="ReceivedDate" Type="DateTime" Precision="3" />
+    <Property Name="PlanCompleteDate" Type="DateTime" Precision="0" />
+    <Property Name="IsOverDue" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="AssignedBy" Type="Int32" />
+    <Property Name="CurrentWorkflowStepId" Type="Int32" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="WorkflowId" Type="Int32" />
+    <Property Name="WorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsReject" Type="Boolean" />
+    <Property Name="CanReject" Type="Boolean" />
+    <Property Name="ObjectProject" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RejectFromId" Type="Int32" />
+    <Property Name="IsOnshoreComment" Type="Boolean" />
+    <Property Name="IsDistributeOnshore" Type="Boolean" />
+    <Property Name="RefId" Type="Int32" />
+    <Property Name="CommentContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsFinal" Type="Boolean" />
+    <Property Name="ActualDate" Type="DateTime" Precision="3" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WaitingSyncData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActionTypeID" Type="Int32" />
+    <Property Name="ActionTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectID" Type="Guid" />
+    <Property Name="ObjectID2" Type="Int32" />
+    <Property Name="ObjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="EffectDate" Type="DateTime" Precision="3" />
+    <Property Name="IsSynced" Type="Boolean" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="UserFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingBreakdownReportAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="BreakdownReportId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingECRAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ECRId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingMOCAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MOCId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingMorningCallAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MorningCallId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingProcedureAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ProcedureId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingPunchAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="PunchId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingSailAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SailId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingShutdownReportAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ShutdownReportId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingWCRAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="WCRId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingECR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateRaised" Type="DateTime" Precision="3" />
+    <Property Name="Section1Id" Type="Int32" />
+    <Property Name="Section1Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Section2Id" Type="Int32" />
+    <Property Name="Section2Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Section3Id" Type="Int32" />
+    <Property Name="Section3Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Section4Id" Type="Int32" />
+    <Property Name="Section4Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Section5Id" Type="Int32" />
+    <Property Name="Section5Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApSection3Id" Type="Int32" />
+    <Property Name="ApSection3Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApRequirementId" Type="Int32" />
+    <Property Name="ApRequirementName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExecutionStatus" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PersonInCharge" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="StatusName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PersonInChargeIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PriorityId" Type="Int32" />
+    <Property Name="PriorityName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackingMOC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SystemName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionOfChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateIssued" Type="DateTime" Precision="3" />
+    <Property Name="ReasonOfChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InitRisk" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InitRiskLvlId" Type="Int32" />
+    <Property Name="InitRiskLvlName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MigrationAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MigrationRiskLvlId" Type="Int32" />
+    <Property Name="MigrationRiskLvlName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DateAccepted" Type="DateTime" Precision="3" />
+    <Property Name="TechAuthority" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="StatusName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClosedClarification" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PICId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackingWCR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OffshoreUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Priority" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OffshoreComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ShipyardUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OpenDate" Type="DateTime" Precision="3" />
+    <Property Name="CloseDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingGeneralWorkingAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="GeneralWorkingId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingGeneralWorking">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="WorkCategoryId" Type="Int32" />
+    <Property Name="WorkCategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WorkContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AssignUserIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AssignUserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BackupUserIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BackupUserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VerifyUserIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VerifyUserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="StartDate1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Deadline" Type="DateTime" Precision="0" />
+    <Property Name="Deadline1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ExportSchedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExportTime" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CurrentDay" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ImportSchedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImportTime" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CurrentDay" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="IntergrateParamConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amos_Dns" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Amos_DataFile" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Amos_Uid" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Amos_Pwd" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_ExportFolder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_ImportFolder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_EmailSendExport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_CurrentLocationId" Type="Int32" />
+    <Property Name="Sync_DefaultEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_EmailName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_EmailPwd" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_MailServer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_Port" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_EnableSsl" Type="Boolean" />
+    <Property Name="Sync_UseDefaultCredentials" Type="Boolean" />
+    <Property Name="Sync_ImportConnStr" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_PopServer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sync_PopPort" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsAutoGetSend" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ExportDataChangeHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ErrorMess" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SendMailComplete" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ImportDataChangeHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ErrorMess" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ImportEmailDownloaded">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessUid" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingMorningCall">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DateRaised" Type="DateTime" Precision="3" />
+    <Property Name="EquipmentName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IssueDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InitRiskAssessment" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="InitRiskLvlId" Type="Int32" />
+    <Property Name="InitRiskLvlName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ActionPlanDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ActionPlanRiskLvlId" Type="Int32" />
+    <Property Name="ActionPlanRiskLvlName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PICId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Deadline" Type="DateTime" Precision="3" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DeadlineHistory" Type="DateTime" Precision="3" />
+    <Property Name="RelativeDoc" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="StatusName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OffshoreComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+  </EntityType>
+  <EntityType Name="TrackingBreakdownReport">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="BrekdownDate" Type="DateTime" Precision="3" />
+    <Property Name="BreakdownSystemName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TagNo" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="SystemName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Priority" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CauseGroup" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FailureDuplication" Type="Double" />
+    <Property Name="RootCause" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProposedAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Lesson" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UnplannedWoNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICDeadline" Type="DateTime" Precision="3" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICStatus" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentStatus" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MRWRItem" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackingShutdownReport">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="DateOfShutdown" Type="DateTime" Precision="3" />
+    <Property Name="TimeOfShutdown" Type="DateTime" Precision="3" />
+    <Property Name="DateResume" Type="DateTime" Precision="3" />
+    <Property Name="TimeResume" Type="DateTime" Precision="3" />
+    <Property Name="DownTime" Type="Double" />
+    <Property Name="EstimatedProduction" Type="Double" />
+    <Property Name="CauseShutdown" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CauseClarificationProcess" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CauseClarificationPowerloss" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CauseClarificationFireGas" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RootCause" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AreaConcern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WayForward" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Deadline" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Lesson" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsWFComplete" Type="Boolean" />
+    <Property Name="IsInWFProcess" Type="Boolean" />
+    <Property Name="IsCompleteFinal" Type="Boolean" />
+    <Property Name="CurrentWorkflowName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentWorkflowStepName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentAssignUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FinalAssignDeptId" Type="Int32" />
+    <Property Name="FinalAssignDeptName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsCancel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackingProcedure">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SystemName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="OldCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NewCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ProcedureName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Checker" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TargerStage" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="CompleteDate" Type="DateTime" Precision="3" />
+    <Property Name="TotalPage" Type="Int32" />
+    <Property Name="DifficultLvl" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeManday" Type="Double" />
+    <Property Name="OffshoreManDay" Type="Double" />
+    <Property Name="CreateType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PercentComplete" Type="Double" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Deadline" Type="DateTime" Precision="3" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedInAMOS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LevelName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CheckerIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingPunch">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CatAB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DrawingNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SystemNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DateRaised" Type="DateTime" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RaisedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PPSApproval" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ShipOwnerApproval" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ShipOwnerAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialRequire" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PONo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TargetDate" Type="DateTime" Precision="3" />
+    <Property Name="Priority" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CloseOutDate" Type="DateTime" Precision="3" />
+    <Property Name="Deadline" Type="DateTime" Precision="3" />
+    <Property Name="DeadlineReasonChange" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WayForward" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VerifyBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Impact" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingSail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="DateRaised" Type="DateTime" Precision="3" />
+    <Property Name="SourceId" Type="Int32" />
+    <Property Name="SourceName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NameObserver" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProposedAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Priority" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TargetClose" Type="DateTime" Precision="3" />
+    <Property Name="ActionTakeClose" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClosedDate" Type="DateTime" Precision="3" />
+    <Property Name="HOCTrackingNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MSRStatus" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SharePermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="FromUserId" Type="Int32" />
+    <Property Name="FromUserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToUserId" Type="Int32" />
+    <Property Name="ToUserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectList" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FromUserEmail" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ToUserEmail" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingBreakdownReportComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="BreakdownReportId" Type="Guid" />
+    <Property Name="BreakdownReportNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingECRComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ECRId" Type="Guid" />
+    <Property Name="ECRNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingMOCComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MOCId" Type="Guid" />
+    <Property Name="MOCNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingShutdownReportComment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ShutdownReportId" Type="Guid" />
+    <Property Name="ShutdownReportNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTypeId" Type="Int32" />
+    <Property Name="CommentTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentBy" Type="Int32" />
+    <Property Name="CommentByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CommentDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="HolidayConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FromDate" Type="DateTime" Precision="3" />
+    <Property Name="ToDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TrackingProductionMeeting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BODCommand" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MainProblem" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DeparmentName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ManagerIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ManagerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICIds" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PICName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Deadline" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="StatusName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsLeaf" Type="Boolean" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="ParentId" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="WorkGroup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrackingProductionMeetingAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ProductionMeetingId" Type="Guid" />
+    <Property Name="Filename" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Extension" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ExtensionIcon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="FileSize" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

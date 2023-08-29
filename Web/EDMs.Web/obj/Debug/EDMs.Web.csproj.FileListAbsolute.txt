@@ -1,0 +1,164 @@
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+D:\Workspace\EDMS - DQRE\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll.config
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb
+D:\Workspace\EDMS - PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Aspose.Words.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\OfficeHelper.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\RandomKey.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb
+D:\Workspace\EDMS_PECC2\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csprojResolveAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll.licenses
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\itextsharp.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\OpenPop.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.Spreadsheet.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Core.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Flow.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Zip.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EnvDTE.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\stdole.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Newtonsoft.Json.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.Spreadsheet.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Web.UI.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Core.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Flow.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Telerik.Windows.Zip.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\bin\Microsoft.AnalysisServices.AdomdClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csproj.CoreCompileInputs.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Web.dll.config
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Web.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Web.pdb
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Aspose.Cells.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Business.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Data.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\FreeTextBox.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\itextsharp.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\OpenPop.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.Design.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.Spreadsheet.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.UI.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.UI.Skins.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Core.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Flow.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Zip.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EnvDTE.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Newtonsoft.Json.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\stdole.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Business.pdb
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Data.pdb
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\EDMs.Data.dll.config
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.Device.Detection.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.Spreadsheet.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Web.UI.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Core.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Flow.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\bin\Telerik.Windows.Zip.xml
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csproj.AssemblyReference.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll.licenses
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csproj.CoreCompileInputs.cache
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.csproj.CopyComplete
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.dll
+D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\obj\Debug\EDMs.Web.pdb

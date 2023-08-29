@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="iCADEventServer.Service.EmergencyEventServerService" CodeBehind="EmergencyEventServerService.svc.cs" %>

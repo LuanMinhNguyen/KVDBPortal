@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EDMsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="AA_MaterialRequest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OrganizationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrganizationName" Type="nvarchar" MaxLength="500" />
+    <Property Name="StoreCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreName" Type="nvarchar" MaxLength="500" />
+    <Property Name="RequestDate" Type="datetime" />
+    <Property Name="RequestBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="Note" Type="nvarchar" MaxLength="4000" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedById" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdatedById" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="SoTYT" Type="nvarchar" MaxLength="200" />
+    <Property Name="SoNguoiCachLyTaiNha" Type="nvarchar" MaxLength="200" />
+    <Property Name="SoNguoiCachLyTapTrung" Type="nvarchar" MaxLength="200" />
+    <Property Name="SoLayMauXN" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsGenEAMMR" Type="bit" />
+  </EntityType>
+  <EntityType Name="AA_MaterialRequestAttachFile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MaterialRequestID" Type="uniqueidentifier" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Extension" Type="nvarchar" MaxLength="30" />
+    <Property Name="ExtensionIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="500" />
+    <Property Name="FileSize" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedByName" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AA_MaterialRequestDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MaterialRequestID" Type="uniqueidentifier" />
+    <Property Name="Sequence" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="PartDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="PartUMO" Type="nvarchar" MaxLength="50" />
+    <Property Name="CurrentStock" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RequestQty" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ApprovedQty" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FromStoreCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="FromStoreName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ToStoreCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToStoreName" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedById" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdatedById" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AA_Menus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Url" Type="varchar" MaxLength="200" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="AA_Permissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="MenuId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AA_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="IsUpdate" Type="bit" />
+    <Property Name="TypeId" Type="int" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Color" Type="nvarchar" MaxLength="20" />
+    <Property Name="IsLimitedView" Type="bit" />
+    <Property Name="ContractorId" Type="int" />
+    <Property Name="ContractorName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsAllowDelete" Type="bit" />
+    <Property Name="IsInternal" Type="bit" />
+  </EntityType>
+  <EntityType Name="AA_Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Employee_Ref" Type="int" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="ResourceId" Type="int" />
+    <Property Name="CanApprove" Type="bit" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="LastUpdatedBy" Type="int" />
+    <Property Name="LasrUpdatedDate" Type="datetime" />
+    <Property Name="HashCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="Position" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nchar" MaxLength="20" />
+    <Property Name="CellPhone" Type="nchar" MaxLength="20" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="TitleId" Type="int" />
+    <Property Name="TitleName" Type="nvarchar" MaxLength="500" />
+    <Property Name="CommentGroupId" Type="int" />
+    <Property Name="CommentGroupName" Type="nvarchar" MaxLength="200" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="LocationId" Type="int" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ProjectId" Type="int" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDeptManager" Type="bit" />
+    <Property Name="IsLeader" Type="bit" />
+    <Property Name="IsEngineer" Type="bit" />
+    <Property Name="DisciplineId" Type="int" />
+    <Property Name="DisciplineName" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDC" Type="bit" />
+    <Property Name="ConfidentialId" Type="int" />
+    <Property Name="ConfidentialName" Type="nvarchar" MaxLength="500" />
+    <Property Name="SignImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsSendMail" Type="bit" />
+    <Property Name="IsPD" Type="bit" />
+    <Property Name="OrgCode" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="AA_UsersLoginHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ServerTime" Type="datetime" />
+    <Property Name="LocalTime" Type="datetime" />
+    <Property Name="LocalTimeZone" Type="nvarchar" MaxLength="50" />
+    <Property Name="LogoutLocalTime" Type="datetime" />
+    <Property Name="IpAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="DurationTimeLogin" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhysicalMemory" Type="nvarchar" MaxLength="50" />
+    <Property Name="WindownDomainUser" Type="nvarchar" MaxLength="200" />
+    <Property Name="HostNameComputer" Type="nvarchar" MaxLength="200" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="200" />
+    <Property Name="OSDetail" Type="nvarchar" MaxLength="200" />
+    <Property Name="LanguageFormat" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsOn" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="EAMModelStoreContainer">
+    <EntitySet Name="AA_MaterialRequest" EntityType="Self.AA_MaterialRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_MaterialRequestAttachFile" EntityType="Self.AA_MaterialRequestAttachFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_MaterialRequestDetail" EntityType="Self.AA_MaterialRequestDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_Menus" EntityType="Self.AA_Menus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_Permissions" EntityType="Self.AA_Permissions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_Roles" EntityType="Self.AA_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_Users" EntityType="Self.AA_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AA_UsersLoginHistory" EntityType="Self.AA_UsersLoginHistory" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

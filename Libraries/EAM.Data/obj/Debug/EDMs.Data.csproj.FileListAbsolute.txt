@@ -1,0 +1,38 @@
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojResolveAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\Telerik.Web.UI.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Data\obj\Debug\EDMs.Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,30 @@
+
+1. Quản lý Thiết bị
+1.1 Thêm một mã tài sản nữa do phòng kế toán quản lý. File Mã Tài Sản
+1.2 Chi tiết thiết bị: Thêm thông tin phân loại thiết bị (Theo quy định bộ y tế)
+1.3 Thêm thông tin nguyên giá và nguồn tiền của thiết bị, 
+1.4 Phòng kế toán sẽ cung cấp thêm một số trường thông tin thiết bị khác cần quản lý.
+1.5 Về dữ liệu thiết bị sẽ public cho tất cả người dùng xem, nhưng chỉ người dùng thuộc bộ phận đó mới được chỉnh sửa dữ liệu.
+1.6 Thêm tab "nhật ký sử dụng thiết bị" => A.Hưng - CDC gửi lại file mẫu dữ liệu
+1.7 Phần thanh lý thiết bị: Thêm thông tin " Số quyết định thanh lý" => Số lượng, Giá trị tài sản về 0
+
+
+2. Quản lý kho vật tư - Phòng Kế toán
+2.1 Màn hình Phiếu nhập kho mới: Bổ sung thêm dòng tính tổng thành tiền của các vật tư trong phiếu nhập kho
+
+2.2 Quản lý vị trí vật lý cho kho vật tư:
+	+ Anh Nam xác nhận khi thực hiện nhập/xuất kho sẽ biết phải chọn nhập/xuất từ vị trí nào.
+	=> Sẽ thực hiện định nghĩa danh mục vị trí cho tất cả các kho.
+	=> Các báo cáo sau: "Tổng hợp nhập; Tồn kho theo ngày; Nhập xuất tồn nhóm + kho; Sổ chi tiết nhập xuất", bổ sung thêm trường vị trí trong báo cáo và trong điều kiện chọn lọc khi xuất báo cáo.
+	
+2.3 Báo cáo hàng gần hết hạn chỉ show những hàng gần hết hạn theo thông số đã thiết lập, không show những hàng đã hết hạn rồi.
+=> Anh Nam sẽ update thông tin "Số ngày cần cảnh bảo trước hết hạn" cho các vật tư cần thiết, nhưng vật tư khác sẽ update hàng loạt một giá trị default.
+
+2.4 Hợp đồng:
+	+ Thông tin "Số lần thanh toán" bỏ ko cần.
+	+ Kiểm tra số lượng và đơn giá phải nhỏ hơn hoặc bằng hợp đồng khi nhập kho vật tư
+	+ Thêm tab thông tin trong hợp đồng: thể hiện các vật tư đã thực hiện nhập kho (Số phiếu, số lượng, ngày giờ, ....)
+	+ Thêm tab thông tin về số lần thanh toán cho hợp đồng: Chị Liệu gửi lại giúp các trường thông tin cần quản lý
+	+ Thêm tab thông tin định nghĩa các giai đoạn thanh toán => Cảnh báo gần đến hạn thanh toán cho từng giai đoạn
+	=> Các tab thông tin thêm chị Liệu gửi file mẫu dữ liệu các trường thông tin cần quản lý.
+	

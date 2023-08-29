@@ -1,0 +1,11 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\obj\Debug\EAM.Data.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\EAM.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\EAM.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\EAM.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\Telerik.Web.UI.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\bin\Debug\Telerik.Web.UI.xml
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\obj\Debug\EAM.Data.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\obj\Debug\EAM.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\obj\Debug\EAM.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.Data\obj\Debug\EAM.Data.csprojAssemblyReference.cache

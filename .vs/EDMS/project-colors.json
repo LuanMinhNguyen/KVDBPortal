@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d16818d5-7a6b-4807-8ad6-ebd3266d54fa": {
+      "ProjectGuid": "d16818d5-7a6b-4807-8ad6-ebd3266d54fa",
+      "DisplayName": "EAM.XNKTWebAPICore",
+      "ColorIndex": 0
+    },
+    "d5a3a098-5aea-41fb-8c11-21a588fddcc6": {
+      "ProjectGuid": "d5a3a098-5aea-41fb-8c11-21a588fddcc6",
+      "DisplayName": "EAM.XNKTBBBD",
+      "ColorIndex": 1
+    },
+    "b71c254d-a08c-43d2-b352-53a88d4ea2c5": {
+      "ProjectGuid": "b71c254d-a08c-43d2-b352-53a88d4ea2c5",
+      "DisplayName": "EAM.LDAWebAPICore",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

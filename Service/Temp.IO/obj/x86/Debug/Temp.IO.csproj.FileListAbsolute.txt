@@ -1,0 +1,25 @@
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\bin\x86\Debug\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\bin\x86\Debug\Temp.IO.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\mscorlib.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\sortkey.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\sorttbls.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\big5.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\bopomofo.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\ksc.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\prc.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\prcp.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\xjis.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\normidna.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\normnfc.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\normnfd.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\normnfkc.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\bin\x86\Debug\normnfkd.nlp
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.csproj.AssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\Temp.IO\obj\x86\Debug\Temp.IO.pdb

@@ -1,0 +1,9 @@
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Web.dll
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Web.pdb
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Business.dll
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Data.dll
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Business.pdb
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\bin\Clinic.Data.pdb
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\obj\Debug\Clinic.Web.csprojResolveAssemblyReference.cache
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\obj\Debug\Clinic.Web.dll
+C:\Workspace\BD-EDMSmini\Dev\Web\Clinic.Web\obj\Debug\Clinic.Web.pdb

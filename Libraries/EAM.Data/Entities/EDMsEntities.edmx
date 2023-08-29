@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EDMsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityType Name="AA_MaterialRequest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+          <Property Name="OrganizationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrganizationName" Type="nvarchar" MaxLength="500" />
+          <Property Name="StoreCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="StoreName" Type="nvarchar" MaxLength="500" />
+          <Property Name="RequestDate" Type="datetime" />
+          <Property Name="RequestBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="Note" Type="nvarchar" MaxLength="4000" />
+          <Property Name="StatusId" Type="int" />
+          <Property Name="StatusName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="SoTYT" Type="nvarchar" MaxLength="200" />
+          <Property Name="SoNguoiCachLyTaiNha" Type="nvarchar" MaxLength="200" />
+          <Property Name="SoNguoiCachLyTapTrung" Type="nvarchar" MaxLength="200" />
+          <Property Name="SoLayMauXN" Type="nvarchar" MaxLength="200" />
+          <Property Name="IsGenEAMMR" Type="bit" />
+          <Property Name="IsMonthlyRequest" Type="bit" />
+          <Property Name="RequestForMonth" Type="nvarchar" MaxLength="500" />
+          <Property Name="DocumentaryNo" Type="nvarchar" MaxLength="500" />
+          <Property Name="DocumentaryDate" Type="datetime" />
+          <Property Name="DocumentaryReason" Type="nvarchar" MaxLength="1000" />
+          <Property Name="OrganizationOrder" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="AA_MaterialRequestAttachFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MaterialRequestID" Type="uniqueidentifier" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="500" />
+          <Property Name="Extension" Type="nvarchar" MaxLength="30" />
+          <Property Name="ExtensionIcon" Type="nvarchar" MaxLength="100" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="500" />
+          <Property Name="FileSize" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="AA_MaterialRequestDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MaterialRequestID" Type="uniqueidentifier" />
+          <Property Name="Sequence" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartDescription" Type="nvarchar" MaxLength="500" />
+          <Property Name="PartUMO" Type="nvarchar" MaxLength="50" />
+          <Property Name="CurrentStock" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="RequestQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ApprovedQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FromStoreCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="FromStoreName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ToStoreCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="ToStoreName" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="RequestPartName" Type="nvarchar" MaxLength="500" />
+          <Property Name="EAMPartCode" Type="nvarchar" MaxLength="500" />
+          <Property Name="EAMPartDescription" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="AA_Menus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="Url" Type="varchar" MaxLength="200" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Type" Type="int" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="AA_PartLibraryForRequest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PartName" Type="nvarchar" MaxLength="500" />
+          <Property Name="UMO" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedById" Type="nvarchar" MaxLength="200" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="OrderNumber" Type="int" />
+          <Property Name="Formula" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="AA_Permissions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleId" Type="int" Nullable="false" />
+          <Property Name="MenuId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AA_Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsAdmin" Type="bit" />
+          <Property Name="IsUpdate" Type="bit" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="TypeName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Color" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsLimitedView" Type="bit" />
+          <Property Name="ContractorId" Type="int" />
+          <Property Name="ContractorName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="IsAllowDelete" Type="bit" />
+          <Property Name="IsInternal" Type="bit" />
+        </EntityType>
+        <EntityType Name="AA_Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleId" Type="int" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Employee_Ref" Type="int" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="ResourceId" Type="int" />
+          <Property Name="CanApprove" Type="bit" />
+          <Property Name="IsAdmin" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastUpdatedBy" Type="int" />
+          <Property Name="LasrUpdatedDate" Type="datetime" />
+          <Property Name="HashCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Position" Type="nvarchar" MaxLength="500" />
+          <Property Name="Phone" Type="nchar" MaxLength="20" />
+          <Property Name="CellPhone" Type="nchar" MaxLength="20" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="TitleId" Type="int" />
+          <Property Name="TitleName" Type="nvarchar" MaxLength="500" />
+          <Property Name="CommentGroupId" Type="int" />
+          <Property Name="CommentGroupName" Type="nvarchar" MaxLength="200" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="LocationId" Type="int" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ProjectId" Type="int" />
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsDeptManager" Type="bit" />
+          <Property Name="IsLeader" Type="bit" />
+          <Property Name="IsEngineer" Type="bit" />
+          <Property Name="DisciplineId" Type="int" />
+          <Property Name="DisciplineName" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsDC" Type="bit" />
+          <Property Name="ConfidentialId" Type="int" />
+          <Property Name="ConfidentialName" Type="nvarchar" MaxLength="500" />
+          <Property Name="SignImageUrl" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsSendMail" Type="bit" />
+          <Property Name="IsPD" Type="bit" />
+          <Property Name="OrgCode" Type="nvarchar" MaxLength="4000" />
+          <Property Name="IsTTYT" Type="bit" />
+          <Property Name="SoTYT" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="AA_UsersLoginHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+          <Property Name="ServerTime" Type="datetime" />
+          <Property Name="LocalTime" Type="datetime" />
+          <Property Name="LocalTimeZone" Type="nvarchar" MaxLength="50" />
+          <Property Name="LogoutLocalTime" Type="datetime" />
+          <Property Name="IpAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="DurationTimeLogin" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhysicalMemory" Type="nvarchar" MaxLength="50" />
+          <Property Name="WindownDomainUser" Type="nvarchar" MaxLength="200" />
+          <Property Name="HostNameComputer" Type="nvarchar" MaxLength="200" />
+          <Property Name="Browser" Type="nvarchar" MaxLength="200" />
+          <Property Name="OSDetail" Type="nvarchar" MaxLength="200" />
+          <Property Name="LanguageFormat" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsOn" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="EAMModelStoreContainer">
+          <EntitySet Name="AA_MaterialRequest" EntityType="Self.AA_MaterialRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_MaterialRequestAttachFile" EntityType="Self.AA_MaterialRequestAttachFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_MaterialRequestDetail" EntityType="Self.AA_MaterialRequestDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_Menus" EntityType="Self.AA_Menus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_PartLibraryForRequest" EntityType="Self.AA_PartLibraryForRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_Permissions" EntityType="Self.AA_Permissions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_Roles" EntityType="Self.AA_Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_Users" EntityType="Self.AA_Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AA_UsersLoginHistory" EntityType="Self.AA_UsersLoginHistory" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EAMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="EAMEntities">
+          <EntitySet Name="AA_MaterialRequest" EntityType="EAMModel.AA_MaterialRequest" />
+          <EntitySet Name="AA_MaterialRequestAttachFile" EntityType="EAMModel.AA_MaterialRequestAttachFile" />
+          <EntitySet Name="AA_MaterialRequestDetail" EntityType="EAMModel.AA_MaterialRequestDetail" />
+          <EntitySet Name="AA_Menus" EntityType="EAMModel.AA_Menus" />
+          <EntitySet Name="AA_Permissions" EntityType="EAMModel.AA_Permissions" />
+          <EntitySet Name="AA_Roles" EntityType="EAMModel.AA_Roles" />
+          <EntitySet Name="AA_UsersLoginHistory" EntityType="EAMModel.AA_UsersLoginHistory" />
+          <EntitySet Name="AA_PartLibraryForRequest" EntityType="EAMModel.AA_PartLibraryForRequest" />
+          <EntitySet Name="AA_Users" EntityType="EAMModel.AA_Users" />
+        </EntityContainer>
+        <EntityType Name="AA_MaterialRequest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="OrganizationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrganizationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="StoreCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StoreName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RequestDate" Type="DateTime" Precision="3" />
+          <Property Name="RequestBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="StatusId" Type="Int32" />
+          <Property Name="StatusName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SoTYT" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SoNguoiCachLyTaiNha" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SoNguoiCachLyTapTrung" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SoLayMauXN" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="IsGenEAMMR" Type="Boolean" />
+          <Property Name="IsMonthlyRequest" Type="Boolean" />
+          <Property Name="RequestForMonth" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentaryNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentaryDate" Type="DateTime" Precision="3" />
+          <Property Name="DocumentaryReason" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="OrganizationOrder" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="AA_MaterialRequestAttachFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="MaterialRequestID" Type="Guid" />
+          <Property Name="FileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Extension" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ExtensionIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FileSize" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="AA_MaterialRequestDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="MaterialRequestID" Type="Guid" />
+          <Property Name="Sequence" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PartUMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CurrentStock" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RequestQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ApprovedQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FromStoreCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FromStoreName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ToStoreCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ToStoreName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="RequestPartName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EAMPartCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EAMPartDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AA_Menus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="Url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="Icon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AA_Permissions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <Property Name="MenuId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AA_Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsAdmin" Type="Boolean" />
+          <Property Name="IsUpdate" Type="Boolean" />
+          <Property Name="TypeId" Type="Int32" />
+          <Property Name="TypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Color" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IsLimitedView" Type="Boolean" />
+          <Property Name="ContractorId" Type="Int32" />
+          <Property Name="ContractorName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="IsAllowDelete" Type="Boolean" />
+          <Property Name="IsInternal" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AA_UsersLoginHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ServerTime" Type="DateTime" Precision="3" />
+          <Property Name="LocalTime" Type="DateTime" Precision="3" />
+          <Property Name="LocalTimeZone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LogoutLocalTime" Type="DateTime" Precision="3" />
+          <Property Name="IpAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DurationTimeLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicalMemory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WindownDomainUser" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="HostNameComputer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Browser" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OSDetail" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="LanguageFormat" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsOn" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AA_PartLibraryForRequest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="PartName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="UMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedById" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="OrderNumber" Type="Int32" />
+          <Property Name="Formula" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AA_Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleId" Type="Int32" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Employee_Ref" Type="Int32" />
+          <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="ResourceId" Type="Int32" />
+          <Property Name="CanApprove" Type="Boolean" />
+          <Property Name="IsAdmin" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdatedBy" Type="Int32" />
+          <Property Name="LasrUpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="HashCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Position" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="CellPhone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="TitleId" Type="Int32" />
+          <Property Name="TitleName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CommentGroupId" Type="Int32" />
+          <Property Name="CommentGroupName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="RoleName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="LocationId" Type="Int32" />
+          <Property Name="LocationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ProjectId" Type="Int32" />
+          <Property Name="ProjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsDeptManager" Type="Boolean" />
+          <Property Name="IsLeader" Type="Boolean" />
+          <Property Name="IsEngineer" Type="Boolean" />
+          <Property Name="DisciplineId" Type="Int32" />
+          <Property Name="DisciplineName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsDC" Type="Boolean" />
+          <Property Name="ConfidentialId" Type="Int32" />
+          <Property Name="ConfidentialName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SignImageUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsSendMail" Type="Boolean" />
+          <Property Name="IsPD" Type="Boolean" />
+          <Property Name="OrgCode" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="IsTTYT" Type="Boolean" />
+          <Property Name="SoTYT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="EAMModelStoreContainer" CdmEntityContainer="EAMEntities">
+          <EntitySetMapping Name="AA_MaterialRequest">
+            <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequest">
+              <MappingFragment StoreEntitySet="AA_MaterialRequest">
+                <ScalarProperty Name="OrganizationOrder" ColumnName="OrganizationOrder" />
+                <ScalarProperty Name="DocumentaryReason" ColumnName="DocumentaryReason" />
+                <ScalarProperty Name="DocumentaryDate" ColumnName="DocumentaryDate" />
+                <ScalarProperty Name="DocumentaryNo" ColumnName="DocumentaryNo" />
+                <ScalarProperty Name="RequestForMonth" ColumnName="RequestForMonth" />
+                <ScalarProperty Name="IsMonthlyRequest" ColumnName="IsMonthlyRequest" />
+                <ScalarProperty Name="IsGenEAMMR" ColumnName="IsGenEAMMR" />
+                <ScalarProperty Name="SoLayMauXN" ColumnName="SoLayMauXN" />
+                <ScalarProperty Name="SoNguoiCachLyTapTrung" ColumnName="SoNguoiCachLyTapTrung" />
+                <ScalarProperty Name="SoNguoiCachLyTaiNha" ColumnName="SoNguoiCachLyTaiNha" />
+                <ScalarProperty Name="SoTYT" ColumnName="SoTYT" />
+                <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+                <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="RequestBy" ColumnName="RequestBy" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+                <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+                <ScalarProperty Name="OrganizationName" ColumnName="OrganizationName" />
+                <ScalarProperty Name="OrganizationCode" ColumnName="OrganizationCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_MaterialRequestAttachFile">
+            <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequestAttachFile">
+              <MappingFragment StoreEntitySet="AA_MaterialRequestAttachFile">
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="ExtensionIcon" ColumnName="ExtensionIcon" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="MaterialRequestID" ColumnName="MaterialRequestID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_MaterialRequestDetail">
+            <EntityTypeMapping TypeName="EAMModel.AA_MaterialRequestDetail">
+              <MappingFragment StoreEntitySet="AA_MaterialRequestDetail">
+                <ScalarProperty Name="EAMPartDescription" ColumnName="EAMPartDescription" />
+                <ScalarProperty Name="EAMPartCode" ColumnName="EAMPartCode" />
+                <ScalarProperty Name="RequestPartName" ColumnName="RequestPartName" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ToStoreName" ColumnName="ToStoreName" />
+                <ScalarProperty Name="ToStoreCode" ColumnName="ToStoreCode" />
+                <ScalarProperty Name="FromStoreName" ColumnName="FromStoreName" />
+                <ScalarProperty Name="FromStoreCode" ColumnName="FromStoreCode" />
+                <ScalarProperty Name="ApprovedQty" ColumnName="ApprovedQty" />
+                <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+                <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+                <ScalarProperty Name="PartUMO" ColumnName="PartUMO" />
+                <ScalarProperty Name="PartDescription" ColumnName="PartDescription" />
+                <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="MaterialRequestID" ColumnName="MaterialRequestID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_Menus">
+            <EntityTypeMapping TypeName="EAMModel.AA_Menus">
+              <MappingFragment StoreEntitySet="AA_Menus">
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_Permissions">
+            <EntityTypeMapping TypeName="EAMModel.AA_Permissions">
+              <MappingFragment StoreEntitySet="AA_Permissions">
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_Roles">
+            <EntityTypeMapping TypeName="EAMModel.AA_Roles">
+              <MappingFragment StoreEntitySet="AA_Roles">
+                <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+                <ScalarProperty Name="IsAllowDelete" ColumnName="IsAllowDelete" />
+                <ScalarProperty Name="ContractorName" ColumnName="ContractorName" />
+                <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+                <ScalarProperty Name="IsLimitedView" ColumnName="IsLimitedView" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="IsUpdate" ColumnName="IsUpdate" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_UsersLoginHistory">
+            <EntityTypeMapping TypeName="EAMModel.AA_UsersLoginHistory">
+              <MappingFragment StoreEntitySet="AA_UsersLoginHistory">
+                <ScalarProperty Name="IsOn" ColumnName="IsOn" />
+                <ScalarProperty Name="LanguageFormat" ColumnName="LanguageFormat" />
+                <ScalarProperty Name="OSDetail" ColumnName="OSDetail" />
+                <ScalarProperty Name="Browser" ColumnName="Browser" />
+                <ScalarProperty Name="HostNameComputer" ColumnName="HostNameComputer" />
+                <ScalarProperty Name="WindownDomainUser" ColumnName="WindownDomainUser" />
+                <ScalarProperty Name="PhysicalMemory" ColumnName="PhysicalMemory" />
+                <ScalarProperty Name="DurationTimeLogin" ColumnName="DurationTimeLogin" />
+                <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+                <ScalarProperty Name="LogoutLocalTime" ColumnName="LogoutLocalTime" />
+                <ScalarProperty Name="LocalTimeZone" ColumnName="LocalTimeZone" />
+                <ScalarProperty Name="LocalTime" ColumnName="LocalTime" />
+                <ScalarProperty Name="ServerTime" ColumnName="ServerTime" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_PartLibraryForRequest">
+            <EntityTypeMapping TypeName="EAMModel.AA_PartLibraryForRequest">
+              <MappingFragment StoreEntitySet="AA_PartLibraryForRequest">
+                <ScalarProperty Name="Formula" ColumnName="Formula" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="UMO" ColumnName="UMO" />
+                <ScalarProperty Name="PartName" ColumnName="PartName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AA_Users">
+            <EntityTypeMapping TypeName="EAMModel.AA_Users">
+              <MappingFragment StoreEntitySet="AA_Users">
+                <ScalarProperty Name="SoTYT" ColumnName="SoTYT" />
+                <ScalarProperty Name="IsTTYT" ColumnName="IsTTYT" />
+                <ScalarProperty Name="OrgCode" ColumnName="OrgCode" />
+                <ScalarProperty Name="IsPD" ColumnName="IsPD" />
+                <ScalarProperty Name="IsSendMail" ColumnName="IsSendMail" />
+                <ScalarProperty Name="SignImageUrl" ColumnName="SignImageUrl" />
+                <ScalarProperty Name="ConfidentialName" ColumnName="ConfidentialName" />
+                <ScalarProperty Name="ConfidentialId" ColumnName="ConfidentialId" />
+                <ScalarProperty Name="IsDC" ColumnName="IsDC" />
+                <ScalarProperty Name="DisciplineName" ColumnName="DisciplineName" />
+                <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+                <ScalarProperty Name="IsEngineer" ColumnName="IsEngineer" />
+                <ScalarProperty Name="IsLeader" ColumnName="IsLeader" />
+                <ScalarProperty Name="IsDeptManager" ColumnName="IsDeptManager" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+                <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="CommentGroupName" ColumnName="CommentGroupName" />
+                <ScalarProperty Name="CommentGroupId" ColumnName="CommentGroupId" />
+                <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+                <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="HashCode" ColumnName="HashCode" />
+                <ScalarProperty Name="LasrUpdatedDate" ColumnName="LasrUpdatedDate" />
+                <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="CanApprove" ColumnName="CanApprove" />
+                <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Employee_Ref" ColumnName="Employee_Ref" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EDMsEntities">
+        
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

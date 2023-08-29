@@ -1,0 +1,14 @@
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.TestConsole.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.TestConsole.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Debug\EAM.TestConsole.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Debug\EAM.TestConsole.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Debug\EAM.TestConsole.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\Aspose.Cells.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Debug\EAM.TestConsole.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.TestConsole.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\obj\Debug\EAM.TestConsole.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EAM.TestConsole\bin\Debug\EAM.Data.dll.config

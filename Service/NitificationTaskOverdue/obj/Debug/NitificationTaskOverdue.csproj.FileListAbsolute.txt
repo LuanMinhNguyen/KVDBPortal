@@ -1,0 +1,68 @@
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe.config
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.NotificationTaskOverdue.resources
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.ProjectInstaller.resources
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe.config
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.NotificationTaskOverdue.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.ProjectInstaller.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.GenerateResource.Cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe.config
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.NotificationTaskOverdue.resources
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.ProjectInstaller.resources
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS - PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe.config
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.NotificationTaskOverdue.resources
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.ProjectInstaller.resources
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.GenerateResource.Cache
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.exe
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csprojResolveAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.NotificationTaskOverdue.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\NitificationTaskOverdue.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\bin\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\NitificationTaskOverdue\obj\Debug\NitificationTaskOverdue.csproj.CoreCompileInputs.cache

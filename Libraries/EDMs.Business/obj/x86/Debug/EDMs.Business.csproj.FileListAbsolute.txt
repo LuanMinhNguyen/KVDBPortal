@@ -1,0 +1,17 @@
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Business.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Business.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Data.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Data.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.csprojResolveAssemblyReference.cache
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\bin\x86\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.csproj.AssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.csproj.CoreCompileInputs.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Libraries\EDMs.Business\obj\x86\Debug\EDMs.Business.pdb

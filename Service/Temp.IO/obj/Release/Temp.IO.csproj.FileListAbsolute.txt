@@ -1,0 +1,13 @@
+C:\Workspace\BD-EDMSmini\Dev\Service\Temp.IO\bin\Release\Temp.IO.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\Temp.IO\bin\Release\Temp.IO.pdb
+C:\Workspace\BD-EDMSmini\Dev\Service\Temp.IO\obj\Release\Temp.IO.dll
+C:\Workspace\BD-EDMSmini\Dev\Service\Temp.IO\obj\Release\Temp.IO.pdb
+C:\Workspace\EDMS\Dev\Service\Temp.IO\bin\Release\Temp.IO.dll
+C:\Workspace\EDMS\Dev\Service\Temp.IO\bin\Release\Temp.IO.pdb
+C:\Workspace\EDMS\Dev\Service\Temp.IO\obj\Release\Temp.IO.dll
+C:\Workspace\EDMS\Dev\Service\Temp.IO\obj\Release\Temp.IO.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\bin\Release\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\bin\Release\Temp.IO.pdb
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\obj\Release\Temp.IO.csprojResolveAssemblyReference.cache
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\obj\Release\Temp.IO.dll
+D:\00. Workspace\WMS PTSC PPS\Source\Service\Temp.IO\obj\Release\Temp.IO.pdb

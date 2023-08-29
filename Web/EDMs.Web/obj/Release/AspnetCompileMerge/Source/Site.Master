@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EDMs.Web.SiteMaster" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Home Page</title>
+    <link href="Content/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <style type="text/css">
+        .RadMenu_Windows7 .rmRootLink {
+            text-transform: uppercase !important;
+        }
+        .RadMenu_MetroTouch .rmRootGroup {
+            border-color: #4c4c4c;
+            color: #fff !important;
+            background-color: #414247 !important;
+            /*background-image: linear-gradient(#606060,#505050,#606060);*/
+        }
+        .RadMenu .rmRootGroup .rmItem {
+            border-style: none !important;
+            font-size: 13px;
+            line-height: 17px;
+            font-family: helvetica, arial, verdana, sans-serif;
+        }
+
+        .RadMenu .rmGroup, .RadMenu .rmRootGroup, .RadMenu .rmMultiColumn {
+            border-style: none !important;
+        }
+
+        #RAD_SPLITTER_PANE_CONTENT_ctl00_topPane {
+            background-color: #414247
+        }
+
+
+
+        .RadMenu_Windows7 .rmRootGroup, .RadMenu_Windows7 .rmFirst, .RadMenu_Windows7 a.rmLink, .RadMenu_Windows7 .rmText, .RadMenu_Windows7 .rmLeftArrow, .RadMenu_Windows7 .rmRightArrow, .RadMenu_Windows7 .rmTopArrow, .RadMenu_Windows7 .rmBottomArrow {
+            background-image: none !important;
+        }
+
+        .RadMenu .rmGroup .rmText {
+            padding: 0px 5px 0 5px !important;
+            margin: 0 0 0 4px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function onClicked(sender, eventArgs) {
+            if (eventArgs.get_item().get_value() != null) {
+                location.href = eventArgs.get_item().get_value();
+            }
+        }
+        //<![CDATA[
+        // Dictionary containing the advanced template client object
+        // for a given RadScheduler instance (the control ID is used as key).
+        var schedulerTemplates = {};
+
+        function schedulerFormCreated(scheduler, eventArgs) {
+            // Create a client-side object only for the advanced templates
+            var mode = eventArgs.get_mode();
+            if (mode == Telerik.Web.UI.SchedulerFormMode.AdvancedInsert ||
+                mode == Telerik.Web.UI.SchedulerFormMode.AdvancedEdit) {
+                // Initialize the client-side object for the advanced form
+                var formElement = eventArgs.get_formElement();
+                var templateKey = scheduler.get_id() + "_" + mode;
+                var advancedTemplate = schedulerTemplates[templateKey];
+                if (!advancedTemplate) {
+                    // Initialize the template for this RadScheduler instance
+                    // and cache it in the schedulerTemplates dictionary
+                    var schedulerElement = scheduler.get_element();
+                    var isModal = scheduler.get_advancedFormSettings().modal;
+                    advancedTemplate = new window.SchedulerAdvancedTemplate(schedulerElement, formElement, isModal);
+
+                    if (advancedTemplate) {
+                        advancedTemplate.initialize();
+
+                        schedulerTemplates[templateKey] = advancedTemplate;
+
+                        // Remove the template object from the dictionary on dispose.
+                        scheduler.add_disposing(function () {
+                            schedulerTemplates[templateKey] = null;
+                        });
+                    }
+                }
+
+                // Are we using Web Service data binding?
+                if (!scheduler.get_webServiceSettings().get_isEmpty()) {
+                    // Populate the form with the appointment data
+                    var apt = eventArgs.get_appointment();
+                    var isInsert = mode == Telerik.Web.UI.SchedulerFormMode.AdvancedInsert;
+                    advancedTemplate.populate(apt, isInsert);
+                }
+            }
+        }
+    //]]>
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <telerik:RadScriptManager runat="server" ID="RadScriptManager1" CdnSettings-TelerikCdn="Disabled">
+            <Scripts>
+            </Scripts>
+        </telerik:RadScriptManager>
+        
+        <!--Rad Windows-->
+        <telerik:RadWindowManager ID="MasterWindows" runat="server" EnableShadow="true">
+            <Windows>
+                <telerik:RadWindow ID="ChangePasswordDialog" runat="server" Title="Change password" Height="300px" VisibleStatusbar="False"
+                    Width="500px" MaxHeight="500px" MaxWidth="800px" Left="150px" ReloadOnShow="true" ShowContentDuringLoad="false"
+                    Modal="true">
+                </telerik:RadWindow>
+            </Windows>
+        </telerik:RadWindowManager>
+
+        <telerik:RadStyleSheetManager runat="server" ID="RadStyleSheet1" />
+        <telerik:RadSkinManager runat="server" ID="RadSkinManager1" ShowChooser="true" Skin="Windows7" PersistenceKey="Skin" PersistenceMode="Session" Visible="False"/>
+        <telerik:RadFormDecorator runat="server" ID="RadFormDecorator1" DecoratedControls="Default,Zone" />
+        <telerik:RadSplitter runat="Server" ID="RadSplitter1" Width="100%" BorderSize="0"
+            BorderStyle="None" PanesBorderSize="0" Height="100%" Orientation="Horizontal"
+            VisibleDuringInit="false">
+            <telerik:RadPane ID="topPane" runat="server" Height="100px" style="background-color: #414247">
+               
+
+                <div class="header">
+                    <div class="logo">
+                        <asp:Image ID="imgLogo" runat="server" 
+                                ImageUrl="Images/logo.svg" style="padding-left: 20px; height: 50px; border-color: transparent; padding-top: 10px"/>
+                        <div style="display: inline;">
+                            <span style="                                    font-size: x-large;
+                                    padding-top: 12px;
+                                    padding-left: 15px;
+                                    position: fixed;
+                                    font-weight: bold;
+                                    color: #ffffff">EAM Web Portal - Hong Ngoc Hospital</span>
+                        </div>
+                    </div>
+                    <div class="skin-chooser" style="margin-top: 3px; z-index: 3001;">
+                        <telerik:RadMenu runat="server" ID="menu" CssClass="TemplateMenu" style="cursor: pointer;"
+                            OnItemClick="menu_OnItemClick" OnClientItemClicking="profileMenuItemClicking" >
+                            <Items>
+                                <telerik:RadMenuItem>
+                                    <ItemTemplate>
+                                        <asp:Label ID="lblFullName" runat="server" Text="Welcome, " style="padding-left: 5px;"></asp:Label>
+                                        <asp:Label ID="lblCurrentUserOnline" runat="server" Visible="False" style="padding-left: 5px;"></asp:Label>
+                                        <%--<img alt="avatar" src="Images/user_64.png" style="width: 50px; height: 50px; margin: 1px;" />--%>
+                                    </ItemTemplate>
+                                    <Items>
+                                        <%--<telerik:RadMenuItem Text="Thông tin cá nhân" Width="180px" />--%>
+                                        <telerik:RadMenuItem Text="Change password" Width="180px" Value="ChangePasswordCommand" ImageUrl="Images/changepass.png" Visible="False"/>
+                                        <telerik:RadMenuItem IsSeparator="False" />
+                                        <telerik:RadMenuItem Text="Log out" Width="180px" Value="LogoutCommand" ImageUrl="Images/logout.png" />
+                                    </Items>
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenu>
+                        
+                    </div>
+                </div>
+                <telerik:RadMenu runat="Server" ID="MainMenu" EnableShadows="False" EnableRoundedCorners="true" RenderMode="Auto" ShowToggleHandle="true"
+                    Style="float: none; position: absolute; top: 69px; z-index: 2000; cursor: pointer; " 
+                    Width="100%" Skin="MetroTouch" CssClass="mainMenu" ClickToOpen="False">
+                </telerik:RadMenu>
+            </telerik:RadPane>
+            <telerik:RadPane runat="server" ID="contentPane" Scrolling="none" Width="100%">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </telerik:RadPane>
+        </telerik:RadSplitter>
+        <asp:PlaceHolder runat="server" ID="AnalyticsPlaceholder">
+            <script type="text/javascript">
+
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-111455-1']);
+                _gaq.push(['_setDomainName', '.telerik.com']);
+                _gaq.push(['_addIgnoredRef', 'telerik.com']);
+                _gaq.push(['_trackPageview']);
+
+                (function () {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            </script>
+        </asp:PlaceHolder>
+        <telerik:RadCodeBlock runat="server">
+            <script type="text/javascript">
+                function profileMenuItemClicking(sender, args) {
+                    var itemValue = args.get_item().get_value();
+                    if (itemValue == "ChangePasswordCommand") {
+                        ShowChangePasswordForm();
+                        args.set_cancel(true);
+                    }
+                }
+
+                function ShowChangePasswordForm() {
+                    window.radopen("../../Controls/Security/ChangePasswordForm.aspx", "ChangePasswordDialog");
+                }
+            </script>
+        </telerik:RadCodeBlock>
+    </form>
+</body>
+</html>

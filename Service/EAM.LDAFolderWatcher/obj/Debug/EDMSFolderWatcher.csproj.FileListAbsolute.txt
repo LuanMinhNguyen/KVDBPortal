@@ -1,0 +1,73 @@
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.ProjectInstaller.resources
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe.config
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS - DQRE\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe.config
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.dll
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.ProjectInstaller.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.GenerateResource.Cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe.config
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.ProjectInstaller.resources
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS - PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe.config
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.dll
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.dll
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.ProjectInstaller.resources
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.GenerateResource.Cache
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.exe
+D:\Workspace\EDMS_PECC2\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.ProjectInstaller.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMSFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.dll
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Business.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\EDMs.Data.dll.config
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\bin\Debug\Temp.IO.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.CopyComplete
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\EDMSFolderWatcher\obj\Debug\EDMSFolderWatcher.csproj.CoreCompileInputs.cache

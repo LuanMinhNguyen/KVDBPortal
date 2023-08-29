@@ -1,0 +1,41 @@
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Form1.resources
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Properties.Resources.resources
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS - DQRE\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.pdb
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csprojResolveAssemblyReference.cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Form1.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Properties.Resources.resources
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.GenerateResource.Cache
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.exe
+D:\00. Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Form1.resources
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Properties.Resources.resources
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.GenerateResource.Cache
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS - PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.pdb
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csprojResolveAssemblyReference.cache
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Form1.resources
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Properties.Resources.resources
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.GenerateResource.Cache
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.exe
+D:\Workspace\EDMS_PECC2\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\bin\Debug\WMSTestAmosConnection.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csprojAssemblyReference.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Form1.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.Properties.Resources.resources
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.GenerateResource.cache
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.exe
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.pdb
+E:\00. New Workspace\EAM_HongNgocHospital\Source\Service\WMSTestAmosConnection\obj\Debug\WMSTestAmosConnection.csproj.CoreCompileInputs.cache
