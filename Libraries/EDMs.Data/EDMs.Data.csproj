@@ -256,6 +256,7 @@
     <Compile Include="DAO\Workflow\WorkflowDAO.cs" />
     <Compile Include="DAO\Workflow\CustomizeWorkflowDetailDAO.cs" />
     <Compile Include="Dto\Asset\AssetDepreciationDto.cs" />
+    <Compile Include="Dto\Asset\AssetParameterDto.cs" />
     <Compile Include="Dto\Asset\AssetStructureDto.cs" />
     <Compile Include="Dto\Asset\LocationStructureDto.cs" />
     <Compile Include="Dto\Asset\LocationDto.cs" />
@@ -285,6 +286,8 @@
     <Compile Include="Dto\MaterialInventory\PartListDto.cs" />
     <Compile Include="Dto\MaterialInventory\StockDto.cs" />
     <Compile Include="Dto\MaterialInventory\StoresDto.cs" />
+    <Compile Include="Dto\MRC\MRCDto.cs" />
+    <Compile Include="Dto\Part\PartDto.cs" />
     <Compile Include="Dto\PPM\NormMaterialDocDto.cs" />
     <Compile Include="Dto\PPM\NormMaterialPartDto.cs" />
     <Compile Include="Dto\PPM\PPMLaborPlanDto.cs" />
@@ -303,6 +306,7 @@
     <Compile Include="Dto\PurchaseOrder\REQLineDto.cs" />
     <Compile Include="Dto\PurchaseOrder\PORDListDto.cs" />
     <Compile Include="Dto\PurchaseOrder\REQListDto.cs" />
+    <Compile Include="Dto\Part\StoreDto.cs" />
     <Compile Include="Entities\Area.cs" />
     <Compile Include="Entities\AttachContractFile.cs" />
     <Compile Include="Entities\AttachPRFile.cs" />

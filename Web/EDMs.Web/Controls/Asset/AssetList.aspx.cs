@@ -42,7 +42,7 @@ namespace EDMs.Web.Controls.Asset
         /// </param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session.Add("SelectedMainMenu", "Quản Lý Tài Sản");
+            Session.Add("SelectedMainMenu", "Quản lý tài sản");
             this.Title = ConfigurationManager.AppSettings.Get("AppName");
 
 
@@ -56,7 +56,7 @@ namespace EDMs.Web.Controls.Asset
             //var assetList = Session["AssestList"] as List<AssetDto>;
 
             var userParam = new SqlParameter("@user", SqlDbType.NVarChar);
-            userParam.Value = UserSession.Current.User.Username;
+            userParam.Value = UserSession.Current.User.Id;
             DataSet ds;
             var dataList = new List<AssetDto>();
             ds = this.eamService.GetDataSet("get_asset_r5", new[] { userParam });

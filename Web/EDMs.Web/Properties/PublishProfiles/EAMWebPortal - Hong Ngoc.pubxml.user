@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\WebPortal</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\EAMPortal_KVDB</_PublishTargetUrl>
     <History>False|2023-08-25T14:19:37.8461280Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
@@ -72,25 +72,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/04/2018 10:08:13</publishTime>
     </File>
     <File Include="bin/EDMs.Business.dll">
-      <publishTime>08/28/2023 16:52:11</publishTime>
+      <publishTime>09/02/2023 16:50:40</publishTime>
     </File>
     <File Include="bin/EDMs.Business.pdb">
-      <publishTime>08/28/2023 16:52:11</publishTime>
+      <publishTime>09/02/2023 16:50:40</publishTime>
     </File>
     <File Include="bin/EDMs.Data.dll">
-      <publishTime>08/28/2023 16:52:11</publishTime>
+      <publishTime>09/02/2023 16:50:39</publishTime>
     </File>
     <File Include="bin/EDMs.Data.dll.config">
-      <publishTime>08/22/2023 16:18:20</publishTime>
+      <publishTime>08/29/2023 14:18:01</publishTime>
     </File>
     <File Include="bin/EDMs.Data.pdb">
-      <publishTime>08/28/2023 16:52:11</publishTime>
+      <publishTime>09/02/2023 16:50:39</publishTime>
     </File>
     <File Include="bin/EDMs.Web.dll">
-      <publishTime>08/28/2023 16:52:13</publishTime>
+      <publishTime>09/02/2023 16:50:45</publishTime>
     </File>
     <File Include="bin/EDMs.Web.pdb">
-      <publishTime>08/28/2023 16:52:13</publishTime>
+      <publishTime>09/02/2023 16:50:45</publishTime>
     </File>
     <File Include="bin/EnvDTE.dll">
       <publishTime>01/06/2023 16:44:02</publishTime>
@@ -156,7 +156,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/12/2020 00:14:26</publishTime>
     </File>
     <File Include="Controls/Asset/AssetDetail.aspx">
-      <publishTime>08/28/2023 16:40:24</publishTime>
+      <publishTime>08/31/2023 15:43:25</publishTime>
     </File>
     <File Include="Controls/Asset/AssetList.aspx">
       <publishTime>08/28/2023 15:42:46</publishTime>
@@ -3855,7 +3855,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/12/2020 00:14:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/28/2023 16:52:14</publishTime>
+      <publishTime>08/29/2023 14:20:12</publishTime>
     </File>
   </ItemGroup>
 </Project>

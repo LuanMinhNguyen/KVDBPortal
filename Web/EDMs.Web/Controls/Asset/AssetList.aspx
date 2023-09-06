@@ -331,28 +331,16 @@
                 } else if (strValue == "ClearFilter") {
                     var grid = $find("<%=grdData.ClientID %>");
                     var masterTableView = grid.get_masterTableView();
+                    masterTableView.clearFilter("ToChuc");
                     masterTableView.clearFilter("ThietBi");
                     masterTableView.clearFilter("TenThietBi");
-                    masterTableView.clearFilter("DonVi");
-                    masterTableView.clearFilter("BoPhan");
-                    masterTableView.clearFilter("TrangThai");
-                    masterTableView.clearFilter("SerialNo");
-                    masterTableView.clearFilter("Model");
-                    masterTableView.clearFilter("ThongSoKyThuat");
-                    masterTableView.clearFilter("NhaCungCap");
+                    masterTableView.clearFilter("lbTrangThai");
+                    masterTableView.clearFilter("PhongBan");
+                    masterTableView.clearFilter("Nhom");
+                    masterTableView.clearFilter("ThietBiCha");
                     masterTableView.clearFilter("PhanLoai");
-                    masterTableView.clearFilter("NhaSanXuat");
-                    masterTableView.clearFilter("NgayVanHanh");
-                    masterTableView.clearFilter("NguoiPhuTrach");
-                    masterTableView.clearFilter("NienHan");
-                    masterTableView.clearFilter("NgungSuDung");
-                    masterTableView.clearFilter("CumChucNang");
-                    masterTableView.clearFilter("HanSuDungThang");
-                    masterTableView.clearFilter("NgayNhanThietBi");
-                    masterTableView.clearFilter("NgayThaoBo");
-                    masterTableView.clearFilter("PhanNhom");
-                    masterTableView.clearFilter("DonViDo");
-                    masterTableView.clearFilter("DoQuanTrang");
+                    masterTableView.clearFilter("KhuVuc");
+                    masterTableView.clearFilter("NgayBDTheoDoi");
                 }
             }
         </script>

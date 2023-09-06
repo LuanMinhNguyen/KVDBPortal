@@ -568,14 +568,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6AE74ADF-0618-4EE3-AF26-14F6698A7362}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dev.azure.com/truetechdeveloper
-		SccProjectUniqueName0 = Service\\WMSSyncDataSetup\\WMSSyncDataSetup.isproj
-		SccProjectTopLevelParentUniqueName0 = EDMS.sln
-		SccAuxPath0 = https://dev.azure.com/truetechdeveloper
-		SccLocalPath0 = Service\\WMSSyncDataSetup
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-	EndGlobalSection
 EndGlobal

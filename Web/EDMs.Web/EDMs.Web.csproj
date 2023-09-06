@@ -150,6 +150,8 @@
     <Content Include="Controls\Material\PartDetail.aspx" />
     <Content Include="Controls\Material\StoreDetail.aspx" />
     <Content Include="Controls\Material\PartList.aspx" />
+    <Content Include="Controls\Parts\PartDetail.aspx" />
+    <Content Include="Controls\Parts\PartList.aspx" />
     <Content Include="Controls\PPM\WOCompletedDetail.aspx" />
     <Content Include="Controls\Material\StoreList.aspx" />
     <Content Include="Controls\PPM\WRDetail.aspx" />
@@ -168,6 +170,8 @@
     <Content Include="Controls\Purchase\REQDetail.aspx" />
     <Content Include="Controls\Purchase\PORDList.aspx" />
     <Content Include="Controls\Purchase\REQList.aspx" />
+    <Content Include="Controls\Parts\StoreDetail.aspx" />
+    <Content Include="Controls\Parts\StoreList.aspx" />
     <Content Include="EAM_PartList.aspx" />
     <Content Include="EAM_DocumentList.aspx" />
     <Content Include="EAM_PORDList.aspx" />
@@ -709,6 +713,20 @@
     <Compile Include="Controls\Material\PartList.aspx.designer.cs">
       <DependentUpon>PartList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Parts\PartDetail.aspx.cs">
+      <DependentUpon>PartDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Parts\PartDetail.aspx.designer.cs">
+      <DependentUpon>PartDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\PartList.aspx.cs">
+      <DependentUpon>PartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Parts\PartList.aspx.designer.cs">
+      <DependentUpon>PartList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PPM\WOCompletedDetail.aspx.cs">
       <DependentUpon>WOCompletedDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -834,6 +852,20 @@
     </Compile>
     <Compile Include="Controls\Purchase\REQList.aspx.designer.cs">
       <DependentUpon>REQList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\StoreDetail.aspx.cs">
+      <DependentUpon>StoreDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Parts\StoreDetail.aspx.designer.cs">
+      <DependentUpon>StoreDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\StoreList.aspx.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Parts\StoreList.aspx.designer.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
     </Compile>
     <Compile Include="DownLoadFile.ashx.cs">
       <DependentUpon>DownLoadFile.ashx</DependentUpon>

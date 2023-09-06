@@ -123,13 +123,13 @@ namespace EDMs.Web.Controls.Asset
         protected global::Telerik.Web.UI.RadPane Radpane4;
 
         /// <summary>
-        /// lbAsset control.
+        /// grdAsset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadListBox lbAsset;
+        protected global::Telerik.Web.UI.RadGrid grdAsset;
 
         /// <summary>
         /// RadSplitbar1 control.
@@ -456,13 +456,13 @@ namespace EDMs.Web.Controls.Asset
         protected global::Telerik.Web.UI.RadPageView RadPageView3;
 
         /// <summary>
-        /// grdAssetPartUsage control.
+        /// RadTreeView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdAssetPartUsage;
+        protected global::Telerik.Web.UI.RadTreeView RadTreeView1;
 
         /// <summary>
         /// RadPageView4 control.
@@ -492,13 +492,13 @@ namespace EDMs.Web.Controls.Asset
         protected global::Telerik.Web.UI.RadPane RadPane5;
 
         /// <summary>
-        /// grdAssetPartAssociated control.
+        /// grdAssetParameters control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdAssetPartAssociated;
+        protected global::Telerik.Web.UI.RadGrid grdAssetParameters;
 
         /// <summary>
         /// RadSplitbar3 control.
@@ -519,103 +519,103 @@ namespace EDMs.Web.Controls.Asset
         protected global::Telerik.Web.UI.RadPane RadPane6;
 
         /// <summary>
-        /// RadPageView5 control.
+        /// txtDonViDoParam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView5;
+        protected global::Telerik.Web.UI.RadTextBox txtDonViDoParam;
 
         /// <summary>
-        /// rtvAssetDocument control.
+        /// txtMoTaParam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTreeView rtvAssetDocument;
+        protected global::Telerik.Web.UI.RadTextBox txtMoTaParam;
 
         /// <summary>
-        /// DownloadMenu control.
+        /// txtTypeOfMeter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTreeViewContextMenu DownloadMenu;
+        protected global::Telerik.Web.UI.RadTextBox txtTypeOfMeter;
 
         /// <summary>
-        /// RadPageView6 control.
+        /// txtPhysicalMeter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView6;
+        protected global::Telerik.Web.UI.RadTextBox txtPhysicalMeter;
 
         /// <summary>
-        /// grdAssetEvent control.
+        /// txtTotalUsage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdAssetEvent;
+        protected global::Telerik.Web.UI.RadTextBox txtTotalUsage;
 
         /// <summary>
-        /// RadPageView7 control.
+        /// txtMeterRollover control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView7;
+        protected global::Telerik.Web.UI.RadTextBox txtMeterRollover;
 
         /// <summary>
-        /// RadSplitter2 control.
+        /// txtUsageSinceInstall control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadSplitter RadSplitter2;
+        protected global::Telerik.Web.UI.RadTextBox txtUsageSinceInstall;
 
         /// <summary>
-        /// RadPane7 control.
+        /// txtLastReading control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane RadPane7;
+        protected global::Telerik.Web.UI.RadTextBox txtLastReading;
 
         /// <summary>
-        /// grdAssetDepreciation control.
+        /// txtUsageSinceLastWO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdAssetDepreciation;
+        protected global::Telerik.Web.UI.RadTextBox txtUsageSinceLastWO;
 
         /// <summary>
-        /// RadSplitbar4 control.
+        /// txtLastReadingDate1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadSplitBar RadSplitbar4;
+        protected global::Telerik.Web.UI.RadTextBox txtLastReadingDate1;
 
         /// <summary>
-        /// RadPane8 control.
+        /// cbUpDownMeter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane RadPane8;
+        protected global::Telerik.Web.UI.RadCheckBox cbUpDownMeter;
 
         /// <summary>
         /// RadAjaxLoadingPanel2 control.
@@ -634,33 +634,6 @@ namespace EDMs.Web.Controls.Asset
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadAjaxManager ajaxCustomer;
-
-        /// <summary>
-        /// RadWindowManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindowManager RadWindowManager1;
-
-        /// <summary>
-        /// ImportData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindow ImportData;
-
-        /// <summary>
-        /// ChartReport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindow ChartReport;
 
         /// <summary>
         /// ProjectName control.

@@ -132,6 +132,10 @@
         #ctl00_ContentPlaceHolder2_txtSearch {
             height: 27px !important;
         }
+
+        #ctl00_ContentPlaceHolder2_grdAsset_GridData {
+            height: 650px !important;
+        }
     </style>
 
     <div style="width: 100%; height: 100%; background-color: #f0f0f0">
@@ -139,13 +143,15 @@
             <telerik:RadPane ID="Radpane1" runat="server" Width="100%" Height="40" ShowContentDuringLoad="False" Scrollable="false" Scrolling="None">
                 <telerik:RadToolBar RenderMode="Lightweight" runat="server" ID="ToolBarAsset" EnableRoundedCorners="true" EnableShadows="true" Skin="MetroTouch" Height="40">
                     <Items>
-                        <telerik:RadToolBarButton Text="Left" Group="Align">
+                        <telerik:RadToolBarButton Text="Left" Group="Align" Width="100%">
                             <ItemTemplate>
-                                <span style="color: dodgerblue; font-size: 16px; font-weight: normal; font-family: helvetica, arial, verdana, sans-serif;">Thiết Bị: </span>
+                                <div style="display: flex">
+                                    <span style="color: dodgerblue; font-size: 16px; font-weight: normal; font-family: helvetica, arial, verdana, sans-serif;">Thiết Bị: </span>
 
-                                <span style="color: black; font-size: 16px; font-weight: normal; font-family: helvetica, arial, verdana, sans-serif;">
-                                    <asp:Label runat="server" ID="lblAssetName"></asp:Label>
-                                </span>
+                                    <span style="color: black; font-size: 16px; font-weight: normal; font-family: helvetica, arial, verdana, sans-serif;">
+                                        <asp:Label runat="server" ID="lblAssetName"></asp:Label>
+                                    </span>
+                                </div>
                             </ItemTemplate>
                         </telerik:RadToolBarButton>
 
@@ -176,7 +182,7 @@
                                     ImageUrl="~/Images/search20.png" OnClick="btnSearch_OnClick" />
                             </telerik:RadPane>
                             <telerik:RadPane ID="Radpane4" runat="server" Width="100%">
-                                <telerik:RadListBox RenderMode="Lightweight" runat="server" ID="lbAsset" Height="100%" Width="100%" LoadingPanelID="<%# RadAjaxLoadingPanel2.ClientID %>" EnableLoadOnDemand="False" Skin="MetroTouch" OnSelectedIndexChanged="lbAsset_OnSelectedIndexChanged" AutoPostBack="True">
+                                <%--<telerik:RadListBox RenderMode="Lightweight" runat="server" ID="lbAsset" Height="100%" Width="100%" LoadingPanelID="<%# RadAjaxLoadingPanel2.ClientID %>" EnableLoadOnDemand="False" Skin="MetroTouch" OnSelectedIndexChanged="lbAsset_OnSelectedIndexChanged" AutoPostBack="True">
                                     <ItemTemplate>
                                         <span class="assetTitle"><%# DataBinder.Eval(Container, "Text")%></span>
                                         <table>
@@ -194,7 +200,54 @@
                                             </tr>
                                         </table>
                                     </ItemTemplate>
-                                </telerik:RadListBox>
+                                </telerik:RadListBox>--%>
+                                <telerik:RadGrid runat="server" ID="grdAsset"
+                                    OnNeedDataSource="grdAsset_NeedDataSource" Skin="MetroTouch" AllowPaging="true" AutoGenerateColumns="false" OnSelectedIndexChanged="grdAsset_SelectedIndexChanged" PageSize="300" Width="100%">
+                                    <ClientSettings Selecting-AllowRowSelect="true" EnableRowHoverStyle="true" EnablePostBackOnRowClick="true" />
+                                    <MasterTableView DataKeyNames="ThietBi" ShowHeader="false">
+                                        <PagerStyle AlwaysVisible="True" FirstPageToolTip="First page" LastPageToolTip="Last page" NextPagesToolTip="Next page" NextPageToolTip="Next page" PagerTextFormat="Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; / &lt;strong&gt;{1}&lt;/strong&gt;, Total:  &lt;strong&gt;{5}&lt;/strong&gt; items." PageSizeLabelText="Row/page: " PrevPagesToolTip="Previous page" PrevPageToolTip="Previous page" />
+                                        <Columns>
+                                            <telerik:GridTemplateColumn>
+                                                <ItemStyle Font-Size="14px" />
+                                                <ItemTemplate>
+                                                    <div style="width: 350px">
+                                                        <span class="assetTitle" runat="server" id="assetFullname" style="display: block"><%# DataBinder.Eval(Container.DataItem, "FullName")%></span>
+                                                        <table>
+                                                            <tr>
+                                                                <td align="right" style="width: 120px"><span class="assetDetail">Tổ chức:&nbsp;</span></td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbOrg" class="assetDetail" 
+                                                                        Text='<%# DataBinder.Eval(Container.DataItem, "ToChuc") %>'>
+                                                                    </asp:Label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right"><span class="assetDetail">Trạng Thái:&nbsp;</span></td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbStatus" class="assetDetail" 
+                                                                        Text='<%# DataBinder.Eval(Container.DataItem, "TrangThai") %>'>
+                                                                    </asp:Label>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right"><span class="assetDetail">Phòng ban/PX:&nbsp;</span></td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbPhongBan" class="assetDetail" 
+                                                                        Text='<%# DataBinder.Eval(Container.DataItem, "PhongBan") %>'>
+                                                                    </asp:Label>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <asp:HiddenField runat="server" ID="hfAsset" Value='<%# DataBinder.Eval(Container.DataItem, "ThietBi")%>' />
+                                                    <asp:HiddenField runat="server" ID="hfAssetFullName" Value='<%# DataBinder.Eval(Container.DataItem, "FullName")%>' />
+                                                </ItemTemplate>
+                                            </telerik:GridTemplateColumn>
+                                        </Columns>
+                                    </MasterTableView>
+                                    <ClientSettings Selecting-AllowRowSelect="true">
+                                        <Selecting AllowRowSelect="true" />
+                                        <Scrolling AllowScroll="True" SaveScrollPosition="True" ScrollHeight="500" UseStaticHeaders="True" />
+                                    </ClientSettings>
+                                </telerik:RadGrid>
                             </telerik:RadPane>
                         </telerik:RadSplitter>
                     </telerik:RadPane>
@@ -277,7 +330,7 @@
                                         <td align="right" style="width: 150px; padding-right: 2px">Ngày BĐ theo dõi</td>
                                         <td align="right" style="width: 150px; padding-right: 2px">
                                             <telerik:RadDatePicker ID="txtNgayBDTheoDoi" runat="server" Skin="MetroTouch" Width="150" Enabled="False">
-                                                <DateInput runat="server" DateFormat="dd-MMM-yy" ReadOnly="True" DisplayDateFormat="dd/MM/yyyy"/>
+                                                <DateInput runat="server" DateFormat="dd-MMM-yy" ReadOnly="True" DisplayDateFormat="dd/MM/yyyy" />
                                             </telerik:RadDatePicker>
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Khu vực</td>
@@ -416,80 +469,105 @@
                             </telerik:RadPageView>
                             <%--Ke hoach bao duong--%>
                             <telerik:RadPageView runat="server" ID="RadPageView2">
-                                <telerik:RadSplitter RenderMode="Lightweight" ID="PMScheduleSplitter" runat="server" Height="100%" Width="100%" Orientation="Horizontal" Skin="Silk">
-                                    <telerik:RadPane ID="PMSchedulePanel" runat="server" Width="100%" Height="300">
-                                        <telerik:RadGrid ID="grdAssetPMSchedule" runat="server" AllowPaging="true"
-                                            AutoGenerateColumns="False" CellPadding="0" CellSpacing="0"
-                                            GridLines="None" Height="100%" Skin="Metro"
-                                            OnNeedDataSource="grdAssetPMSchedule_OnNeedDataSource" ShowHeader="true">
-                                            <MasterTableView Width="100%" TableLayout="Auto" CssClass="rgMasterTable">
-                                                <CommandItemSettings ShowAddNewRecordButton="false" RefreshText="Làm mới dữ liệu" ShowExportToExcelButton="False" />
-                                                <PagerStyle AlwaysVisible="True" FirstPageToolTip="First page" LastPageToolTip="Last page" NextPagesToolTip="Next page" NextPageToolTip="Next page" PagerTextFormat="Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; / &lt;strong&gt;{1}&lt;/strong&gt;, Total:  &lt;strong&gt;{5}&lt;/strong&gt; items." PageSizeLabelText="Row/page: " PrevPagesToolTip="Previous page" PrevPageToolTip="Previous page" />
-                                                <HeaderStyle Font-Bold="True" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                <Columns>
-
-                                                    <telerik:GridBoundColumn DataField="QuyTrinh" HeaderText="Quy trình" UniqueName="QuyTrinh">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridBoundColumn DataField="MoTa" HeaderText="Mô tả" UniqueName="MoTa">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridBoundColumn DataField="PhongBan" HeaderText="Phòng ban/PX" UniqueName="PhongBan">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="120" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridBoundColumn DataField="ChuKy" HeaderText="Chu kỳ" UniqueName="ChuKy">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="100" />
-                                                        <ItemStyle HorizontalAlign="Right" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridDateTimeColumn DataFormatString="{0:dd/MM/yy}" DataField="NgayBatDau" HeaderText="Ngày bắt đầu" UniqueName="NgayBatDau">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="80" />
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                    </telerik:GridDateTimeColumn>
-
-                                                    <telerik:GridBoundColumn DataField="TanSuat" HeaderText="Tần suất" UniqueName="TanSuat">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridDateTimeColumn DataFormatString="{0:dd/MM/yy}" DataField="ThoiDiemBD" HeaderText="Thời điểm bắt đầu" UniqueName="ThoiDiemBD">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridDateTimeColumn>
-
-                                                    <telerik:GridBoundColumn DataField="PhieuCongViec" HeaderText="Phiếu công việc" UniqueName="PhieuCongViec">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridBoundColumn DataField="NguoiThucHien" HeaderText="Người thực hiện" UniqueName="NguoiThucHien">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-
-                                                    <telerik:GridBoundColumn DataField="NguoiGiamSat" HeaderText="Người giám sát" UniqueName="NguoiGiamSat">
-                                                        <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                    </telerik:GridBoundColumn>
-                                                </Columns>
-                                            </MasterTableView>
-                                            <ClientSettings Selecting-AllowRowSelect="true">
-                                                <Selecting AllowRowSelect="true" />
-                                                <Scrolling AllowScroll="True" SaveScrollPosition="True" ScrollHeight="500" UseStaticHeaders="True" />
-                                            </ClientSettings>
-                                        </telerik:RadGrid>
+                                <%--<telerik:RadSplitter RenderMode="Lightweight" ID="PMScheduleSplitter" runat="server" Height="90%" Width="100%" Orientation="Horizontal" Skin="Silk">
+                                    <telerik:RadPane ID="PMSchedulePanel" runat="server" Width="100%" Height="65%">
                                     </telerik:RadPane>
                                     <telerik:RadSplitBar ID="RadSplitbar2" runat="server" CollapseMode="Forward">
                                     </telerik:RadSplitBar>
                                     <telerik:RadPane ID="PMScheduleDetail" runat="server" Width="100%">
                                     </telerik:RadPane>
-                                </telerik:RadSplitter>
+                                </telerik:RadSplitter>--%>
+
+                                <div class="row" style="margin: 0 10px; height: 10%">
+                                    <div class="col" style="display: flex; justify-content: space-between">
+                                        <div class="col-4"></div>
+                                        <div class="col-4"></div>
+                                        <div class="col-4" style="display: flex; align-items: center">
+                                            <telerik:RadDropDownList runat="server" ID="ddlPMScheduleSearchType" Skin="MetroTouch">
+                                                <Items>
+                                                    <telerik:DropDownListItem Value="0" Text="Quy trình" />
+                                                    <telerik:DropDownListItem Value="1" Text="Mô tả" />
+                                                    <telerik:DropDownListItem Value="2" Text="Phòng ban/PX" />
+                                                    <telerik:DropDownListItem Value="3" Text="Chu kỳ" />
+                                                    <telerik:DropDownListItem Value="4" Text="Ngày bắt đầu" />
+                                                    <telerik:DropDownListItem Value="5" Text="Tần suất" />
+                                                    <telerik:DropDownListItem Value="6" Text="Thời điểm bắt đầu" />
+                                                    <telerik:DropDownListItem Value="7" Text="Phiếu công việc" />
+                                                    <telerik:DropDownListItem Value="8" Text="Người thực hiện" />
+                                                    <telerik:DropDownListItem Value="9" Text="Người giám sát" />
+                                                </Items>
+                                            </telerik:RadDropDownList>
+                                            <telerik:RadTextBox runat="server" ID="txtPPMScheduleSearch" Skin="MetroTouch"></telerik:RadTextBox>
+                                            <telerik:RadLinkButton runat="server" ID="RadLinkButton1" Text="Run" Skin="MetroTouch"></telerik:RadLinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                                <telerik:RadGrid ID="grdAssetPMSchedule" runat="server" AllowPaging="true"
+                                    AutoGenerateColumns="False" CellPadding="0" CellSpacing="0"
+                                    GridLines="None" Height="650px" Skin="Metro"
+                                    OnNeedDataSource="grdAssetPMSchedule_OnNeedDataSource">
+                                    <MasterTableView Width="100%" TableLayout="Auto" CssClass="rgMasterTable" ShowHeader="true">
+                                        <CommandItemSettings ShowAddNewRecordButton="false" RefreshText="Làm mới dữ liệu" ShowExportToExcelButton="False" />
+                                        <PagerStyle AlwaysVisible="True" FirstPageToolTip="First page" LastPageToolTip="Last page" NextPagesToolTip="Next page" NextPageToolTip="Next page" PagerTextFormat="Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; / &lt;strong&gt;{1}&lt;/strong&gt;, Total:  &lt;strong&gt;{5}&lt;/strong&gt; items." PageSizeLabelText="Row/page: " PrevPagesToolTip="Previous page" PrevPageToolTip="Previous page" />
+                                        <HeaderStyle Font-Bold="True" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <Columns>
+
+                                            <telerik:GridBoundColumn DataField="QuyTrinh" HeaderText="Quy trình" UniqueName="QuyTrinh">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridBoundColumn DataField="MoTa" HeaderText="Mô tả" UniqueName="MoTa">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridBoundColumn DataField="PhongBan" HeaderText="Phòng ban/PX" UniqueName="PhongBan">
+                                                <HeaderStyle HorizontalAlign="Center" Width="120" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridBoundColumn DataField="ChuKy" HeaderText="Chu kỳ" UniqueName="ChuKy">
+                                                <HeaderStyle HorizontalAlign="Center" Width="100" />
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridDateTimeColumn DataFormatString="{0:dd/MM/yy}" DataField="NgayBatDau" HeaderText="Ngày bắt đầu" UniqueName="NgayBatDau">
+                                                <HeaderStyle HorizontalAlign="Center" Width="80" />
+                                                <ItemStyle HorizontalAlign="Center" />
+                                            </telerik:GridDateTimeColumn>
+
+                                            <telerik:GridBoundColumn DataField="TanSuat" HeaderText="Tần suất" UniqueName="TanSuat">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridDateTimeColumn DataFormatString="{0:dd/MM/yy}" DataField="ThoiDiemBD" HeaderText="Thời điểm bắt đầu" UniqueName="ThoiDiemBD">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridDateTimeColumn>
+
+                                            <telerik:GridBoundColumn DataField="PhieuCongViec" HeaderText="Phiếu công việc" UniqueName="PhieuCongViec">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridBoundColumn DataField="NguoiThucHien" HeaderText="Người thực hiện" UniqueName="NguoiThucHien">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+
+                                            <telerik:GridBoundColumn DataField="NguoiGiamSat" HeaderText="Người giám sát" UniqueName="NguoiGiamSat">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                            </telerik:GridBoundColumn>
+                                        </Columns>
+                                    </MasterTableView>
+                                    <ClientSettings Selecting-AllowRowSelect="true">
+                                        <Selecting AllowRowSelect="true" />
+                                        <Scrolling AllowScroll="True" SaveScrollPosition="True" ScrollHeight="500" UseStaticHeaders="True" />
+                                    </ClientSettings>
+                                </telerik:RadGrid>
                             </telerik:RadPageView>
                             <%--Vat tu su dung--%>
                             <telerik:RadPageView runat="server" ID="RadPageView3">
@@ -770,7 +848,7 @@
                     </UpdatedControls>
                 </telerik:AjaxSetting>
 
-                <telerik:AjaxSetting AjaxControlID="lbAsset">
+                <telerik:AjaxSetting AjaxControlID="grdAsset">
                     <UpdatedControls>
                         <telerik:AjaxUpdatedControl ControlID="lblAssetName" />
                         <telerik:AjaxUpdatedControl ControlID="TabAssetDetail" LoadingPanelID="RadAjaxLoadingPanel2" />
@@ -783,13 +861,13 @@
                         <telerik:AjaxUpdatedControl ControlID="grdAssetDepreciation" LoadingPanelID="RadAjaxLoadingPanel2" />
                         <telerik:AjaxUpdatedControl ControlID="grdAssetHistory" LoadingPanelID="RadAjaxLoadingPanel2" />
                         <telerik:AjaxUpdatedControl ControlID="grdAssetEvent" LoadingPanelID="RadAjaxLoadingPanel2" />
-                        <telerik:AjaxUpdatedControl ControlID="lbAsset" LoadingPanelID="RadAjaxLoadingPanel2" />
+                        <telerik:AjaxUpdatedControl ControlID="grdAsset" LoadingPanelID="RadAjaxLoadingPanel2" />
                     </UpdatedControls>
                 </telerik:AjaxSetting>
 
                 <telerik:AjaxSetting AjaxControlID="btnSearch">
                     <UpdatedControls>
-                        <telerik:AjaxUpdatedControl ControlID="lbAsset" LoadingPanelID="RadAjaxLoadingPanel2" />
+                        <telerik:AjaxUpdatedControl ControlID="grdAsset" LoadingPanelID="RadAjaxLoadingPanel2" />
                     </UpdatedControls>
                 </telerik:AjaxSetting>
 

@@ -19,8 +19,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using EDMs.Business.Services;
 using EDMs.Data.Dto;
+using EDMs.Data.Dto.Asset;
+using EDMs.Data.Dto.MRC;
 using EDMs.Web.Utilities.Sessions;
 using Telerik.Web.UI;
+using Telerik.Web.UI.Skins;
 
 namespace EDMs.Web.Controls.Asset
 {
@@ -45,22 +48,19 @@ namespace EDMs.Web.Controls.Asset
         /// </param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session.Add("SelectedMainMenu", "Quản Lý Tài Sản");
+            Session.Add("SelectedMainMenu", "Quản lý thiết bị");
             this.Title = ConfigurationManager.AppSettings.Get("AppName");
-
 
             if (!Page.IsPostBack)
             {
                 this.GetAssetDataList();
-                this.LoadAssetList();
-                //this.lbAsset.SelectedIndex = 0;
             }
         }
 
         private void GetAssetDataList()
         {
             var userParam = new SqlParameter("@user", SqlDbType.NVarChar);
-            userParam.Value = UserSession.Current.User.Username;
+            userParam.Value = UserSession.Current.User.Id;
             DataSet ds;
             var assetList = new List<AssetDto>();
             ds = this.eamService.GetDataSet("get_asset_r5", new[] { userParam });
@@ -76,26 +76,11 @@ namespace EDMs.Web.Controls.Asset
             Session.Add("AssestList", assetList);
         }
 
-        private void LoadAssetList()
-        {
-            var assetList = Session["AssestList"] as List<AssetDto>;
-            this.BindAssestData(assetList);
-            
-        }
-
         private void BindAssestData(List<AssetDto> assetList)
         {
-            this.lbAsset.Items.Clear();
-            foreach (var item in assetList)
-            {
-                var lbItem = new RadListBoxItem(item.FullName, item.ThietBi);
-                lbItem.Attributes.Add("ToChuc", item.ToChuc);
-                lbItem.Attributes.Add("TrangThai", item.TrangThai == "I" ? "Đã lắp đặp" : "Đã gỡ bỏ");
-                lbItem.Attributes.Add("PhongBan", item.PhongBan);
-                this.lbAsset.Items.Add(lbItem);
-            }
-
-            this.lbAsset.DataBind();
+            this.grdAsset.DataSource = null;
+            this.grdAsset.DataSource = assetList;
+            this.grdAsset.DataBind();
         }
 
         private static int[] GetData()
@@ -109,31 +94,13 @@ namespace EDMs.Web.Controls.Asset
             }
             return arr;
         }
+
         protected void RadAjaxManager1_AjaxRequest(object sender, AjaxRequestEventArgs e)
         {
             if (e.Argument == "RefreshProgressReport")
             {
             }
-            
-        }
 
-        protected void lbAsset_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var lblAssetName = this.ToolBarAsset.Items[0].FindControl("lblAssetName") as Label;
-            lblAssetName.Text = this.lbAsset.SelectedItem.Text;
-
-            var assestList = Session["AssestList"] as List<AssetDto>;
-            var assetObj = assestList.FirstOrDefault(t => t.ThietBi == lbAsset.SelectedValue);
-
-            //this.LoadAssetStructure(assetObj);
-            this.grdAssetPMSchedule.Rebind();
-            //this.grdAssetPartUsage.Rebind();
-            //this.grdAssetPartAssociated.Rebind();
-            //this.LoadAssetDocumentTree(assetObj);
-            //this.grdAssetDepreciation.Rebind();
-            //this.grdAssetEvent.Rebind();
-            this.grdAssetHistory.Rebind();
-            this.FillObjectDetail(assetObj);
         }
 
         private void LoadAssetDocumentTree(AssetDto assetObj)
@@ -161,35 +128,6 @@ namespace EDMs.Web.Controls.Asset
             //    }
 
             //    this.rtvAssetDocument.Nodes.Add(mainNode);
-
-            //}
-        }
-
-        private void LoadAssetStructure(AssetDto assetObj)
-        {
-            //this.rtvAssetLvl.Nodes.Clear();
-            //var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //objectParam.Value = assetObj.ThietBi;
-            //organizationParam.Value = assetObj.DonVi;
-            //DataSet ds;
-            //var assetList = new List<AssetStructureDto>();
-            //ds = this.eamService.GetDataSet("get_asset_structure", new[] { objectParam, organizationParam });
-            //if (ds != null)
-            //{
-            //    assetList = this.eamService.CreateListFromTable<AssetStructureDto>(ds.Tables[0]);
-            //    var mainNode = new RadTreeNode(assetObj.FullName, assetObj.ThietBi);
-            //    mainNode.ImageUrl = @"~/Images/folderdir16.png";
-            //    foreach (var item in assetList)
-            //    {
-            //        var childNode = new RadTreeNode(item.MA_THIET_BI + " - " + item.TEN_THIET_BI, item.MA_THIET_BI);
-            //        childNode.ImageUrl = @"~/Images/folderdir16.png";
-
-            //        mainNode.Nodes.Add(childNode);
-            //        mainNode.Expanded = true;
-            //    }
-
-            //    this.rtvAssetLvl.Nodes.Add(mainNode);
 
             //}
         }
@@ -223,17 +161,14 @@ namespace EDMs.Web.Controls.Asset
         protected void grdAssetPMSchedule_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
         {
             var assetPMScheduleList = new List<AssetPMScheduleDto>();
-            if (this.lbAsset.SelectedItem != null)
+            if (this.grdAsset.SelectedItems.Count > 0)
             {
-                var assetObj = new AssetDto()
-                {
-                    ThietBi = this.lbAsset.SelectedItem.Value,
-                    ToChuc = this.lbAsset.SelectedItem.Attributes["ToChuc"]
-                };
+                var OBJ_CODE = this.grdAsset.SelectedItems[0].FindControl("hfAsset") as HiddenField;
+                var ORG = this.grdAsset.SelectedItems[0].FindControl("lbOrg") as Label;
                 var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
                 var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-                objectParam.Value = assetObj.ThietBi;
-                organizationParam.Value = assetObj.ToChuc;
+                objectParam.Value = OBJ_CODE.Value;
+                organizationParam.Value = ORG.Text;
                 DataSet ds;
                 ds = this.eamService.GetDataSet("get_asset_pmschedule", new[] { objectParam, organizationParam });
                 if (ds != null)
@@ -243,106 +178,6 @@ namespace EDMs.Web.Controls.Asset
             }
 
             this.grdAssetPMSchedule.DataSource = assetPMScheduleList;
-        }
-
-        protected void grdAssetPartUsage_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
-        {
-            //var assetPartUsageList = new List<AssetPartUsageDto>();
-            //if (this.lbAsset.SelectedItem != null)
-            //{
-            //    var assetObj = new AssetDto()
-            //    {
-            //        ThietBi = this.lbAsset.SelectedItem.Value,
-            //        DonVi = this.lbAsset.SelectedItem.Attributes["DonVi"]
-            //    };
-            //    var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //    var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //    objectParam.Value = assetObj.ThietBi;
-            //    organizationParam.Value = assetObj.DonVi;
-            //    DataSet ds;
-            //    ds = this.eamService.GetDataSet("get_asset_part_usage", new[] { objectParam, organizationParam });
-            //    if (ds != null)
-            //    {
-            //        assetPartUsageList = this.eamService.CreateListFromTable<AssetPartUsageDto>(ds.Tables[0]);
-            //    }
-            //}
-
-            //this.grdAssetPartUsage.DataSource = assetPartUsageList;
-        }
-
-        protected void grdAssetPartAssociated_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
-        {
-            //var assetPartAssociatedList = new List<AssetPartAssociatedDto>();
-            //if (this.lbAsset.SelectedItem != null)
-            //{
-            //    var assetObj = new AssetDto()
-            //    {
-            //        ThietBi = this.lbAsset.SelectedItem.Value,
-            //        DonVi = this.lbAsset.SelectedItem.Attributes["DonVi"]
-            //    };
-            //    var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //    var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //    objectParam.Value = assetObj.ThietBi;
-            //    organizationParam.Value = assetObj.DonVi;
-            //    DataSet ds;
-            //    ds = this.eamService.GetDataSet("get_asset_part_associated", new[] { objectParam, organizationParam });
-            //    if (ds != null)
-            //    {
-            //        assetPartAssociatedList = this.eamService.CreateListFromTable<AssetPartAssociatedDto>(ds.Tables[0]);
-            //    }
-            //}
-
-            //this.grdAssetPartAssociated.DataSource = assetPartAssociatedList;
-        }
-
-        protected void grdAssetDepreciation_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
-        {
-            //var assetDepreciationList = new List<AssetDepreciationDto>();
-            //if (this.lbAsset.SelectedItem != null)
-            //{
-            //    var assetObj = new AssetDto()
-            //    {
-            //        ThietBi = this.lbAsset.SelectedItem.Value,
-            //        DonVi = this.lbAsset.SelectedItem.Attributes["DonVi"]
-            //    };
-            //    var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //    var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //    objectParam.Value = assetObj.ThietBi;
-            //    organizationParam.Value = assetObj.DonVi;
-            //    DataSet ds;
-            //    ds = this.eamService.GetDataSet("get_asset_depreciations", new[] { objectParam, organizationParam });
-            //    if (ds != null)
-            //    {
-            //        assetDepreciationList = this.eamService.CreateListFromTable<AssetDepreciationDto>(ds.Tables[0]);
-            //    }
-            //}
-
-            //this.grdAssetDepreciation.DataSource = assetDepreciationList;
-        }
-
-        protected void grdAssetEvent_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
-        {
-            //var assetEventList = new List<AssetEventDto>();
-            //if (this.lbAsset.SelectedItem != null)
-            //{
-            //    var assetObj = new AssetDto()
-            //    {
-            //        ThietBi = this.lbAsset.SelectedItem.Value,
-            //        DonVi = this.lbAsset.SelectedItem.Attributes["DonVi"]
-            //    };
-            //    var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //    var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //    objectParam.Value = assetObj.ThietBi;
-            //    organizationParam.Value = assetObj.DonVi;
-            //    DataSet ds;
-            //    ds = this.eamService.GetDataSet("get_asset_events", new[] { objectParam, organizationParam });
-            //    if (ds != null)
-            //    {
-            //        assetEventList = this.eamService.CreateListFromTable<AssetEventDto>(ds.Tables[0]);
-            //    }
-            //}
-
-            //this.grdAssetEvent.DataSource = assetEventList;
         }
 
         private void FillObjectDetail(AssetDto obj)
@@ -367,12 +202,58 @@ namespace EDMs.Web.Controls.Asset
             this.txtGiaTri.Text = obj.GiaTri;
             this.txtPhanLoai.Text = obj.PhanLoai;
 
-            this.txtSerialNumber.Text = obj.SerialNumber;   
+            this.txtSerialNumber.Text = obj.SerialNumber;
             this.txtSoDangKy.Text = obj.SoDangKy;
-            
+
             this.txtXepLoai.Text = obj.XepLoai;
             this.txtNguoiQuanLy.Text = obj.NguoiQuanLy;
         }
+
+        public class TreeNodeData
+        {
+            public int ThietBi { get; set; }
+            public string TenThietBi { get; set; }
+            public int ThietBiCha { get; set; }
+        }
+
+
+        private void LoadTreeView(AssetDto assetDto)
+        {
+            List<TreeNodeData> treeData = new List<TreeNodeData>
+            {
+                new TreeNodeData { ThietBi = 1, TenThietBi = assetDto.TenThietBi, ThietBiCha = 0 },
+            };
+
+            var assestList = Session["AssestList"] as List<AssetDto>;
+            var childList = assestList.Where(t => t.ThietBiCha == assetDto.ThietBi).ToList();
+            if (childList.Count > 0)
+            {
+                int i = 2;
+                foreach (var item in childList)
+                {
+                    treeData.Add(new TreeNodeData()
+                    {
+                        ThietBi = i,
+                        TenThietBi = item.TenThietBi,
+                        ThietBiCha = 1
+                    });
+                    i++;
+                }
+            }
+
+            RadTreeView1.DataTextField = "TenThietBi";
+            RadTreeView1.DataFieldID = "ThietBi";
+            RadTreeView1.DataFieldParentID = "ThietBiCha";
+            RadTreeView1.DataSource = treeData;
+            RadTreeView1.DataBind();
+
+            foreach (RadTreeNode rtn in RadTreeView1.Nodes)
+            {
+                rtn.ExpandChildNodes();
+                rtn.Expanded = true;
+            }
+        }
+
 
         protected void rtvObjectDocument_OnContextMenuItemClick(object sender, RadTreeViewContextMenuEventArgs e)
         {
@@ -384,43 +265,15 @@ namespace EDMs.Web.Controls.Asset
 
         protected void grdAssetHistory_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
         {
-            //var assetEventList = new List<AssetEventDto>();
-
-            //if (this.lbAsset.SelectedItem != null)
-            //{
-            //    var lblAssetName = this.ToolBarAsset.Items[0].FindControl("lblAssetName") as Label;
-            //    lblAssetName.Text = this.lbAsset.SelectedItem.Text;
-            //    var assestList = Session["AssestList"] as List<AssetDto>;
-            //    var assetObj = assestList.FirstOrDefault(t => t.ThietBi == lbAsset.SelectedValue);
-                
-
-            //    if (assetObj != null)
-            //    {
-            //        var userParam = new SqlParameter("@user", SqlDbType.NVarChar);
-            //        userParam.Value = UserSession.Current.User.Username;
-            //        DataSet ds;
-            //        ds = this.eamService.GetDataSet("get_assetEvent_r5", new[] { userParam });
-            //        if (ds != null)
-            //        {
-            //            assetEventList = this.eamService.CreateListFromTable<AssetEventDto>(ds.Tables[0]);
-            //        }
-            //    }
-            //}
-
-            //this.grdAssetHistory.DataSource = assetEventList;
-
             var assetEventList = new List<AssetEventDto>();
-            if (this.lbAsset.SelectedItem != null)
+            if (this.grdAsset.SelectedItems.Count > 0)
             {
-                var assetObj = new AssetDto()
-                {
-                    ThietBi = this.lbAsset.SelectedItem.Value,
-                    ToChuc = this.lbAsset.SelectedItem.Attributes["ToChuc"]
-                };
+                var OBJ_CODE = this.grdAsset.SelectedItems[0].FindControl("hfAsset") as HiddenField;
+                var ORG = this.grdAsset.SelectedItems[0].FindControl("lbOrg") as Label;
                 var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
                 var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-                objectParam.Value = assetObj.ThietBi;
-                organizationParam.Value = assetObj.ToChuc;
+                objectParam.Value = OBJ_CODE.Value;
+                organizationParam.Value = ORG.Text;
                 DataSet ds;
                 ds = this.eamService.GetDataSet("get_assetEvent_r5", new[] { objectParam, organizationParam });
                 if (ds != null)
@@ -430,6 +283,108 @@ namespace EDMs.Web.Controls.Asset
             }
 
             this.grdAssetHistory.DataSource = assetEventList;
+        }
+
+        protected void grdAsset_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
+        {
+            var assestList = Session["AssestList"] as List<AssetDto>;
+
+            this.grdAsset.DataSource = assestList;
+        }
+
+        protected void grdAsset_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var OBJ_CODE = this.grdAsset.SelectedItems[0].FindControl("hfAsset") as HiddenField;
+            var hfAssetFullName = this.grdAsset.SelectedItems[0].FindControl("hfAssetFullName") as HiddenField;
+            var lblAssetName = this.ToolBarAsset.Items[0].FindControl("lblAssetName") as Label;
+            lblAssetName.Text = hfAssetFullName.Value;
+            var assestList = Session["AssestList"] as List<AssetDto>;
+            var assetObj = assestList.FirstOrDefault(t => t.ThietBi == OBJ_CODE.Value);
+
+            this.grdAssetPMSchedule.Rebind();
+            this.grdAssetHistory.Rebind();
+            this.FillObjectDetail(assetObj);
+            this.LoadTreeView(assetObj);
+            this.grdAssetParameters.Rebind();
+        }
+
+        protected void grdAsset_ItemDataBound(object sender, GridItemEventArgs e)
+        {
+            if (e.Item is GridDataItem)
+            {
+                var item = e.Item as GridDataItem;
+                var lbStatus = item.FindControl("lbStatus") as Label;
+                var hfStatus = item.FindControl("hfStatus") as HiddenField;
+                lbStatus.Text = hfStatus.Value == "I" ? "Đã lắp đặt" : "Đã gỡ bỏ";
+            }
+        }
+
+        protected void RadTreeView1_NodeDataBound(object sender, RadTreeNodeEventArgs e)
+        {
+            e.Node.ImageUrl = "../../Images/folderdir16.png";
+        }
+
+        protected void grdAssetParameters_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
+        {
+            var assetParameterList = new List<AssetParameterDto>();
+            if (this.grdAsset.SelectedItems.Count > 0)
+            {
+                var OBJ_CODE = this.grdAsset.SelectedItems[0].FindControl("hfAsset") as HiddenField;
+                var ORG = this.grdAsset.SelectedItems[0].FindControl("lbOrg") as Label;
+                var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
+                var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
+                objectParam.Value = OBJ_CODE.Value;
+                organizationParam.Value = ORG.Text;
+                DataSet ds;
+                ds = this.eamService.GetDataSet("get_assetParam_r5", new[] { objectParam, organizationParam });
+                if (ds != null)
+                {
+                    assetParameterList = this.eamService.CreateListFromTable<AssetParameterDto>(ds.Tables[0]);
+                }
+            }
+            this.grdAssetParameters.DataSource = assetParameterList;
+        }
+
+        protected void grdAssetParameters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Lấy chỉ mục (index) của dòng được chọn
+            var selectedItem = grdAssetParameters.SelectedItems;
+
+            if (selectedItem.Count > 0)
+            {
+                // Lấy dòng được chọn từ chỉ mục
+                GridDataItem selectedRow = grdAssetParameters.SelectedItems[0] as GridDataItem;
+
+                if (selectedRow != null)
+                {
+                    // Lấy giá trị của cột "MyColumn" từ dòng được chọn
+                    string donvido = selectedRow["DonViDo"].Text;
+                    string mota = selectedRow["MoTa"].Text;
+                    string totalusage = selectedRow["TotalUsage"].Text;
+                    string usagesinceinstall = selectedRow["UsageSinceInstall"].Text;
+                    string usagesincelastwo = selectedRow["UsageSinceLastWO"].Text;
+                    string typeofmeter = selectedRow["TypeOfMeter"].Text;
+                    string physicalmeter = selectedRow["PhysicalMeter"].Text;
+                    string meterrollover = selectedRow["MeterRollover"].Text;
+                    string lastreading = selectedRow["LastReading"].Text;
+                    string lastreadingdate = selectedRow["LastReadingDate"].Text;
+                    string updownmeter = selectedRow["UpDownMeter"].Text;
+
+                    // Bây giờ bạn có thể làm gì đó với giá trị của cột, ví dụ:
+                    // Hiển thị giá trị trong một Label
+                    this.txtDonViDoParam.Text = !string.IsNullOrEmpty(donvido) ? donvido : "";
+                    this.txtMoTaParam.Text = !string.IsNullOrEmpty(mota) ? mota : "";
+                    this.txtTotalUsage.Text = !string.IsNullOrEmpty(totalusage) ? totalusage : "";
+                    this.txtUsageSinceInstall.Text = !string.IsNullOrEmpty(usagesinceinstall) ? usagesinceinstall : "";
+                    this.txtUsageSinceLastWO.Text = !string.IsNullOrEmpty(usagesincelastwo) ? usagesincelastwo : "";
+                    this.txtTypeOfMeter.Text = !string.IsNullOrEmpty(typeofmeter) ? typeofmeter : "";
+                    this.txtPhysicalMeter.Text = !string.IsNullOrEmpty(physicalmeter) && physicalmeter != "&nbsp;" ? physicalmeter : "";
+                    this.txtMeterRollover.Text = !string.IsNullOrEmpty(meterrollover) && meterrollover != "&nbsp;" ? meterrollover : "";
+                    this.txtLastReading.Text = !string.IsNullOrEmpty(lastreading) ? lastreading : "";
+                    this.txtLastReadingDate1.Text = !string.IsNullOrEmpty(lastreadingdate) && lastreadingdate != "&nbsp;" ? lastreadingdate : "";
+                    this.cbUpDownMeter.Checked = updownmeter == "+" ? true : false;
+                }
+            }
         }
     }
 }
