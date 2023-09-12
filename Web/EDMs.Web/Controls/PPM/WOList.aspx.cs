@@ -1,31 +1,21 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Customer.aspx.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   Class customer
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
+﻿using EDMs.Business.Services;
+using EDMs.Data.Dto;
+using EDMs.Web.Utilities.Sessions;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
+using System.Linq;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using EDMs.Business.Services;
-using EDMs.Data.Dto;
-using EDMs.Data.Dto.PPM;
-using EDMs.Web.Utilities.Sessions;
 using Telerik.Web.UI;
+using EDMs.Data.Dto.PPM;
 
 namespace EDMs.Web.Controls.PPM
 {
-    /// <summary>
-    /// Class customer
-    /// </summary>
-    public partial class WOList : Page
+    public partial class WOList : System.Web.UI.Page
     {
         /// <summary>
         /// The scope project service.
@@ -43,9 +33,8 @@ namespace EDMs.Web.Controls.PPM
         /// </param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session.Add("SelectedMainMenu", "Quản Lý Công Việc");
+            Session.Add("SelectedMainMenu", "Quản lý công việc");
             this.Title = ConfigurationManager.AppSettings.Get("AppName");
-
 
             if (!Page.IsPostBack)
             {
@@ -55,24 +44,34 @@ namespace EDMs.Web.Controls.PPM
         protected void grdData_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
         {
             var userParam = new SqlParameter("@user", SqlDbType.NVarChar);
-            userParam.Value = UserSession.Current.User.Username.ToUpper();
+            userParam.Value = UserSession.Current.User.Id;
             DataSet ds;
-            var objectList = new List<WODto>();
-            ds = this.eamService.GetDataSet("get_wo_list", new[] { userParam });
+            var dataList = new List<WODto>();
+            ds = this.eamService.GetDataSet("get_WO_r5", new[] { userParam });
             if (ds != null)
             {
-                objectList = this.eamService.CreateListFromTable<WODto>(ds.Tables[0]);
+                dataList = this.eamService.CreateListFromTable<WODto>(ds.Tables[0]);
             }
 
-            grdData.DataSource = objectList;
+            grdData.DataSource = dataList;
         }
 
         protected void ckbEnableFilter_CheckedChange(object sender, EventArgs e)
         {
             this.grdData.AllowFilteringByColumn = ((CheckBox)sender).Checked;
-            this.grdData.Height = Unit.Percentage(((CheckBox)sender).Checked ? 85 : 90);
+            this.grdData.Height = Unit.Percentage(((CheckBox)sender).Checked ? 75 : 80);
             this.grdData.Rebind();
+        }
+
+        protected void grdData_ItemDataBound(object sender, GridItemEventArgs e)
+        {
+            if (e.Item is GridDataItem)
+            {
+                GridDataItem dataItem = (GridDataItem)e.Item;
+                string douutien = dataItem["DoUuTien"].Text;
+                Label lbDoUuTien = dataItem["lbDoUuTien"].FindControl("lbDoUuTien") as Label;
+                lbDoUuTien.Text = !string.IsNullOrEmpty(douutien) ? douutien.Split('@')[0] : "";
+            }
         }
     }
 }
-

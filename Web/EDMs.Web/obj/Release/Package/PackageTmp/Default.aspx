@@ -242,7 +242,7 @@
     <div style=" width: 100%; height: 100%; background-color: #f0f0f0">
         <telerik:RadSplitter RenderMode="Lightweight" ID="MainSplitter" runat="server" Height="100%" Width="100%">
             <telerik:RadPane ID="RadPane1" runat="server" Width="450" Locked="True" CssClass="dashboard">
-                <div >
+                <div style="display: none">
                     <div style="border-color: #d8d8d8; border-bottom-width: 1px !important; height: 35px; border-style: solid; border-width: 0px">
                         <div class="divTitle" style="width: 400px">Thông Báo</div>
                         <div class="divBtnRefresh">
@@ -272,7 +272,7 @@
             <telerik:RadPane ID="RadPane3" runat="server" Scrolling="Both" Height="100%">
                 <telerik:RadSplitter RenderMode="Lightweight" ID="Radsplitter3" runat="server" Height="100%" Orientation="Horizontal">
                     <telerik:RadPane ID="RadPane2" runat="server" Height="40%" CssClass="dashboard1">
-                        <div style="width: 98%">
+                        <div style="width: 98%; display: none">
                             <div style="border-color: #d8d8d8;border-bottom-width: 1px !important;height: 35px; border-style: solid;border-width: 0px">
                                 <div class="divTitle" style="width: 400px">Biểu đồ</div>
                                 <div class="divBtnRefresh">
@@ -383,7 +383,7 @@
                         </div>
                     </telerik:RadPane>
                     <telerik:RadPane ID="RadPane4" runat="server" Height="60%"  CssClass="dashboard1" >
-                        <div style="width: 98%">
+                        <div style="width: 98%; display: none">
                             <div style="border-color: #d8d8d8;border-bottom-width: 1px !important;height: 35px; border-style: solid;border-width: 0px">
                                 <div class="divTitle" style="width: 400px">Đánh giá hiệu năng</div>
                                 <div class="divBtnRefresh">
@@ -391,7 +391,7 @@
                                 </div>
                             </div>
                         </div>
-                        <table width="100%">
+                        <table width="100%" style="display: none">
                             <tr style="height: 100px">
                                 <td width="20%" align="center">
                                     <telerik:RadRadialGauge runat="server" ID="Gauge1" Width="60%">
@@ -551,12 +551,7 @@
                             </tr>
                         </table>
                     </telerik:RadPane>
-
-
                 </telerik:RadSplitter>
-
-
-                
             </telerik:RadPane>
         </telerik:RadSplitter>
         

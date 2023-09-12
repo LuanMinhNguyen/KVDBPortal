@@ -135,17 +135,12 @@
                     <Items>
                         <telerik:RadToolBarButton ImageUrl="~/Images/toolbar_split.png" ToolTip="Split View" Value="SplitView" />
                         <telerik:RadToolBarButton runat="server" IsSeparator="true" />
-                        <telerik:RadToolBarButton ImageUrl="~/Images/clear_24.png" ToolTip="Clear Filter" Value="ClearFilter" />
-                        <telerik:RadToolBarButton runat="server" IsSeparator="true" />
-
                         <telerik:RadToolBarButton runat="server" Value="IsFilter">
                             <ItemTemplate>
                                 <asp:CheckBox ID="ckbEnableFilter" runat="server" Text="Show Filter Row" AutoPostBack="True"
                                     OnCheckedChanged="ckbEnableFilter_CheckedChange" />
                             </ItemTemplate>
                         </telerik:RadToolBarButton>
-
-
                     </Items>
                 </telerik:RadToolBar>
             </telerik:RadPane>
@@ -328,19 +323,6 @@
                 var strValue = button.get_value();
                 if (strValue == "SplitView") {
                     window.location.href = "AssetDetail.aspx";
-                } else if (strValue == "ClearFilter") {
-                    var grid = $find("<%=grdData.ClientID %>");
-                    var masterTableView = grid.get_masterTableView();
-                    masterTableView.clearFilter("ToChuc");
-                    masterTableView.clearFilter("ThietBi");
-                    masterTableView.clearFilter("TenThietBi");
-                    masterTableView.clearFilter("lbTrangThai");
-                    masterTableView.clearFilter("PhongBan");
-                    masterTableView.clearFilter("Nhom");
-                    masterTableView.clearFilter("ThietBiCha");
-                    masterTableView.clearFilter("PhanLoai");
-                    masterTableView.clearFilter("KhuVuc");
-                    masterTableView.clearFilter("NgayBDTheoDoi");
                 }
             }
         </script>

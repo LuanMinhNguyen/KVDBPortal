@@ -390,7 +390,7 @@ namespace EDMs.Web.Controls.Asset
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadLinkButton btnSearchHistory;
+        protected global::Telerik.Web.UI.RadButton btnSearchHistory;
 
         /// <summary>
         /// grdAssetHistory control.
@@ -429,13 +429,13 @@ namespace EDMs.Web.Controls.Asset
         protected global::Telerik.Web.UI.RadTextBox txtPPMScheduleSearch;
 
         /// <summary>
-        /// RadLinkButton1 control.
+        /// btnPPMScheduleSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadLinkButton RadLinkButton1;
+        protected global::Telerik.Web.UI.RadButton btnPPMScheduleSearch;
 
         /// <summary>
         /// grdAssetPMSchedule control.
@@ -472,6 +472,33 @@ namespace EDMs.Web.Controls.Asset
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadPageView RadPageView4;
+
+        /// <summary>
+        /// ddlAssetParamSearchType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadDropDownList ddlAssetParamSearchType;
+
+        /// <summary>
+        /// txtAssetParamSearchText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadTextBox txtAssetParamSearchText;
+
+        /// <summary>
+        /// btnAssetParamSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadButton btnAssetParamSearch;
 
         /// <summary>
         /// RadSplitter1 control.
@@ -517,6 +544,15 @@ namespace EDMs.Web.Controls.Asset
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadPane RadPane6;
+
+        /// <summary>
+        /// paramInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl paramInfo;
 
         /// <summary>
         /// txtDonViDoParam control.

@@ -9,13 +9,13 @@ namespace EDMs.Data.Dto.Asset
     {
         public string DonViDo { get; set; }
         public string MoTa { get; set; }
-        public string TotalUsage { get; set; }
-        public string UsageSinceInstall { get; set; }
-        public string UsageSinceLastWO { get; set; }
+        public int TotalUsage { get; set; }
+        public int UsageSinceInstall { get; set; }
+        public int UsageSinceLastWO { get; set; }
         public string TypeOfMeter { get; set; }
         public string PhysicalMeter { get; set; }
         public string MeterRollover { get; set; }
-        public string LastReading { get; set; }
+        public int LastReading { get; set; }
         public string LastReadingDate { get; set; }
         public string EstDailyUsage { get; set;}
         public string AvgDailyUsageDate { get; set; }

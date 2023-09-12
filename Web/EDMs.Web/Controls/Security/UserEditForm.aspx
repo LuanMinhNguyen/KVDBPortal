@@ -180,7 +180,7 @@
                     <div style="clear: both; font-size: 0;"></div>
                 </li>
                 
-                <li style="width: 600px;">
+                <li style="width: 600px; display: none">
                     <div>
                         <label style="width: 125px; float: left; padding-top: 5px; padding-right: 10px; text-align: right;">
                             <span style="color: #2E5689; text-align: right; ">Position
@@ -208,7 +208,7 @@
                     <div style="clear: both; font-size: 0;"></div>
                 </li>
             
-            <li style="width: 600px;">
+            <li style="width: 600px; display: none">
                 <div>
                     <label style="width: 125px; float: left; padding-top: 5px; padding-right: 10px; text-align: right;">
                         <span style="color: #2E5689; text-align: right; ">
@@ -222,7 +222,7 @@
                 <div style="clear: both; font-size: 0;"></div>
             </li>
             
-            <li style="width: 600px;">
+            <li style="width: 600px; display: none">
                 <div>
                     <label style="width: 125px; float: left; padding-top: 5px; padding-right: 10px; text-align: right;">
                         <span style="color: #2E5689; text-align: right; ">Y tá Phó quản lý

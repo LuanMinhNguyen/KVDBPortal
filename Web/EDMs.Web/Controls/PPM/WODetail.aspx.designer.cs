@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EDMs.Web.Controls.PPM
+namespace EDMs.Web.Controls.WO
 {
 
 
@@ -33,13 +33,13 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadPane Radpane1;
 
         /// <summary>
-        /// ToolBarObject control.
+        /// ToolBarPart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadToolBar ToolBarObject;
+        protected global::Telerik.Web.UI.RadToolBar ToolBarPart;
 
         /// <summary>
         /// ViewToolBar control.
@@ -69,13 +69,13 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadSplitter SubSplitter;
 
         /// <summary>
-        /// PanelObjectList control.
+        /// PanelWOList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane PanelObjectList;
+        protected global::Telerik.Web.UI.RadPane PanelWOList;
 
         /// <summary>
         /// LeftSplitter control.
@@ -123,13 +123,13 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadPane Radpane4;
 
         /// <summary>
-        /// lbObject control.
+        /// grdWO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadListBox lbObject;
+        protected global::Telerik.Web.UI.RadGrid grdWO;
 
         /// <summary>
         /// RadSplitbar1 control.
@@ -141,49 +141,49 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadSplitBar RadSplitbar1;
 
         /// <summary>
-        /// PanelObjectDetail control.
+        /// PanelStoreDetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane PanelObjectDetail;
+        protected global::Telerik.Web.UI.RadPane PanelStoreDetail;
 
         /// <summary>
-        /// TabObjectDetail control.
+        /// TabWODetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTabStrip TabObjectDetail;
+        protected global::Telerik.Web.UI.RadTabStrip TabWODetail;
 
         /// <summary>
-        /// MultiPageObject control.
+        /// MultiPageWO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadMultiPage MultiPageObject;
+        protected global::Telerik.Web.UI.RadMultiPage MultiPageWO;
 
         /// <summary>
-        /// RadPageView1 control.
+        /// RadPageView8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView1;
+        protected global::Telerik.Web.UI.RadPageView RadPageView8;
 
         /// <summary>
-        /// txtPhieuCV control.
+        /// txtPhieuCongViec control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtPhieuCV;
+        protected global::Telerik.Web.UI.RadTextBox txtPhieuCongViec;
 
         /// <summary>
         /// txtDienGiai control.
@@ -213,31 +213,31 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadTextBox txtThietBi;
 
         /// <summary>
-        /// txtBoPhan control.
+        /// txtTenThietBi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtBoPhan;
+        protected global::Telerik.Web.UI.RadTextBox txtTenThietBi;
 
         /// <summary>
-        /// txtKieu control.
+        /// txtPhongBan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtKieu;
+        protected global::Telerik.Web.UI.RadTextBox txtPhongBan;
 
         /// <summary>
-        /// txtNguoiTao control.
+        /// txtLoaiBaoDuong control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtNguoiTao;
+        protected global::Telerik.Web.UI.RadTextBox txtLoaiBaoDuong;
 
         /// <summary>
         /// txtTrangThai control.
@@ -249,40 +249,13 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadTextBox txtTrangThai;
 
         /// <summary>
-        /// txtNgayTao control.
+        /// txtNguoiTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtNgayTao;
-
-        /// <summary>
-        /// cbBaoHanh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadCheckBox cbBaoHanh;
-
-        /// <summary>
-        /// cbThueNgoai control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadCheckBox cbThueNgoai;
-
-        /// <summary>
-        /// txtngayTheoLich control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtngayTheoLich;
+        protected global::Telerik.Web.UI.RadTextBox txtNguoiTao;
 
         /// <summary>
         /// txtMaQuyTrinh control.
@@ -294,40 +267,58 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadTextBox txtMaQuyTrinh;
 
         /// <summary>
-        /// txtPhanLoai control.
+        /// txtDoUuTien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtPhanLoai;
+        protected global::Telerik.Web.UI.RadTextBox txtDoUuTien;
 
         /// <summary>
-        /// txtPhanCongBoi control.
+        /// txtNgayTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtPhanCongBoi;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayTao;
 
         /// <summary>
-        /// txtNgayBaoCao control.
+        /// txtNgayKeHoachGoc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtNgayBaoCao;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayKeHoachGoc;
 
         /// <summary>
-        /// txtPhanCongDen control.
+        /// txtLenhSanXuat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtPhanCongDen;
+        protected global::Telerik.Web.UI.RadTextBox txtLenhSanXuat;
+
+        /// <summary>
+        /// txtBaoCaoTinhTrangThietBi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadTextBox txtBaoCaoTinhTrangThietBi;
+
+        /// <summary>
+        /// txtBBGiamDinhKiThuat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadTextBox txtBBGiamDinhKiThuat;
 
         /// <summary>
         /// txtNguoiBaoCao control.
@@ -339,175 +330,157 @@ namespace EDMs.Web.Controls.PPM
         protected global::Telerik.Web.UI.RadTextBox txtNguoiBaoCao;
 
         /// <summary>
-        /// txtKeHoachBatDau control.
+        /// txtBBKiemTraSuCoTB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtKeHoachBatDau;
+        protected global::Telerik.Web.UI.RadTextBox txtBBKiemTraSuCoTB;
 
         /// <summary>
-        /// txtKeHoachHoanThanh control.
+        /// txtBienPhapSuaChua control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtKeHoachHoanThanh;
+        protected global::Telerik.Web.UI.RadTextBox txtBienPhapSuaChua;
 
         /// <summary>
-        /// txtNgayBatDau control.
+        /// txtNgayBaoCao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtNgayBatDau;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayBaoCao;
 
         /// <summary>
-        /// txtNgayHoanThanh control.
+        /// txtBBHienTruong control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDatePicker txtNgayHoanThanh;
+        protected global::Telerik.Web.UI.RadTextBox txtBBHienTruong;
 
         /// <summary>
-        /// cbDatChoPhepSuDung control.
+        /// txtBBNghiemThu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadCheckBox cbDatChoPhepSuDung;
+        protected global::Telerik.Web.UI.RadTextBox txtBBNghiemThu;
 
         /// <summary>
-        /// cbKhongTheSuDung control.
+        /// txtNguoiGiaoViec control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadCheckBox cbKhongTheSuDung;
+        protected global::Telerik.Web.UI.RadTextBox txtNguoiGiaoViec;
 
         /// <summary>
-        /// cbSuDungTamThoi control.
+        /// txtPhieuBatToaXe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadCheckBox cbSuDungTamThoi;
+        protected global::Telerik.Web.UI.RadTextBox txtPhieuBatToaXe;
 
         /// <summary>
-        /// txtKetLuan control.
+        /// txtPhieuTraToaXe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox txtKetLuan;
+        protected global::Telerik.Web.UI.RadTextBox txtPhieuTraToaXe;
 
         /// <summary>
-        /// RadPageView3 control.
+        /// txtNguoiThucHien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView3;
+        protected global::Telerik.Web.UI.RadTextBox txtNguoiThucHien;
 
         /// <summary>
-        /// grdWOActivities control.
+        /// txtPhieuBatDauMay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdWOActivities;
+        protected global::Telerik.Web.UI.RadTextBox txtPhieuBatDauMay;
 
         /// <summary>
-        /// RadPageView2 control.
+        /// txtPhieuTraDauMay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView2;
+        protected global::Telerik.Web.UI.RadTextBox txtPhieuTraDauMay;
 
         /// <summary>
-        /// PMScheduleSplitter control.
+        /// txtNgayBatDauKeHoach control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadSplitter PMScheduleSplitter;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayBatDauKeHoach;
 
         /// <summary>
-        /// PMSchedulePanel control.
+        /// txtBBGiamDinhB2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane PMSchedulePanel;
+        protected global::Telerik.Web.UI.RadTextBox txtBBGiamDinhB2;
 
         /// <summary>
-        /// grdPart control.
+        /// txtNgayKetThucKeHoach control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid grdPart;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayKetThucKeHoach;
 
         /// <summary>
-        /// RadSplitbar2 control.
+        /// txtNgayBatDauThucTe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadSplitBar RadSplitbar2;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayBatDauThucTe;
 
         /// <summary>
-        /// PMScheduleDetail control.
+        /// txtNgayKetThucThucTe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPane PMScheduleDetail;
+        protected global::Telerik.Web.UI.RadTextBox txtNgayKetThucThucTe;
 
         /// <summary>
-        /// RadPageView5 control.
+        /// txtCaKip control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPageView RadPageView5;
-
-        /// <summary>
-        /// rtvObjectDocument control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadTreeView rtvObjectDocument;
-
-        /// <summary>
-        /// DownloadMenu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadTreeViewContextMenu DownloadMenu;
+        protected global::Telerik.Web.UI.RadTextBox txtCaKip;
 
         /// <summary>
         /// RadAjaxLoadingPanel2 control.
@@ -526,69 +499,6 @@ namespace EDMs.Web.Controls.PPM
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadAjaxManager ajaxCustomer;
-
-        /// <summary>
-        /// RadWindowManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindowManager RadWindowManager1;
-
-        /// <summary>
-        /// ImportData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindow ImportData;
-
-        /// <summary>
-        /// ChartReport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadWindow ChartReport;
-
-        /// <summary>
-        /// ProjectName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField ProjectName;
-
-        /// <summary>
-        /// ProjectId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField ProjectId;
-
-        /// <summary>
-        /// lblFromDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField lblFromDate;
-
-        /// <summary>
-        /// lblToDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField lblToDate;
 
         /// <summary>
         /// RadCodeBlock1 control.

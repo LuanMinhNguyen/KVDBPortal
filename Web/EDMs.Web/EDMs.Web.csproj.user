@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
     <UseIISExpress>false</UseIISExpress>
-    <NameOfLastUsedPublishProfile>D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\Properties\PublishProfiles\EAMWebPortal - Hong Ngoc.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\Tai lieu\TRUETECH\EAM\Source\Web\EDMs.Web\Properties\PublishProfiles\EAMWebPortal.pubxml</NameOfLastUsedPublishProfile>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />
     <IISExpressSSLPort />

@@ -136,9 +136,10 @@
                 <div class="header" style="background: #00a0ee !important; height: 58px !important">
                     <div class="logo">
                         <asp:Image ID="imgLogo" runat="server"
-                            ImageUrl="Images/logo.svg" Style="padding-left: 20px; height: 58px; border-color: transparent; padding-top: 10px" />
+                            ImageUrl="Images/logo.svg" 
+                            Style="padding-left: 10px; height: 58px; object-fit: fill; border-color: transparent; padding-top: 4px; padding-bottom: 4px" />
                         <div style="display: inline;">
-                            <span style="font-size: x-large; padding-top: 12px; padding-left: 15px; position: fixed; font-weight: bold; color: #ffffff">EAM Web Portal - Công ty Kho vận Đá Bạc - Vinacomin, Phần mềm quản lý Cơ điện - Vận tải</span>
+                            <span style="font-size: 20px; padding-top: 15px; padding-left: 35px; position: fixed; color: #ffffff">EAM Web Portal - Công ty Kho vận Đá Bạc - Vinacomin, Phần mềm quản lý Cơ điện - Vận tải</span>
                         </div>
                     </div>
                     <div class="skin-chooser" style="margin-top: 3px; z-index: 3001;">

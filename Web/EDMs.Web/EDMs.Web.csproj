@@ -142,52 +142,16 @@
     <Content Include="App_Data\Appointments_Outlook.xml" />
     <Content Include="Controls\Asset\AssetDetail.aspx" />
     <Content Include="Controls\Asset\AssetList.aspx" />
-    <Content Include="Controls\Asset\LocationDetail.aspx" />
-    <Content Include="Controls\Asset\LocationList.aspx" />
-    <Content Include="Controls\Material\ReturnList.aspx" />
-    <Content Include="Controls\Material\ReceiptList.aspx" />
-    <Content Include="Controls\Material\IssuesReturnLineList.aspx" />
-    <Content Include="Controls\Material\PartDetail.aspx" />
-    <Content Include="Controls\Material\StoreDetail.aspx" />
-    <Content Include="Controls\Material\PartList.aspx" />
+    <Content Include="Controls\Document\DocumentDetail.aspx" />
+    <Content Include="Controls\Document\DocumentList.aspx" />
+    <Content Include="Controls\Document\XML\ToolsFile.xml" />
     <Content Include="Controls\Parts\PartDetail.aspx" />
     <Content Include="Controls\Parts\PartList.aspx" />
-    <Content Include="Controls\PPM\WOCompletedDetail.aspx" />
-    <Content Include="Controls\Material\StoreList.aspx" />
-    <Content Include="Controls\PPM\WRDetail.aspx" />
-    <Content Include="Controls\PPM\WRList.aspx" />
-    <Content Include="Controls\PPM\WOPartPlanList.aspx" />
-    <Content Include="Controls\PPM\WOResultDetail.aspx" />
-    <Content Include="Controls\PPM\WOCompletedList.aspx" />
-    <Content Include="Controls\PPM\WOResultList.aspx" />
-    <Content Include="Controls\PPM\WOPlanList.aspx" />
-    <Content Include="Controls\PPM\WOPlanDetail.aspx" />
-    <Content Include="Controls\PPM\WODetail.aspx" />
-    <Content Include="Controls\PPM\MatDetail.aspx" />
-    <Content Include="Controls\PPM\WOList.aspx" />
-    <Content Include="Controls\PPM\MatList.aspx" />
-    <Content Include="Controls\Purchase\PORDDetail.aspx" />
-    <Content Include="Controls\Purchase\REQDetail.aspx" />
-    <Content Include="Controls\Purchase\PORDList.aspx" />
-    <Content Include="Controls\Purchase\REQList.aspx" />
     <Content Include="Controls\Parts\StoreDetail.aspx" />
     <Content Include="Controls\Parts\StoreList.aspx" />
-    <Content Include="EAM_PartList.aspx" />
-    <Content Include="EAM_DocumentList.aspx" />
-    <Content Include="EAM_PORDList.aspx" />
-    <Content Include="EAM_ScraptsLineList.aspx" />
-    <Content Include="EAM_AssetManagementList.aspx" />
-    <Content Include="EAM_WORETNLineList.aspx" />
-    <Content Include="EAM_IssuesLineList.aspx" />
-    <Content Include="EAM_REQList.aspx" />
-    <Content Include="EAM_StoresManagement.aspx" />
-    <Content Include="EAM_ReceiptList.aspx" />
-    <Content Include="EAM_TranslineList.aspx" />
-    <Content Include="EAM_WOPartPlanList.aspx" />
-    <Content Include="EAM_WOCompletedList.aspx" />
-    <Content Include="EAM_WOPlanList.aspx" />
-    <Content Include="EAM_PPMManagement.aspx" />
-    <Content Include="EAM_AssetManagement.aspx" />
+    <Content Include="Controls\PPM\WODetail.aspx" />
+    <Content Include="Controls\PPM\WOList.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Images\clear_24.png" />
     <Content Include="Images\complete_16.png" />
     <Content Include="Images\complete_20.png" />
@@ -252,7 +216,6 @@
     <Content Include="Images\process2.png" />
     <Content Include="Images\release.png" />
     <Content Include="Images\release1.png" />
-    <Content Include="Default.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Controls\Security\ImportDataChangedFile.aspx" />
@@ -657,61 +620,19 @@
     <Compile Include="Controls\Asset\AssetList.aspx.designer.cs">
       <DependentUpon>AssetList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Asset\LocationDetail.aspx.cs">
-      <DependentUpon>LocationDetail.aspx</DependentUpon>
+    <Compile Include="Controls\Document\DocumentDetail.aspx.cs">
+      <DependentUpon>DocumentDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\Asset\LocationDetail.aspx.designer.cs">
-      <DependentUpon>LocationDetail.aspx</DependentUpon>
+    <Compile Include="Controls\Document\DocumentDetail.aspx.designer.cs">
+      <DependentUpon>DocumentDetail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Asset\LocationList.aspx.cs">
-      <DependentUpon>LocationList.aspx</DependentUpon>
+    <Compile Include="Controls\Document\DocumentList.aspx.cs">
+      <DependentUpon>DocumentList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\Asset\LocationList.aspx.designer.cs">
-      <DependentUpon>LocationList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\ReturnList.aspx.cs">
-      <DependentUpon>ReturnList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\ReturnList.aspx.designer.cs">
-      <DependentUpon>ReturnList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\ReceiptList.aspx.cs">
-      <DependentUpon>ReceiptList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\ReceiptList.aspx.designer.cs">
-      <DependentUpon>ReceiptList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\IssuesReturnLineList.aspx.cs">
-      <DependentUpon>IssuesReturnLineList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\IssuesReturnLineList.aspx.designer.cs">
-      <DependentUpon>IssuesReturnLineList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\PartDetail.aspx.cs">
-      <DependentUpon>PartDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\PartDetail.aspx.designer.cs">
-      <DependentUpon>PartDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\StoreDetail.aspx.cs">
-      <DependentUpon>StoreDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\StoreDetail.aspx.designer.cs">
-      <DependentUpon>StoreDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\PartList.aspx.cs">
-      <DependentUpon>PartList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\PartList.aspx.designer.cs">
-      <DependentUpon>PartList.aspx</DependentUpon>
+    <Compile Include="Controls\Document\DocumentList.aspx.designer.cs">
+      <DependentUpon>DocumentList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Parts\PartDetail.aspx.cs">
       <DependentUpon>PartDetail.aspx</DependentUpon>
@@ -727,132 +648,6 @@
     <Compile Include="Controls\Parts\PartList.aspx.designer.cs">
       <DependentUpon>PartList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\PPM\WOCompletedDetail.aspx.cs">
-      <DependentUpon>WOCompletedDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOCompletedDetail.aspx.designer.cs">
-      <DependentUpon>WOCompletedDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Material\StoreList.aspx.cs">
-      <DependentUpon>StoreList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Material\StoreList.aspx.designer.cs">
-      <DependentUpon>StoreList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WRDetail.aspx.cs">
-      <DependentUpon>WRDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WRDetail.aspx.designer.cs">
-      <DependentUpon>WRDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WRList.aspx.cs">
-      <DependentUpon>WRList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WRList.aspx.designer.cs">
-      <DependentUpon>WRList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPartPlanList.aspx.cs">
-      <DependentUpon>WOPartPlanList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPartPlanList.aspx.designer.cs">
-      <DependentUpon>WOPartPlanList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOResultDetail.aspx.cs">
-      <DependentUpon>WOResultDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOResultDetail.aspx.designer.cs">
-      <DependentUpon>WOResultDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOCompletedList.aspx.cs">
-      <DependentUpon>WOCompletedList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOCompletedList.aspx.designer.cs">
-      <DependentUpon>WOCompletedList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOResultList.aspx.cs">
-      <DependentUpon>WOResultList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOResultList.aspx.designer.cs">
-      <DependentUpon>WOResultList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPlanList.aspx.cs">
-      <DependentUpon>WOPlanList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPlanList.aspx.designer.cs">
-      <DependentUpon>WOPlanList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPlanDetail.aspx.cs">
-      <DependentUpon>WOPlanDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOPlanDetail.aspx.designer.cs">
-      <DependentUpon>WOPlanDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WODetail.aspx.cs">
-      <DependentUpon>WODetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WODetail.aspx.designer.cs">
-      <DependentUpon>WODetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\MatDetail.aspx.cs">
-      <DependentUpon>MatDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\MatDetail.aspx.designer.cs">
-      <DependentUpon>MatDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\WOList.aspx.cs">
-      <DependentUpon>WOList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\WOList.aspx.designer.cs">
-      <DependentUpon>WOList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\PPM\MatList.aspx.cs">
-      <DependentUpon>MatList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\PPM\MatList.aspx.designer.cs">
-      <DependentUpon>MatList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Purchase\PORDDetail.aspx.cs">
-      <DependentUpon>PORDDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Purchase\PORDDetail.aspx.designer.cs">
-      <DependentUpon>PORDDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Purchase\REQDetail.aspx.cs">
-      <DependentUpon>REQDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Purchase\REQDetail.aspx.designer.cs">
-      <DependentUpon>REQDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Purchase\PORDList.aspx.cs">
-      <DependentUpon>PORDList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Purchase\PORDList.aspx.designer.cs">
-      <DependentUpon>PORDList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Purchase\REQList.aspx.cs">
-      <DependentUpon>REQList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Purchase\REQList.aspx.designer.cs">
-      <DependentUpon>REQList.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Parts\StoreDetail.aspx.cs">
       <DependentUpon>StoreDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -867,120 +662,19 @@
     <Compile Include="Controls\Parts\StoreList.aspx.designer.cs">
       <DependentUpon>StoreList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DownLoadFile.ashx.cs">
-      <DependentUpon>DownLoadFile.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_PartList.aspx.cs">
-      <DependentUpon>EAM_PartList.aspx</DependentUpon>
+    <Compile Include="Controls\PPM\WODetail.aspx.cs">
+      <DependentUpon>WODetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EAM_PartList.aspx.designer.cs">
-      <DependentUpon>EAM_PartList.aspx</DependentUpon>
+    <Compile Include="Controls\PPM\WODetail.aspx.designer.cs">
+      <DependentUpon>WODetail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EAM_DocumentList.aspx.cs">
-      <DependentUpon>EAM_DocumentList.aspx</DependentUpon>
+    <Compile Include="Controls\PPM\WOList.aspx.cs">
+      <DependentUpon>WOList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EAM_DocumentList.aspx.designer.cs">
-      <DependentUpon>EAM_DocumentList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_PORDList.aspx.cs">
-      <DependentUpon>EAM_PORDList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_PORDList.aspx.designer.cs">
-      <DependentUpon>EAM_PORDList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_ScraptsLineList.aspx.cs">
-      <DependentUpon>EAM_ScraptsLineList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_ScraptsLineList.aspx.designer.cs">
-      <DependentUpon>EAM_ScraptsLineList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_AssetManagementList.aspx.cs">
-      <DependentUpon>EAM_AssetManagementList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_AssetManagementList.aspx.designer.cs">
-      <DependentUpon>EAM_AssetManagementList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_WORETNLineList.aspx.cs">
-      <DependentUpon>EAM_WORETNLineList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_WORETNLineList.aspx.designer.cs">
-      <DependentUpon>EAM_WORETNLineList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_IssuesLineList.aspx.cs">
-      <DependentUpon>EAM_IssuesLineList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_IssuesLineList.aspx.designer.cs">
-      <DependentUpon>EAM_IssuesLineList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_REQList.aspx.cs">
-      <DependentUpon>EAM_REQList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_REQList.aspx.designer.cs">
-      <DependentUpon>EAM_REQList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_StoresManagement.aspx.cs">
-      <DependentUpon>EAM_StoresManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_StoresManagement.aspx.designer.cs">
-      <DependentUpon>EAM_StoresManagement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_ReceiptList.aspx.cs">
-      <DependentUpon>EAM_ReceiptList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_ReceiptList.aspx.designer.cs">
-      <DependentUpon>EAM_ReceiptList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_TranslineList.aspx.cs">
-      <DependentUpon>EAM_TranslineList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_TranslineList.aspx.designer.cs">
-      <DependentUpon>EAM_TranslineList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_WOPartPlanList.aspx.cs">
-      <DependentUpon>EAM_WOPartPlanList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_WOPartPlanList.aspx.designer.cs">
-      <DependentUpon>EAM_WOPartPlanList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_WOCompletedList.aspx.cs">
-      <DependentUpon>EAM_WOCompletedList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_WOCompletedList.aspx.designer.cs">
-      <DependentUpon>EAM_WOCompletedList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_WOPlanList.aspx.cs">
-      <DependentUpon>EAM_WOPlanList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_WOPlanList.aspx.designer.cs">
-      <DependentUpon>EAM_WOPlanList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_PPMManagement.aspx.cs">
-      <DependentUpon>EAM_PPMManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_PPMManagement.aspx.designer.cs">
-      <DependentUpon>EAM_PPMManagement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EAM_AssetManagement.aspx.cs">
-      <DependentUpon>EAM_AssetManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EAM_AssetManagement.aspx.designer.cs">
-      <DependentUpon>EAM_AssetManagement.aspx</DependentUpon>
+    <Compile Include="Controls\PPM\WOList.aspx.designer.cs">
+      <DependentUpon>WOList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -988,6 +682,9 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoadFile.ashx.cs">
+      <DependentUpon>DownLoadFile.ashx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Security\ImportDataChangedFile.aspx.cs">
       <DependentUpon>ImportDataChangedFile.aspx</DependentUpon>

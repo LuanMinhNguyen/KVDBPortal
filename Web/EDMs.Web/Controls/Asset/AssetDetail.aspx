@@ -148,8 +148,14 @@
         #ctl00_ContentPlaceHolder2_RadSplitter1 {
             height: auto !important
         }
-        #ctl00_ContentPlaceHolder2_grdAssetParameters_GridData{
-            height: 30vh !important
+
+        #ctl00_ContentPlaceHolder2_grdAssetParameters_GridData {
+            height: 25vh !important
+        }
+
+        #RAD_SPLITTER_PANE_CONTENT_ctl00_ContentPlaceHolder2_RadPane6 {
+            width: auto !important;
+            height: auto !important
         }
     </style>
 
@@ -207,7 +213,7 @@
                                                 <ItemStyle Font-Size="14px" />
                                                 <ItemTemplate>
                                                     <div style="width: 350px">
-                                                        <span class="assetTitle" runat="server" id="assetFullname" style="display: block"><%# DataBinder.Eval(Container.DataItem, "FullName")%></span>
+                                                        <span class="assetTitle" style="display: block"><%# DataBinder.Eval(Container.DataItem, "FullName")%></span>
                                                         <table>
                                                             <tr>
                                                                 <td align="right" style="width: 120px"><span class="assetDetail">Tổ chức:&nbsp;</span></td>
@@ -264,7 +270,7 @@
                         <telerik:RadMultiPage runat="server" ID="MultiPageAsset" SelectedIndex="0">
                             <telerik:RadPageView runat="server" ID="RadPageView8">
                                 <br />
-                                <table>
+                                <table style="width: 100%">
                                     <tr>
                                         <td colspan="6">
                                             <dl class="accordion">
@@ -276,7 +282,7 @@
                                     </tr>
                                     <tr>
                                         <td align="right" style="width: 150px; padding-right: 2px">Thiết bị:</td>
-                                        <td>
+                                        <td style="width: 30%">
                                             <telerik:RadTextBox ID="txtThietBi" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                             <telerik:RadTextBox ID="txtDienGiai" runat="server" Skin="MetroTouch" Width="250" ReadOnly="True" />
                                         </td>
@@ -288,24 +294,19 @@
                                     </tr>
                                     <tr>
                                         <td align="right" style="width: 150px; padding-right: 2px">Thông số kĩ thuật</td>
-                                        <td>
-                                            <telerik:RadTextBox ID="txtThongSoKyThuat" runat="server" Skin="MetroTouch" Width="450" TextMode="MultiLine" Rows="3" ReadOnly="True" />
+                                        <td rowspan="2">
+                                            <telerik:RadTextBox ID="txtThongSoKyThuat" runat="server" Skin="MetroTouch" Width="450" TextMode="MultiLine" Rows="2" ReadOnly="True" />
                                         </td>
-                                        <td align="right" style="width: 150px; padding-right: 2px" colspan="2">
-                                            <table>
-                                                <tr>
-                                                    <td align="right" style="width: 150px; padding-right: 2px">Phòng ban/PX</td>
-                                                    <td>
-                                                        <telerik:RadTextBox ID="txtPhongBan" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="right" style="width: 150px; padding-right: 2px">Trạng thái</td>
-                                                    <td>
-                                                        <telerik:RadTextBox ID="txtTrangThai" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" Style="font-weight: bold;" />
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td align="right" style="width: 150px; padding-right: 2px">Phòng ban/PX</td>
+                                        <td>
+                                            <telerik:RadTextBox ID="txtPhongBan" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td align="right" style="width: 150px; padding-right: 2px">Trạng thái</td>
+                                        <td>
+                                            <telerik:RadTextBox ID="txtTrangThai" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" Style="font-weight: bold;" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -320,17 +321,17 @@
 
                                     <tr>
                                         <td align="right" style="width: 150px; padding-right: 2px">Phân nhóm</td>
-                                        <td style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadTextBox ID="txtPhanNhom" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Ngày BĐ theo dõi</td>
-                                        <td align="right" style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadDatePicker ID="txtNgayBDTheoDoi" runat="server" Skin="MetroTouch" Width="150" Enabled="False">
                                                 <DateInput runat="server" DateFormat="dd-MMM-yy" ReadOnly="True" DisplayDateFormat="dd/MM/yyyy" />
                                             </telerik:RadDatePicker>
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Khu vực</td>
-                                        <td align="right" style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadTextBox ID="txtKhuVuc" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                     </tr>
@@ -345,7 +346,7 @@
                                             <telerik:RadTextBox ID="txtDonViDo" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Thiết bị cha</td>
-                                        <td align="right" style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadTextBox ID="txtThietBiCha" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                     </tr>
@@ -360,7 +361,7 @@
                                             <telerik:RadTextBox ID="txtGiaTri" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Phân loại</td>
-                                        <td align="right" style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadTextBox ID="txtPhanLoai" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                     </tr>
@@ -371,7 +372,7 @@
                                             <telerik:RadTextBox ID="txtSerialNumber" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                         <td align="right" style="width: 150px; padding-right: 2px">Số đăng ký</td>
-                                        <td align="right" style="width: 150px; padding-right: 2px">
+                                        <td>
                                             <telerik:RadTextBox ID="txtSoDangKy" runat="server" Skin="MetroTouch" Width="150" ReadOnly="True" />
                                         </td>
                                     </tr>
@@ -413,19 +414,22 @@
                                                 </Items>
                                             </telerik:RadDropDownList>
                                             <telerik:RadTextBox runat="server" ID="txtSearchText" Skin="MetroTouch"></telerik:RadTextBox>
-                                            <telerik:RadLinkButton runat="server" ID="btnSearchHistory" Text="Run" Skin="MetroTouch"></telerik:RadLinkButton>
+                                            <telerik:RadButton runat="server" ID="btnSearchHistory" Text="Run" Skin="MetroTouch" OnClick="btnSearchHistory_Click"></telerik:RadButton>
                                         </div>
                                     </div>
                                 </div>
-                                <telerik:RadGrid runat="server" ID="grdAssetHistory" OnNeedDataSource="grdAssetHistory_NeedDataSource" Width="100%"
-                                    AllowPaging="True"
-                                    AutoGenerateColumns="False" CellPadding="0" CellSpacing="0"
-                                    GridLines="None" Height="650px" Skin="Metro">
+                                <telerik:RadGrid runat="server" ID="grdAssetHistory"
+                                    OnNeedDataSource="grdAssetHistory_NeedDataSource"
+                                    OnItemDataBound="grdAssetHistory_ItemDataBound"
+                                    Width="100%" AllowPaging="True" AutoGenerateColumns="False"
+                                    CellPadding="0" CellSpacing="0" GridLines="None" Height="650px" Skin="Metro">
                                     <MasterTableView Width="100%" TableLayout="Auto" CssClass="rgMasterTable" PageSize="30">
                                         <CommandItemSettings ShowAddNewRecordButton="false" RefreshText="Làm mới dữ liệu" ShowExportToExcelButton="False" ShowRefreshButton="true" />
                                         <PagerStyle AlwaysVisible="True" FirstPageToolTip="First page" LastPageToolTip="Last page" NextPagesToolTip="Next page" NextPageToolTip="Next page" PagerTextFormat="Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; / &lt;strong&gt;{1}&lt;/strong&gt;, Total:  &lt;strong&gt;{5}&lt;/strong&gt; items." PageSizeLabelText="Row/page: " PrevPagesToolTip="Previous page" PrevPageToolTip="Previous page" />
                                         <HeaderStyle Font-Bold="True" HorizontalAlign="Center" VerticalAlign="Middle" />
                                         <Columns>
+                                            <telerik:GridBoundColumn DataField="TrangThai" UniqueName="TrangThai" Display="false" />
+
                                             <telerik:GridBoundColumn DataField="MaPhieu" HeaderText="Mã phiếu" UniqueName="MaPhieu">
                                                 <HeaderStyle HorizontalAlign="Center" Width="150" />
                                                 <ItemStyle HorizontalAlign="Left" />
@@ -441,15 +445,18 @@
                                                 <ItemStyle HorizontalAlign="Left" />
                                             </telerik:GridBoundColumn>
 
-                                            <telerik:GridBoundColumn DataField="TrangThai" HeaderText="Trạng thái" UniqueName="TrangThai">
+                                            <telerik:GridTemplateColumn HeaderText="Trạng thái" UniqueName="lbTrangThai">
+                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
+                                                <ItemStyle HorizontalAlign="Left" />
+                                                <ItemTemplate>
+                                                    <asp:Label runat="server" ID="lbTrangThai"></asp:Label>
+                                                </ItemTemplate>
+                                            </telerik:GridTemplateColumn>
+
+                                            <telerik:GridBoundColumn DataField="NgayHoanThanh" HeaderText="Ngày hoàn thành" UniqueName="NgayHoanThanh">
                                                 <HeaderStyle HorizontalAlign="Center" Width="150" />
                                                 <ItemStyle HorizontalAlign="Left" />
                                             </telerik:GridBoundColumn>
-
-                                            <telerik:GridDateTimeColumn DataField="NgayHoanThanh" HeaderText="Ngày hoàn thành" UniqueName="NgayHoanThanh" DataFormatString="{0:dd/MM/yy}">
-                                                <HeaderStyle HorizontalAlign="Center" Width="150" />
-                                                <ItemStyle HorizontalAlign="Left" />
-                                            </telerik:GridDateTimeColumn>
 
                                             <telerik:GridBoundColumn DataField="DonVi" HeaderText="Đơn vị" UniqueName="DonVi">
                                                 <HeaderStyle HorizontalAlign="Center" Width="150" />
@@ -486,7 +493,7 @@
                                                 </Items>
                                             </telerik:RadDropDownList>
                                             <telerik:RadTextBox runat="server" ID="txtPPMScheduleSearch" Skin="MetroTouch"></telerik:RadTextBox>
-                                            <telerik:RadLinkButton runat="server" ID="RadLinkButton1" Text="Run" Skin="MetroTouch"></telerik:RadLinkButton>
+                                            <telerik:RadButton runat="server" ID="btnPPMScheduleSearch" Text="Run" Skin="MetroTouch" OnClick="btnPPMScheduleSearch_Click"></telerik:RadButton>
                                         </div>
                                     </div>
                                 </div>
@@ -568,6 +575,35 @@
                             </telerik:RadPageView>
                             <%--Thông số vận hành--%>
                             <telerik:RadPageView runat="server" ID="RadPageView4">
+                                <div class="row" style="margin: 0 10px; height: 10%">
+                                    <div class="col" style="display: flex; justify-content: space-between">
+                                        <div class="col-4"></div>
+                                        <div class="col-4"></div>
+                                        <div class="col-4" style="display: flex; align-items: center">
+                                            <telerik:RadDropDownList runat="server" ID="ddlAssetParamSearchType" Skin="MetroTouch">
+                                                <Items>
+                                                    <telerik:DropDownListItem Value="0" Text="Đơn vị đo" />
+                                                    <telerik:DropDownListItem Value="1" Text="Mô tả" />
+                                                    <telerik:DropDownListItem Value="2" Text="Total Usage" />
+                                                    <telerik:DropDownListItem Value="3" Text="Usage Since Install" />
+                                                    <telerik:DropDownListItem Value="4" Text="Usage Since Last WO" />
+                                                    <telerik:DropDownListItem Value="5" Text="Type of Meter" />
+                                                    <telerik:DropDownListItem Value="6" Text="Physical Meter" />
+                                                    <telerik:DropDownListItem Value="7" Text="Meter Rollover" />
+                                                    <telerik:DropDownListItem Value="8" Text="Last Reading" />
+                                                    <telerik:DropDownListItem Value="9" Text="Last Reading Date" />
+                                                    <telerik:DropDownListItem Value="10" Text="Est. Daily Usage" />
+                                                    <telerik:DropDownListItem Value="11" Text="Avg. Daily Usage" />
+                                                    <telerik:DropDownListItem Value="12" Text="Readings for Calc." />
+                                                    <telerik:DropDownListItem Value="13" Text="Days Since Last Entry" />
+                                                    <telerik:DropDownListItem Value="14" Text="Up/Down Meter" />
+                                                </Items>
+                                            </telerik:RadDropDownList>
+                                            <telerik:RadTextBox runat="server" ID="txtAssetParamSearchText" Skin="MetroTouch"></telerik:RadTextBox>
+                                            <telerik:RadButton runat="server" ID="btnAssetParamSearch" Text="Run" Skin="MetroTouch" OnClick="btnAssetParamSearch_Click"></telerik:RadButton>
+                                        </div>
+                                    </div>
+                                </div>
                                 <telerik:RadSplitter RenderMode="Lightweight" ID="RadSplitter1" runat="server" Height="100%" Width="100%" Orientation="Horizontal" Skin="Metro">
                                     <telerik:RadPane ID="RadPane5" runat="server" Width="100%" Height="300">
                                         <telerik:RadGrid ID="grdAssetParameters" runat="server" AllowPaging="True"
@@ -670,7 +706,7 @@
                                     </telerik:RadSplitBar>
                                     <telerik:RadPane ID="RadPane6" runat="server" Width="100%">
                                         <span style="border-bottom: 1px solid #46A3D3; color: #085B8F; font-size: 1.15em; letter-spacing: 0.1em; line-height: 1.2; margin: 0.5em auto 0.6em; text-align: left; text-decoration: none; display: block; font-weight: bold; font-family: helvetica, arial, verdana, sans-serif; padding-top: 10px">Chi tiết</span>
-                                        <div style="padding-left: 10px">
+                                        <div style="padding-left: 10px; width: max-content" runat="server" id="paramInfo">
                                             <table>
                                                 <tr>
                                                     <td align="right">Đơn vị đo</td>
@@ -776,6 +812,18 @@
                         <telerik:AjaxUpdatedControl ControlID="grdAsset" LoadingPanelID="RadAjaxLoadingPanel2" />
                         <telerik:AjaxUpdatedControl ControlID="RadTreeView1" LoadingPanelID="RadAjaxLoadingPanel2" />
                         <telerik:AjaxUpdatedControl ControlID="grdAssetParameters" LoadingPanelID="RadAjaxLoadingPanel2" />
+                        <telerik:AjaxUpdatedControl ControlID="paramInfo" />
+                        <telerik:AjaxUpdatedControl ControlID="txtDonViDoParam" />
+                        <telerik:AjaxUpdatedControl ControlID="txtMoTaParam" />
+                        <telerik:AjaxUpdatedControl ControlID="txtTypeOfMeter" />
+                        <telerik:AjaxUpdatedControl ControlID="txtPhysicalMeter" />
+                        <telerik:AjaxUpdatedControl ControlID="txtTotalUsage" />
+                        <telerik:AjaxUpdatedControl ControlID="txtMeterRollover" />
+                        <telerik:AjaxUpdatedControl ControlID="txtUsageSinceInstall" />
+                        <telerik:AjaxUpdatedControl ControlID="txtLastReading" />
+                        <telerik:AjaxUpdatedControl ControlID="txtUsageSinceLastWO" />
+                        <telerik:AjaxUpdatedControl ControlID="txtLastReadingDate1" />
+                        <telerik:AjaxUpdatedControl ControlID="cbUpDownMeter" />
                     </UpdatedControls>
                 </telerik:AjaxSetting>
 
@@ -785,9 +833,28 @@
                     </UpdatedControls>
                 </telerik:AjaxSetting>
 
+                <telerik:AjaxSetting AjaxControlID="btnSearchHistory">
+                    <UpdatedControls>
+                        <telerik:AjaxUpdatedControl ControlID="grdAssetHistory" LoadingPanelID="RadAjaxLoadingPanel2" />
+                    </UpdatedControls>
+                </telerik:AjaxSetting>
+
+                <telerik:AjaxSetting AjaxControlID="btnPPMScheduleSearch">
+                    <UpdatedControls>
+                        <telerik:AjaxUpdatedControl ControlID="grdAssetPMSchedule" LoadingPanelID="RadAjaxLoadingPanel2" />
+                    </UpdatedControls>
+                </telerik:AjaxSetting>
+
+                <telerik:AjaxSetting AjaxControlID="btnAssetParamSearch">
+                    <UpdatedControls>
+                        <telerik:AjaxUpdatedControl ControlID="grdAssetParameters" LoadingPanelID="RadAjaxLoadingPanel2" />
+                    </UpdatedControls>
+                </telerik:AjaxSetting>
+
                 <telerik:AjaxSetting AjaxControlID="grdAssetParameters">
                     <UpdatedControls>
                         <telerik:AjaxUpdatedControl ControlID="grdAssetParameters" LoadingPanelID="RadAjaxLoadingPanel2" />
+                        <telerik:AjaxUpdatedControl ControlID="paramInfo" />
                         <telerik:AjaxUpdatedControl ControlID="txtDonViDoParam" />
                         <telerik:AjaxUpdatedControl ControlID="txtMoTaParam" />
                         <telerik:AjaxUpdatedControl ControlID="txtTypeOfMeter" />

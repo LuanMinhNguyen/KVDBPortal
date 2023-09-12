@@ -97,39 +97,7 @@ namespace EDMs.Web.Controls.Asset
 
         protected void RadAjaxManager1_AjaxRequest(object sender, AjaxRequestEventArgs e)
         {
-            if (e.Argument == "RefreshProgressReport")
-            {
-            }
-
-        }
-
-        private void LoadAssetDocumentTree(AssetDto assetObj)
-        {
-            //this.rtvAssetDocument.Nodes.Clear();
-            //var objectParam = new SqlParameter("@object", SqlDbType.NVarChar);
-            //var organizationParam = new SqlParameter("@organization", SqlDbType.NVarChar);
-            //objectParam.Value = assetObj.ThietBi;
-            //organizationParam.Value = assetObj.DonVi;
-            //DataSet ds;
-            //var documentList = new List<AssetDocumentDto>();
-            //ds = this.eamService.GetDataSet("get_asset_documents", new[] { objectParam, organizationParam });
-            //if (ds != null)
-            //{
-            //    documentList = this.eamService.CreateListFromTable<AssetDocumentDto>(ds.Tables[0]);
-            //    var mainNode = new RadTreeNode("<b>Thiết bị: </b>" + assetObj.FullName, assetObj.ThietBi);
-            //    mainNode.ImageUrl = @"~/Images/folderdir16.png";
-            //    foreach (var item in documentList)
-            //    {
-            //        var childNode = new RadTreeNode(item.MA_TAI_LIEU + ": " + item.TEN_TAI_LIEU, item.DuongDan);
-            //        childNode.ImageUrl = @"~/Images/documents.png";
-
-            //        mainNode.Nodes.Add(childNode);
-            //        mainNode.Expanded = true;
-            //    }
-
-            //    this.rtvAssetDocument.Nodes.Add(mainNode);
-
-            //}
+           
         }
 
         protected void btnSearch_OnClick(object sender, ImageClickEventArgs e)
@@ -174,6 +142,43 @@ namespace EDMs.Web.Controls.Asset
                 if (ds != null)
                 {
                     assetPMScheduleList = this.eamService.CreateListFromTable<AssetPMScheduleDto>(ds.Tables[0]);
+                }
+
+                if (!string.IsNullOrEmpty(this.txtPPMScheduleSearch.Text))
+                {
+                    switch (this.ddlPMScheduleSearchType.SelectedValue)
+                    {
+                        case "0":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.QuyTrinh.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "1":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.MoTa.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "2":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.PhongBan.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "3":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.ChuKy.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "4":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.NgayBatDau.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "5":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.TanSuat.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "6":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.ThoiDiemBD.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "7":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.PhieuCongViec.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "8":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.NguoiThucHien.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                        case "9":
+                            assetPMScheduleList = assetPMScheduleList.Where(t => t.NguoiGiamSat.Contains(this.txtPPMScheduleSearch.Text)).ToList();
+                            break;
+                    }
                 }
             }
 
@@ -280,8 +285,33 @@ namespace EDMs.Web.Controls.Asset
                 {
                     assetEventList = this.eamService.CreateListFromTable<AssetEventDto>(ds.Tables[0]);
                 }
-            }
 
+                if (!string.IsNullOrEmpty(this.txtSearchText.Text))
+                {
+                    switch (this.ddlSearchType.SelectedValue)
+                    {
+                        case "0":
+                            assetEventList = assetEventList.Where(t => t.MaPhieu.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                        case "1":
+                            assetEventList = assetEventList.Where(t => t.ChiTiet.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                        case "2":
+                            assetEventList = assetEventList.Where(t => t.Loai.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                        case "3":
+                            assetEventList = assetEventList.Where(t => t.TrangThai.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                        case "4":
+                            assetEventList = assetEventList.Where(t => t.NgayHoanThanh.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                        case "5":
+                            assetEventList = assetEventList.Where(t => t.DonVi.Contains(this.txtSearchText.Text)).ToList();
+                            break;
+                    }
+                }
+            }
+            
             this.grdAssetHistory.DataSource = assetEventList;
         }
 
@@ -306,6 +336,18 @@ namespace EDMs.Web.Controls.Asset
             this.FillObjectDetail(assetObj);
             this.LoadTreeView(assetObj);
             this.grdAssetParameters.Rebind();
+            this.paramInfo.Attributes["style"] = "display: block";  
+            this.txtDonViDoParam.Text = "";
+            this.txtMoTaParam.Text = "";
+            this.txtTypeOfMeter.Text = "";
+            this.txtPhysicalMeter.Text = "";
+            this.txtTotalUsage.Text = "";
+            this.txtMeterRollover.Text = "";
+            this.txtUsageSinceInstall.Text = "";
+            this.txtLastReading.Text = "";
+            this.txtUsageSinceLastWO.Text = "";
+            this.txtLastReadingDate1.Text = "";
+            this.cbUpDownMeter.Checked = false;
         }
 
         protected void grdAsset_ItemDataBound(object sender, GridItemEventArgs e)
@@ -341,6 +383,58 @@ namespace EDMs.Web.Controls.Asset
                 {
                     assetParameterList = this.eamService.CreateListFromTable<AssetParameterDto>(ds.Tables[0]);
                 }
+
+                if (!string.IsNullOrEmpty(this.txtAssetParamSearchText.Text))
+                {
+                    switch (this.ddlAssetParamSearchType.SelectedValue)
+                    {
+                        case "0":
+                            assetParameterList = assetParameterList.Where(t => t.DonViDo.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "1":
+                            assetParameterList = assetParameterList.Where(t => t.MoTa.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "2":
+                            assetParameterList = assetParameterList.Where(t => t.TotalUsage == Convert.ToInt32(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "3":
+                            assetParameterList = assetParameterList.Where(t => t.UsageSinceInstall == Convert.ToInt32(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "4":
+                            assetParameterList = assetParameterList.Where(t => t.UsageSinceLastWO == Convert.ToInt32(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "5":
+                            assetParameterList = assetParameterList.Where(t => t.TypeOfMeter.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "6":
+                            assetParameterList = assetParameterList.Where(t => t.PhysicalMeter.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "7":
+                            assetParameterList = assetParameterList.Where(t => t.MeterRollover.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "8":
+                            assetParameterList = assetParameterList.Where(t => t.LastReading == Convert.ToInt32(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "9":
+                            assetParameterList = assetParameterList.Where(t => t.LastReadingDate.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "10":
+                            assetParameterList = assetParameterList.Where(t => t.EstDailyUsage.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "11":
+                            assetParameterList = assetParameterList.Where(t => t.AvgDailyUsageDate.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "12":
+                            assetParameterList = assetParameterList.Where(t => t.ReadingsForCalc.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "13":
+                            assetParameterList = assetParameterList.Where(t => t.DaysSinceLastEntry.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                        case "14":
+                            assetParameterList = assetParameterList.Where(t => t.UpDownMeter.Contains(this.txtAssetParamSearchText.Text)).ToList();
+                            break;
+                    }
+                }
             }
             this.grdAssetParameters.DataSource = assetParameterList;
         }
@@ -372,6 +466,7 @@ namespace EDMs.Web.Controls.Asset
 
                     // Bây giờ bạn có thể làm gì đó với giá trị của cột, ví dụ:
                     // Hiển thị giá trị trong một Label
+                    this.paramInfo.Attributes["style"] = "display: block";
                     this.txtDonViDoParam.Text = !string.IsNullOrEmpty(donvido) ? donvido : "";
                     this.txtMoTaParam.Text = !string.IsNullOrEmpty(mota) ? mota : "";
                     this.txtTotalUsage.Text = !string.IsNullOrEmpty(totalusage) ? totalusage : "";
@@ -385,6 +480,32 @@ namespace EDMs.Web.Controls.Asset
                     this.cbUpDownMeter.Checked = updownmeter == "+" ? true : false;
                 }
             }
+        }
+
+        protected void grdAssetHistory_ItemDataBound(object sender, GridItemEventArgs e)
+        {
+            if (e.Item is GridDataItem)
+            {
+                GridDataItem item = (GridDataItem)e.Item;
+                var TrangThai = item["TrangThai"].Text;
+                var lbTrangThai = item["lbTrangThai"].FindControl("lbTrangThai") as Label;
+                lbTrangThai.Text = TrangThai == "C" ? "Đã hoàn thành" : TrangThai;
+            }
+        }
+
+        protected void btnSearchHistory_Click(object sender, EventArgs e)
+        {
+            this.grdAssetHistory.Rebind();
+        }
+
+        protected void btnPPMScheduleSearch_Click(object sender, EventArgs e)
+        {
+            this.grdAssetPMSchedule.Rebind();
+        }
+
+        protected void btnAssetParamSearch_Click(object sender, EventArgs e)
+        {
+            this.grdAssetParameters.Rebind();
         }
     }
 }

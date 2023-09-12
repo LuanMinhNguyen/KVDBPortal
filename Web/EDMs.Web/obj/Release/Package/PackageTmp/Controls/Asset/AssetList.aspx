@@ -135,17 +135,12 @@
                     <Items>
                         <telerik:RadToolBarButton ImageUrl="~/Images/toolbar_split.png" ToolTip="Split View" Value="SplitView" />
                         <telerik:RadToolBarButton runat="server" IsSeparator="true" />
-                        <telerik:RadToolBarButton ImageUrl="~/Images/clear_24.png" ToolTip="Clear Filter" Value="ClearFilter" />
-                        <telerik:RadToolBarButton runat="server" IsSeparator="true" />
-
                         <telerik:RadToolBarButton runat="server" Value="IsFilter">
                             <ItemTemplate>
                                 <asp:CheckBox ID="ckbEnableFilter" runat="server" Text="Show Filter Row" AutoPostBack="True"
                                     OnCheckedChanged="ckbEnableFilter_CheckedChange" />
                             </ItemTemplate>
                         </telerik:RadToolBarButton>
-
-
                     </Items>
                 </telerik:RadToolBar>
             </telerik:RadPane>
@@ -328,31 +323,6 @@
                 var strValue = button.get_value();
                 if (strValue == "SplitView") {
                     window.location.href = "AssetDetail.aspx";
-                } else if (strValue == "ClearFilter") {
-                    var grid = $find("<%=grdData.ClientID %>");
-                    var masterTableView = grid.get_masterTableView();
-                    masterTableView.clearFilter("ThietBi");
-                    masterTableView.clearFilter("TenThietBi");
-                    masterTableView.clearFilter("DonVi");
-                    masterTableView.clearFilter("BoPhan");
-                    masterTableView.clearFilter("TrangThai");
-                    masterTableView.clearFilter("SerialNo");
-                    masterTableView.clearFilter("Model");
-                    masterTableView.clearFilter("ThongSoKyThuat");
-                    masterTableView.clearFilter("NhaCungCap");
-                    masterTableView.clearFilter("PhanLoai");
-                    masterTableView.clearFilter("NhaSanXuat");
-                    masterTableView.clearFilter("NgayVanHanh");
-                    masterTableView.clearFilter("NguoiPhuTrach");
-                    masterTableView.clearFilter("NienHan");
-                    masterTableView.clearFilter("NgungSuDung");
-                    masterTableView.clearFilter("CumChucNang");
-                    masterTableView.clearFilter("HanSuDungThang");
-                    masterTableView.clearFilter("NgayNhanThietBi");
-                    masterTableView.clearFilter("NgayThaoBo");
-                    masterTableView.clearFilter("PhanNhom");
-                    masterTableView.clearFilter("DonViDo");
-                    masterTableView.clearFilter("DoQuanTrang");
                 }
             }
         </script>

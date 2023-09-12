@@ -8,7 +8,7 @@ namespace EDMs.Data.Dto
         public string ChiTiet { get; set; }
         public string Loai { get; set; }
         public string TrangThai { get; set; }
-        public DateTime NgayHoanThanh { get; set; }
+        public string NgayHoanThanh { get; set; }
         public string DonVi { get; set; }
     }
 }
